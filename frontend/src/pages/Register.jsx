@@ -1,14 +1,14 @@
 import { useState } from "react";
 import { registerUser } from "../api";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
-  const navigate = useNavigate(); // Initialize navigate
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
-    role: "mentor", // Default role
+    role: "", // Empty default role
     password: "",
   });
 
@@ -23,34 +23,90 @@ const Register = () => {
   
     if (result.success) {
       alert("✅ Registration Successful! Redirecting to Login...");
-      navigate("/login"); // Redirect to Login Page
+      navigate("/login");
     } else {
       alert(`❌ Error: ${result.message}`);
     }
   };
 
   return (
-    <div className="max-w-md mx-auto mt-10 p-6 bg-white shadow-md rounded">
-      <h2 className="text-xl font-bold mb-4">Register</h2>
-      <form onSubmit={handleSubmit}>
-        <input type="text" name="name" placeholder="Name" value={formData.name} onChange={handleChange} required className="w-full p-2 border mb-2" />
-        <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange} required className="w-full p-2 border mb-2" />
-        <input type="tel" name="phone" placeholder="Phone" value={formData.phone} onChange={handleChange} required className="w-full p-2 border mb-2" />
-        
-        <select name="role" value={formData.role} onChange={handleChange} className="w-full p-2 border mb-2">
-          <option value="mentor">Mentor</option>
-          <option value="student">Student</option>
-          <option value="investor">Investor</option>
-          <option value="startup">Startup</option>
-        </select>
+    <div className="min-h-screen bg-gray-900 flex items-center justify-center p-4">
+      <div className="max-w-md w-full p-6 bg-gray-800 rounded-lg shadow-lg">
+        <h2 className="text-2xl font-bold text-white mb-6 text-center">Register</h2>
+        <form onSubmit={handleSubmit} className="space-y-4">
+          <input 
+            type="text" 
+            name="name" 
+            placeholder="Name" 
+            value={formData.name} 
+            onChange={handleChange} 
+            required 
+            className="w-full p-3 bg-gray-700 border border-gray-600 rounded text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500" 
+          />
+          <input 
+            type="email" 
+            name="email" 
+            placeholder="Email" 
+            value={formData.email} 
+            onChange={handleChange} 
+            required 
+            className="w-full p-3 bg-gray-700 border border-gray-600 rounded text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500" 
+          />
+          <input 
+            type="tel" 
+            name="phone" 
+            placeholder="Phone" 
+            value={formData.phone} 
+            onChange={handleChange} 
+            required 
+            className="w-full p-3 bg-gray-700 border border-gray-600 rounded text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500" 
+          />
+          
+          <div className="relative">
+            <select 
+              name="role" 
+              value={formData.role} 
+              onChange={handleChange} 
+              required
+              className="w-full p-3 bg-gray-700 border border-gray-600 rounded text-white focus:outline-none focus:ring-2 focus:ring-blue-500 appearance-none pr-10"
+            >
+              <option value="" disabled selected>Join As</option>
+              <option value="mentor">Mentor</option>
+              <option value="student">Student</option>
+              <option value="investor">Investor</option>
+              <option value="startup">Startup</option>
+            </select>
+            <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-400">
+              <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+              </svg>
+            </div>
+          </div>
 
-        <input type="password" name="password" placeholder="Password" value={formData.password} onChange={handleChange} required className="w-full p-2 border mb-2" />
+          <input 
+            type="password" 
+            name="password" 
+            placeholder="Password" 
+            value={formData.password} 
+            onChange={handleChange} 
+            required 
+            className="w-full p-3 bg-gray-700 border border-gray-600 rounded text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500" 
+          />
 
-        <button type="submit" className="w-full p-2 bg-blue-500 text-white rounded hover:bg-blue-600">Register</button>
-      </form>
-      <p className="text-sm text-center mt-4">
-        Already have an account? <a href="/login" className="text-blue-500">Login</a>
-      </p>
+          <button 
+            type="submit" 
+            className="w-full p-3 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-800"
+          >
+            Register
+          </button>
+        </form>
+        <p className="text-sm text-center mt-6 text-gray-400">
+          Already have an account?{' '}
+          <a href="/login" className="text-blue-400 hover:text-blue-300 transition duration-200">
+            Login
+          </a>
+        </p>
+      </div>
     </div>
   );
 };

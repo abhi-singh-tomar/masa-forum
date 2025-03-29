@@ -207,55 +207,52 @@ const Home = () => {
     <div className="bg-black min-h-screen">
       {/* Hero Section */}
       <motion.section 
-        className="relative h-screen flex flex-col justify-center items-center text-center px-6 pt-20 bg-black"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-      >
-        <motion.div 
-          className="relative z-10 text-white"
-          initial={{ scale: 0.9 }}
-          animate={{ scale: 1 }}
-          transition={{ duration: 0.5 }}
+  className="relative h-screen flex flex-col justify-center items-center text-center px-6 pt-20 bg-black"
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ duration: 1 }}
+>
+  <motion.div 
+    className="relative z-10 text-white"
+    initial={{ scale: 0.9 }}
+    animate={{ scale: 1 }}
+    transition={{ duration: 0.5 }}
+  >
+    <h1 className="text-5xl md:text-6xl font-bold mb-4 drop-shadow-lg">
+      Welcome <span className="text-3xl md:text-4xl">to</span>{" "}
+      <span className="text-yellow-400">
+        {displayedText}
+        <motion.span
+          animate={{ opacity: cursorVisible ? 1 : 0 }}
+          className="ml-1"
         >
-          <h1 className="text-5xl md:text-6xl font-bold mb-4 drop-shadow-lg">
-            Welcome to{" "}
-            <span className="text-yellow-400">
-              {displayedText}
-              <motion.span
-                animate={{ opacity: cursorVisible ? 1 : 0 }}
-                className="ml-1"
-              >
-                |
-              </motion.span>
-            </span>
-          </h1>
-          
-          <motion.p 
-            className="text-lg md:text-xl mb-6 max-w-2xl mx-auto"
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.5 }}
-          >
-            Empowering startups, MSMEs, and innovators with resources and mentorship.
-          </motion.p>
+          |
+        </motion.span>
+      </span>
+    </h1>
+    
+    <motion.p 
+      className="text-lg md:text-xl mb-8 max-w-2xl mx-auto"
+      initial={{ y: 20, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ delay: 0.5 }}
+    >
+      Empowering startups, MSMEs, and innovators with resources and mentorship.
+    </motion.p>
 
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <Link
-              to="/membership"
-              className="px-6 py-3 bg-yellow-500 text-gray-900 rounded-lg font-semibold inline-block"
-            >
-              Become a Member
-            </Link>
-          </motion.div>
-        </motion.div>
-
-        
-      </motion.section>
-
+    <motion.div
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+    >
+      <Link
+        to="/membership"
+        className="px-8 py-4 text-xl bg-yellow-500 hover:bg-yellow-400 text-gray-900 rounded-lg font-bold inline-block transition-colors duration-300"
+      >
+        Become a Member
+      </Link>
+    </motion.div>
+  </motion.div>
+</motion.section>
       {/* Features Section */}
       <motion.section 
         className="py-20 px-6 bg-black"
