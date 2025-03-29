@@ -382,7 +382,7 @@ const Home = () => {
                   "For MASA Awards",
                   "For Membership",
                   "Startup Incubation",
-                  "Learn About MASA"
+                  "know About MASA"
                 ].map((option) => (
                   <button
                     key={option}
