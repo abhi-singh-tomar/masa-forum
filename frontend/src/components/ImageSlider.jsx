@@ -1,16 +1,18 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
-import masaImage from "../assets/Masa.jpg";
+import eca from "../assets/gallery-imgs/eca.jpg"
+import ecb from "../assets/gallery-imgs/ecb.jpg"
+import ecc from "../assets/gallery-imgs/ecc.jpg"
+import ecd from "../assets/gallery-imgs/ecd.jpg"
+import ece from "../assets/gallery-imgs/ece.jpg"
+
+
 
 
 // Sample image data (replace with your own image URLs)
 const images = [
-      masaImage,
-  "./assets/EC-pic-1.jpg",
-  "./assets/EC-pic-2.jpg",
-  "./assets/EC-pic-3.jpg",
-  "./assets/EC-pic-4.jpg",
-  "./assets/EC-pic-5.jpg",
+      eca, ecb, ecc, ecd, ece
+  
 ];
 
 const ImageSlider = () => {
