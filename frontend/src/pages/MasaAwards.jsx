@@ -3,11 +3,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import { applyForAward } from "../api";
 
 import Footer from "../components/Footer";
-import aboutImage from "../assets/Masa.jpg";
-import aboutImage2 from "../assets/Masa.jpg";
-import aboutImage3 from "../assets/Masa.jpg";
-import aboutImage4 from "../assets/Masa.jpg";
-import aboutImage5 from "../assets/Masa.jpg";
+import aboutImage from "../assets/awards-imgs/Award-1.jpg";
+import aboutImage2 from "../assets/awards-imgs/Award-2.jpg";
+import aboutImage3 from "../assets/awards-imgs/Award-3.jpg";
+import aboutImage4 from "../assets/awards-imgs/Award-4.jpg";
+import aboutImage5 from "../assets/awards-imgs/Award-5.jpg";
 
 const images = [aboutImage, aboutImage2, aboutImage3, aboutImage4, aboutImage5];
 
