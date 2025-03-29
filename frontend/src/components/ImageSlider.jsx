@@ -6,11 +6,11 @@ import masaImage from "../assets/Masa.jpg";
 // Sample image data (replace with your own image URLs)
 const images = [
       masaImage,
-  "https://i.pravatar.cc/300?img=2",
-  "https://i.pravatar.cc/300?img=3",
-  "https://i.pravatar.cc/300?img=4",
-  "https://i.pravatar.cc/300?img=5",
-  "https://i.pravatar.cc/300?img=6",
+  "./assets/EC-pic-1.jpg",
+  "./assets/EC-pic-2.jpg",
+  "./assets/EC-pic-3.jpg",
+  "./assets/EC-pic-4.jpg",
+  "./assets/EC-pic-5.jpg",
 ];
 
 const ImageSlider = () => {
