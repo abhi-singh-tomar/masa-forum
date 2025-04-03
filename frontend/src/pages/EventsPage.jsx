@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import Footer from '../components/Footer';
-import masaImage from "../assets/Masa.jpg"; // Replace with your actual image imports
+import masaImage from "../assets/pastEvent.jpg"; // Replace with your actual image imports
+import poddar from "../assets/event-imgs/leadershipProgram.JPG";
+import upcomingEvent1 from "../assets/event-imgs/ETS.png";
+import upcomingEvent2 from "../assets/event-imgs/SPN.png";
+import upcomingEvent3 from "../assets/event-imgs/AIC.png";
 
 const EventsPage = () => {
   const [activeTab, setActiveTab] = useState('upcoming');
@@ -15,7 +19,7 @@ const EventsPage = () => {
         location: "Convention Center, New York",
         description: "Join industry leaders for the biggest tech event of the year",
         fullDescription: "This three-day event will feature keynote speeches from tech pioneers, hands-on workshops, and networking opportunities with industry leaders. Don't miss our exclusive product launches and panel discussions.",
-        image: masaImage
+        image: upcomingEvent1
       },
       {
         id: 2,
@@ -24,7 +28,7 @@ const EventsPage = () => {
         location: "Tech Hub, San Francisco",
         description: "Pitch your startup to top investors",
         fullDescription: "A night of innovation where startups present their ideas to a panel of venture capitalists and industry experts, followed by networking and feedback sessions.",
-        image: masaImage
+        image: upcomingEvent2
       },
       {
         id: 3,
@@ -33,7 +37,7 @@ const EventsPage = () => {
         location: "Boston Convention Center",
         description: "Explore the future of artificial intelligence",
         fullDescription: "Two days of deep dives into AI trends, featuring workshops, live demos, and discussions with leading AI researchers and developers.",
-        image: masaImage
+        image: upcomingEvent3
       },
     ],
     past: [
@@ -55,7 +59,7 @@ const EventsPage = () => {
         location: "Corporate Headquarters",
         description: "Six-week intensive leadership training",
         fullDescription: "This program includes mentorship sessions, team projects, and leadership simulations designed to develop executive-level skills.",
-        image: masaImage
+        image: poddar
       },
     ]
   };
