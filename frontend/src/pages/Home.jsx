@@ -207,7 +207,7 @@ const Home = () => {
     <div className="bg-gray-900 min-h-screen">
       {/* Hero Section */}
       <motion.section 
-  className="relative h-screen flex flex-col justify-center items-center text-center px-6 pt-20 bg-gray-600"
+  className="relative h-screen flex flex-col justify-center items-center text-center px-6 pt-20 bg-black"
   initial={{ opacity: 0 }}
   animate={{ opacity: 1 }}
   transition={{ duration: 1 }}
