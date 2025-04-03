@@ -204,10 +204,10 @@ const Home = () => {
   };
 
   return (
-    <div className="bg-black min-h-screen">
+    <div className="bg-gray-900 min-h-screen">
       {/* Hero Section */}
       <motion.section 
-  className="relative h-screen flex flex-col justify-center items-center text-center px-6 pt-20 bg-black"
+  className="relative h-screen flex flex-col justify-center items-center text-center px-6 pt-20 bg-gray-600"
   initial={{ opacity: 0 }}
   animate={{ opacity: 1 }}
   transition={{ duration: 1 }}

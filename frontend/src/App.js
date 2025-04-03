@@ -13,7 +13,6 @@ import SchemesPage from "./pages/SchemesPage";
 import MSMENews from "./pages/MSMENews";
 import Portfolio from "./pages/Portfolio";
 import ContactUs from "./pages/ContactUs";
-import MouseLightEffect from "./components/MouseLightEffect";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
@@ -25,7 +24,6 @@ function App() {
  
   return (
     <div>
-    <MouseLightEffect />
      <Navbar />
       <Routes>
       <Route path="/" element={<Home />} />
