@@ -1,144 +1,70 @@
-import React, { useState } from "react";
-import Footer from "../components/Footer";
+import React from 'react';
 
 const memberships = [
   {
-    title: "Corporate Membership",
-    price: "₹49,999",
-    features: [
-      "Complementary Networking Events For next 2 years.",
-      "4 One-To-One Sessions",
-      "Media Features + Dedicated Case Study.",
-      "Premium Facilitation For MSME Schemes",
-      "Banners & Brand Visibility in Events",
-      "Domestic Delegation",
-      "Feature in MSME TIMES Magazine & MYPOWER BRAND PODCAST",
-    ],
-    color: "bg-yellow-500 text-black",
+    title: "Basic MASA Community",
+    price: "₹4,999",
+    benefit: "Access to all ecosystem benefits",
   },
   {
-    title: "Platinum Membership",
-    price: "₹99,999",
-    features: [
-      "Complementary Networking Events For next 2 years.",
-      "4 One-To-One Sessions",
-      "Media Features + Dedicated Case Study.",
-      "Premium Facilitation For MSME Schemes",
-      "Banners & Brand Visibility in Events",
-      "Domestic Delegation",
-      "Feature in MSME TIMES Magazine & MYPOWER BRAND PODCAST",
-    ],
-    color: "bg-black text-white",
-  },
-  {
-    title: "Patron Membership",
-    price: "₹2,99,999",
-    features: [
-      "Lifetime Membership in MASA",
-      "One-To-One Mentorship Guidance",
-      "Media Features + Dedicated Case Study.",
-      "Premium Facilitation For MSME Schemes",
-      "Banners & Brand Visibility in Events",
-      "Domestic Delegation",
-      "Feature in MSME TIMES Magazine & MYPOWER BRAND PODCAST",
-    ],
-    color: "bg-green-500 text-black",
-  },
-  {
-    title: "Premium Membership",
+    title: "Premium Member",
     price: "₹14,999",
-    features: [
-      "4 Free Networking Events",
-      "One-To-One Session",
-      "Feature in MSME TIMES Magazine",
-      "Complementary Passes to events up to one year",
-      "Brand Visibility for one year",
-      "Advisory on Subsidies & Funding",
-      "Premium Certificate of Membership",
-      "Exclusive MSME Perks",
-    ],
-    color: "bg-yellow-500 text-black",
+    benefit: "Complementary mentoring session",
   },
   {
-    title: "Elite Membership",
+    title: "Elite Member",
     price: "₹19,999",
-    features: [
-      "5 Complementary Networking Events",
-      "2 One-To-One Sessions",
-      "Feature in MSME TIMES Magazine & Complementary Passes to events up to one year",
-      "Brand Visibility in few Events",
-      "Advisory on Subsidies & Funding",
-      "Elite Certificate of Membership",
-      "Exclusive MSME Perks",
-    ],
-    color: "bg-black text-white",
+    benefit: "Coverage in Magazine",
   },
   {
-    title: "Gold Membership",
+    title: "Gold Member",
     price: "₹24,999",
-    features: [
-      "8 Complementary Networking Events up to one year",
-      "3 One-To-One Sessions",
-      "Feature in MSME TIMES Magazine & MYPOWER BRAND PODCAST",
-      "Complementary Passes to events up to one year",
-      "Brand Visibility for one year & Banners in few Events",
-      "Advisory on Subsidies & Funding",
-      "Elite Certificate of Membership",
-      "Exclusive MSME Perks",
-    ],
-    color: "bg-green-500 text-black",
+    benefit: "Featured in Podcast",
+  },
+  {
+    title: "Corporate Member",
+    price: "₹49,999",
+    benefit: "Banners & Brand visibility + VIP networking opportunities",
+  },
+  {
+    title: "Platinum Members",
+    price: "₹99,999",
+    benefit: "2yrs Branding visibility",
+  },
+  {
+    title: "Patron Members",
+    price: "₹2,99,999",
+    benefit: "Lifetime Membership",
   },
 ];
 
-const MembershipPage = () => {
-  const [expanded, setExpanded] = useState(Array(memberships.length).fill(false));
-
-  const toggleExpand = (index) => {
-    setExpanded((prev) => {
-      const newExpanded = [...prev];
-      newExpanded[index] = !newExpanded[index];
-      return newExpanded;
-    });
-  };
-
+export default function MembershipPage() {
   return (
-  <div>
-    <div className="min-h-screen bg-gray-800 text-black p-10">
-      <div className="bg-yellow-500 text-black text-center py-6 rounded-lg mb-10 shadow-lg">
-        <h1 className="text-3xl font-bold">Choose Your MASA Membership Plan</h1>
-      </div>
-      <div className="grid md:grid-cols-3 gap-6">
-        {memberships.map((membership, index) => (
-          <div
-            key={index}
-            className={`p-6 ${membership.color} rounded-2xl shadow-lg flex flex-col justify-between h-full`}
-          >
-            <h2 className="text-2xl font-bold mb-4">{membership.title}</h2>
-            <ul className="mb-4 space-y-2">
-              {(expanded[index] ? membership.features : membership.features.slice(0, 4)).map((feature, i) => (
-                <li key={i} className="text-sm">✔ {feature}</li>
-              ))}
-            </ul>
-            {membership.features.length > 4 && (
-              <button
-                className="text-sm text-blue-700 underline mb-4"
-                onClick={() => toggleExpand(index)}
-              >
-                {expanded[index] ? "Show Less" : "Show More"}
-              </button>
-            )}
-            <p className="text-xl font-bold mb-4">{membership.price}</p>
-            <button className="w-full bg-yellow-400 text-black py-2 rounded-lg font-semibold hover:bg-yellow-600 transition">
-              Join Now
-            </button>
-          </div>
-        ))}
-      </div>
-     
-    </div>
-    <Footer/>
-    </div>  
-  );
-};
+    <div className="min-h-screen bg-gray-700 px-6 py-12 text-white">
+      <div className="max-w-6xl mx-auto text-center">
+        <h1 className="text-5xl font-bold mb-4 text-yellow-500">MSME And Startups Acceleration (MASA)</h1>
+        <p className="text-xl font-semibold text-white mb-2">Join the MASA Community - Access to Excellence and Innovation!</p>
+        <p className="text-white mb-8">Ecosystem Benefits for our Members:</p>
 
-export default MembershipPage;
+        <ul className="text-left max-w-2xl mx-auto mb-12 space-y-2 text-base text-white">
+          <li>✅ Ecosystem for Startups and MSMEs, to grow them from idea to IPO.</li>
+          <li>✅ Get Recognitions, Awards, and validation.</li>
+          <li>✅ Be a part of growth oriented network.</li>
+          <li>✅ Platform for Shared learnings, workshops, training programs.</li>
+          <li>✅ MSME Schemes, Subsidies, Policy Support.</li>
+        </ul>
+
+        <div className="grid md:grid-cols-3 gap-6">
+          {memberships.map((plan, index) => (
+            <div key={index} className="bg-yellow-100 p-6 rounded-2xl shadow hover:shadow-lg transition duration-300">
+              <h2 className="text-xl font-bold mb-2 text-blue-600">{plan.title}</h2>
+              <p className="text-2xl font-semibold text-gray-800 mb-4">{plan.price}</p>
+              <p className="text-gray-600 mb-6">{plan.benefit}</p>
+              <button className="bg-blue-600 text-white px-4 py-2 rounded-xl hover:bg-blue-700 transition">Join Now</button>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}

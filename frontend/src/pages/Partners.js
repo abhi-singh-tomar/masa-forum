@@ -64,7 +64,7 @@ const Partners = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          Our Trusted Partners
+          Our Partner Organizations
         </motion.h2>
         <p className="text-gray-300 mt-2 max-w-lg mx-auto">
           We proudly collaborate with industry leaders to deliver excellence.

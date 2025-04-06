@@ -71,14 +71,14 @@ function Navbar() {
               </button>
               {dropdownOpen === "about" && (
                 <div className="absolute lg:mt-0 bg-white text-black shadow-lg rounded-lg mt-0 p-2 min-w-[150px] z-50">
-                  <Link to="/about" className="block px-4 py-2 hover:bg-gray-200">About Us</Link>
+                  <Link to="/about" className="block px-4 py-2 hover:bg-gray-200">Mission/Vision</Link>
                   <Link to="/team" className="block px-4 py-2 hover:bg-gray-200">Our Team</Link>
                   <Link to="/partners" className="block px-4 py-2 hover:bg-gray-200">Our Partners</Link>
                 </div>
               )}
             </div>
 
-            <Link to="/masa-awards" className="hover:text-gray-300 px-4 py-2">MASA Awards</Link>
+            <Link to="/Ourinitiatives" className="hover:text-gray-300 px-4 py-2">Our initiatives</Link>
             <Link to="/membership" className="hover:text-yellow-500 px-4 py-2">Membership</Link>
             <Link to="/events" className="hover:text-gray-300 px-4 py-2">Events</Link>
 
@@ -102,8 +102,8 @@ function Navbar() {
                 </div>
               )}
             </div>
+            <Link to="/MasainMedia" className="hover:text-gray-300 px-4 py-2">Masa in Media</Link>
 
-            <Link to="/portfolio" className="hover:text-gray-300 px-4 py-2">Portfolio</Link>
             <Link to="/ContactUs" className="hover:text-gray-300 px-4 py-2">Contact Us</Link>
           </div>
         </nav>

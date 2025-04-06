@@ -1,18 +1,18 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
-import eca from "../assets/gallery-imgs/eca.jpg"
-import ecb from "../assets/gallery-imgs/ecb.jpg"
-import ecc from "../assets/gallery-imgs/ecc.jpg"
-import ecd from "../assets/gallery-imgs/ecd.jpg"
-import ece from "../assets/gallery-imgs/ece.jpg"
+import eca from "../assets/gallery-imgs/eca.jpg";
+import ecb from "../assets/gallery-imgs/ecb.jpg";
+import ecc from "../assets/gallery-imgs/ecc.jpg";
+import ecd from "../assets/gallery-imgs/ecd.jpg";
+import ece from "../assets/gallery-imgs/ece.jpg";
 
-
-
-
-// Sample image data (replace with your own image URLs)
+// Updated image data with descriptions
 const images = [
-      eca, ecb, ecc, ecd, ece
-  
+  { src: eca, desc: "First Achievement - Team Celebration" },
+  { src: ecb, desc: "Award Ceremony 2023" },
+  { src: ecc, desc: "Project Completion Milestone" },
+  { src: ecd, desc: "Innovation Award Winner" },
+  { src: ece, desc: "Annual Team Summit" },
 ];
 
 const ImageSlider = () => {
@@ -40,31 +40,39 @@ const ImageSlider = () => {
   return (
     <motion.section className="py-16 bg-black overflow-hidden">
       <h2 className="text-3xl font-bold text-center text-white mb-12">
-        Our Gallery
+        Our Achievements
       </h2>
       <div className="relative w-full max-w-6xl mx-auto">
         <motion.div
           className="flex"
           animate={{
-            x: `-${position * (100 / images.length)}%`, // Move based on position
+            x: `-${position * 304}px`, // Fixed pixel value (300px width + 4px total margin)
           }}
           transition={{
-            duration: 1, // Smooth transition duration
+            duration: 1,
             ease: "linear",
           }}
-          style={{ width: `${extendedImages.length * (100 / images.length)}%` }} // Ensure enough width for all images
+          style={{ width: `${extendedImages.length * 304}px` }} // Fixed pixel width
         >
-          {extendedImages.map((image, index) => (
-            <motion.img
+          {extendedImages.map((item, index) => (
+            <motion.div
               key={index}
-              src={image}
-              alt={`Slide ${index}`}
-              className="w-[300px] h-[200px] object-cover mx-2 rounded-lg" // Adjust size as needed
+              className="flex-shrink-0 mx-2 flex flex-col items-center" // Prevent width shrinkage
               initial="enter"
               animate="center"
               exit="exit"
               variants={slideVariants}
-            />
+              style={{ width: "300px" }} // Explicit width
+            >
+              <motion.img
+                src={item.src}
+                alt={`Slide ${index}`}
+                className="w-[300px] h-[200px] object-cover rounded-lg"
+              />
+              <div className="mt-2 w-[300px] bg-black bg-opacity-60 text-white text-center py-2 rounded-lg">
+                <p className="text-sm">{item.desc}</p>
+              </div>
+            </motion.div>
           ))}
         </motion.div>
       </div>

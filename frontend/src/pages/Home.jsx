@@ -240,17 +240,47 @@ const Home = () => {
       Empowering startups, MSMEs, and innovators with resources and mentorship.
     </motion.p>
 
-    <motion.div
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.95 }}
-    >
-      <Link
-        to="/membership"
-        className="px-8 py-4 text-xl bg-yellow-500 hover:bg-yellow-400 text-gray-900 rounded-lg font-bold inline-block transition-colors duration-300"
+    <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
+      <motion.div
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
       >
-        Become a Member
-      </Link>
-    </motion.div>
+        <Link
+          to="/contactUs"
+          className="px-6 py-3 text-lg bg-yellow-500 hover:bg-yellow-400 text-gray-900 rounded-lg font-bold border-2 border-yellow-300 hover:border-yellow-200 transition-all duration-300"
+        >
+          Event Registration
+        </Link>
+      </motion.div>
+
+      <span className="hidden sm:block text-yellow-400 text-2xl font-bold">✦</span>
+
+      <motion.div
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+      >
+        <Link
+          to="/membership"
+          className="px-6 py-3 text-lg bg-yellow-500 hover:bg-yellow-400 text-gray-900 rounded-lg font-bold border-2 border-yellow-300 hover:border-yellow-200 transition-all duration-300"
+        >
+          Membership
+        </Link>
+      </motion.div>
+
+      <span className="hidden sm:block text-yellow-400 text-2xl font-bold">✦</span>
+
+      <motion.div
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+      >
+        <Link
+          to="/register"
+          className="px-6 py-3 text-lg bg-yellow-500 hover:bg-yellow-400 text-gray-900 rounded-lg font-bold border-2 border-yellow-300 hover:border-yellow-200 transition-all duration-300"
+        >
+          Enroll for Acceleration
+        </Link>
+      </motion.div>
+    </div>
   </motion.div>
 </motion.section>
       {/* Features Section */}
@@ -288,7 +318,7 @@ const Home = () => {
       {/* Testimonials Section */}
       <motion.section className="py-16 bg-black">
   <h2 className="text-3xl font-bold text-center text-white mb-12">
-    What People Say
+    Member Insights
   </h2>
 
   <div className="flex items-center justify-center gap-4 px-6">
@@ -345,7 +375,7 @@ const Home = () => {
       >
         <div className="max-w-2xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-white mb-6">
-            Ready to Elevate Your Business?
+            Ready to Accelerate Your Brand?
           </h2>
           <motion.div
             whileHover={{ scale: 1.05 }}
@@ -355,7 +385,7 @@ const Home = () => {
               to="/register"
               className="inline-block px-8 py-3 bg-yellow-500 text-gray-900 rounded-lg font-semibold"
             >
-              Get Started Now
+              Join Now
             </Link>
           </motion.div>
         </div>
