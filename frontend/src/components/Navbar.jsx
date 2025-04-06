@@ -110,9 +110,7 @@ function Navbar() {
 
         {/* Right-Aligned Auth Buttons */}
         <div className="hidden lg:flex gap-4">
-          <Link to="/login" className="bg-white text-blue-900 px-4 py-2 rounded hover:bg-gray-200">
-            Login
-          </Link>
+          
           <Link to="/register" className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">
             Register
           </Link>
@@ -127,9 +125,7 @@ function Navbar() {
       {/* Mobile Auth Buttons */}
       {menuOpen && (
         <div className="flex flex-col items-center gap-4 mt-4 lg:hidden">
-          <Link to="/login" className="bg-white text-blue-900 px-4 py-2 rounded hover:bg-gray-200 w-32 text-center">
-            Login
-          </Link>
+         
           <Link to="/register" className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 w-32 text-center">
             Register
           </Link>

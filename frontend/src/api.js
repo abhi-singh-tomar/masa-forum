@@ -39,25 +39,7 @@ export const sendUserIntent = async (intent) => {
     }
   };
 
-  export const loginUser = async (email, password) => {
-    try {
-      const response = await fetch(`${API_URL}/auth/login`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, password }),
-      });
   
-      const data = await response.json();
-  
-      if (!response.ok) {
-        throw new Error(data.message || "Something went wrong");
-      }
-  
-      return { success: true, token: data.token, user: data.user };
-    } catch (error) {
-      return { success: false, message: error.message };
-    }
-  };
 
   
   export const applyForAward = async (formData) => {

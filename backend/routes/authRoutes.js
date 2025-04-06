@@ -39,35 +39,7 @@ router.post("/register", async (req, res) => {
 });
 
 // 🔹 LOGIN ROUTE
-router.post("/login", async (req, res) => {
-  try {
-    const { email, password } = req.body;
 
-    // ✅ Check if user exists
-    const user = await User.findOne({ email });
-    if (!user) {
-      return res.status(400).json({ message: "Invalid credentials" });
-    }
-
-    // ✅ Compare password
-    const isMatch = await bcrypt.compare(password, user.password);
-    if (!isMatch) {
-      return res.status(400).json({ message: "Invalid credentials" });
-    }
-
-    // ✅ Generate JWT Token
-    const token = jwt.sign(
-      { userId: user._id, email: user.email, role: user.role },
-      process.env.JWT_SECRET || "your_secret_key", // Use a secure key
-      { expiresIn: "1h" }
-    );
-
-    res.json({ message: "Login successful", token, user });
-  } catch (error) {
-    console.error("❌ Error in Login:", error);
-    res.status(500).json({ message: "Server error" });
-  }
-});
 
 // Get all award applications
 router.get("/", async (req, res) => {

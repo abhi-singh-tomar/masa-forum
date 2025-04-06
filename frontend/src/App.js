@@ -13,7 +13,6 @@ import SchemesPage from "./pages/SchemesPage";
 import MSMENews from "./pages/MSMENews";
 import ContactUs from "./pages/ContactUs";
 import Register from "./pages/Register";
-import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import WhatsAppFloatButton from "./components/WhatsAppFloatButton";
 import MasainMedia from "./pages/MasainMeida"; // Ensure correct import path
@@ -40,7 +39,6 @@ function App() {
       <Route path="/SchemesPage" element={<SchemesPage />} />
       <Route path="/ContactUs" element={<ContactUs />} />
       <Route path="/register" element={<Register />} />
-      <Route path="/login" element={<Login />} />
       <Route path="/dashboard" element={<Dashboard />} />
        {/* Protected Dashboard Route */}
       
