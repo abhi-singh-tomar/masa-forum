@@ -1,35 +1,43 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+
 import Footer from '../components/Footer';
+
+import photo0 from "../assets/masa-in-media-imgs/Statesman.png";
+import photo1 from "../assets/masa-in-media-imgs/prabhat.jpg";
+import photo2 from "../assets/masa-in-media-imgs/yuvaShakti.jpg";
+import photo3 from "../assets/masa-in-media-imgs/hindu.jpg";
+import photo4 from "../assets/masa-in-media-imgs/chronicle.jpg";
+import photo5 from "../assets/masa-in-media-imgs/bengalNews.jpg";
 
 const MasainMedia = () => {
   // Sample media coverage data
   const mediaCoverage = [
     {
       id: 1,
-      title: "MASA Awards 2023 featured in Business Today",
+      title: "",
       source: "Business Today",
       date: "March 15, 2023",
       description: "Coverage of our annual awards ceremony recognizing top MSMEs in the country.",
-      image: "https://example.com/media1.jpg",
+      image: photo0,
       link: "https://businesstoday.com/masa-awards-2023"
     },
     {
       id: 2,
-      title: "Interview with MASA Founder on Economic Times",
-      source: "Economic Times",
+      title: "MASA Education Conclave 2025",
+      source: "Prabhat Khabar",
       date: "February 28, 2023",
       description: "Exclusive interview discussing the future of MSMEs in India.",
-      image: "https://example.com/media2.jpg",
+      image: photo1,
       link: "https://economictimes.com/masa-interview"
     },
     {
       id: 3,
-      title: "MASA's Kalptaru Program in Forbes",
-      source: "Forbes India",
+      title: "Women Awards",
+      source: "www.yuvashakti.com",
       date: "January 10, 2023",
       description: "Feature on how our mentorship program is transforming small businesses.",
-      image: "https://example.com/media3.jpg",
+      image: photo2,
       link: "https://forbes.com/masa-kalptaru"
     },
     {
@@ -38,7 +46,7 @@ const MasainMedia = () => {
       source: "Entrepreneur India",
       date: "December 5, 2022",
       description: "Coverage of our quarterly magazine launch event in Mumbai.",
-      image: "https://example.com/media4.jpg",
+      image: photo3,
       link: "https://entrepreneur.com/msme-times-launch"
     },
     {
@@ -47,7 +55,7 @@ const MasainMedia = () => {
       source: "Startup Magazine",
       date: "November 20, 2022",
       description: "How our investor connect platform is bridging funding gaps.",
-      image: "https://example.com/media5.jpg",
+      image: photo4,
       link: "https://startupmag.com/nivesh-manthan"
     },
     {
@@ -56,7 +64,7 @@ const MasainMedia = () => {
       source: "The Hindu BusinessLine",
       date: "October 8, 2022",
       description: "Case studies of businesses transformed through MASA initiatives.",
-      image: "https://example.com/media6.jpg",
+      image: photo5,
       link: "https://thehindubusinessline.com/masa-impact"
     }
   ];

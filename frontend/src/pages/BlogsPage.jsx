@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import Footer from '../components/Footer';
-import blogImage1 from "../assets/blog-imgs/djyoti.jpg"; // Replace with your actual blog images
+import blogImage1 from "../assets/blog-imgs/ira.JPG"; // Replace with your actual blog images
 import blogImage2 from "../assets/blog-imgs/tandon.jpg"
-import blogImage3 from "../assets/blog-imgs/mahapatra.jpg";
-import blogImage4 from "../assets/blog-imgs/debashis.jpg";
+import blogImage3 from "../assets/blog-imgs/biswarup.JPG";
+import blogImage4 from "../assets/blog-imgs/pragya.JPG";
 
 const BlogsPage = () => {
   const [expandedBlog, setExpandedBlog] = useState(null); // Track expanded blog by ID
@@ -16,17 +16,8 @@ const BlogsPage = () => {
       excerpt: "Exploring trends and predictions for the startup ecosystem in the coming year.",
       fullContent: "The startup landscape in 2025 is poised for significant evolution. With advancements in AI, blockchain, and sustainable tech, entrepreneurs are finding new opportunities to innovate. This article explores key trends, including the rise of remote-first companies, increased investor focus on ESG (Environmental, Social, Governance) factors, and the growing importance of community-driven business models. We’ll also discuss predictions from industry experts and how startups can position themselves for success in this dynamic environment.",
       date: "March 25, 2025",
-      author: "Dhrubojypti Chattopadhyay",
+      author: "Ira Saha",
       image: blogImage1,
-    },
-    {
-      id: 2,
-      title: "How to Pitch to Investors Like a Pro",
-      excerpt: "Tips and strategies to nail your next investor pitch.",
-      fullContent: "Pitching to investors can be daunting, but with the right approach, you can turn it into a winning opportunity. This post covers essential tips: crafting a compelling story, focusing on your unique value proposition, preparing for tough questions, and mastering your delivery. Learn from real-world examples of successful pitches and avoid common pitfalls that turn investors away. Whether you’re a first-time founder or a seasoned entrepreneur, these strategies will help you shine.",
-      date: "March 20, 2025",
-      author: "Vibhor Tandon",
-      image: blogImage2,
     },
     {
       id: 3,
@@ -34,7 +25,7 @@ const BlogsPage = () => {
       excerpt: "A deep dive into how AI is reshaping business opportunities.",
       fullContent: "Artificial Intelligence is no longer a futuristic concept—it’s here, and it’s transforming entrepreneurship. From automating mundane tasks to providing deep customer insights, AI offers tools that level the playing field for small businesses. This article dives into practical applications of AI for entrepreneurs, such as predictive analytics, personalized marketing, and operational efficiency. We’ll also explore the ethical considerations and future implications of this tech revolution.",
       date: "March 15, 2025",
-      author: "Sakyasingha Mahapatra",
+      author: "Biswarup Chatterjee",
       image: blogImage3,
     },
     {
@@ -43,8 +34,16 @@ const BlogsPage = () => {
       excerpt: "Key takeaways from successful founders on growing sustainably.",
       fullContent: "Scaling a business is a delicate balance of growth and stability. In this post, we share lessons from founders who’ve successfully scaled their ventures. Topics include hiring the right team, maintaining company culture, leveraging data-driven decisions, and securing funding without losing control. These insights are backed by real-world case studies, offering actionable advice for entrepreneurs at any stage of their journey.",
       date: "March 10, 2025",
-      author: "Debashis Ghosh",
+      author: "Pragya Jhunjhunwala",
       image: blogImage4,
+    },{
+      id: 2,
+      title: "How to Pitch to Investors Like a Pro",
+      excerpt: "Tips and strategies to nail your next investor pitch.",
+      fullContent: "Pitching to investors can be daunting, but with the right approach, you can turn it into a winning opportunity. This post covers essential tips: crafting a compelling story, focusing on your unique value proposition, preparing for tough questions, and mastering your delivery. Learn from real-world examples of successful pitches and avoid common pitfalls that turn investors away. Whether you’re a first-time founder or a seasoned entrepreneur, these strategies will help you shine.",
+      date: "March 20, 2025",
+      author: "Vibhor Tandon",
+      image: blogImage2,
     },
   ];
 
