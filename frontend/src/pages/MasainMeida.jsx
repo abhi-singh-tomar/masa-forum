@@ -15,57 +15,57 @@ const MasainMedia = () => {
   const mediaCoverage = [
     {
       id: 1,
-      title: "",
-      source: "Business Today",
-      date: "March 15, 2023",
-      description: "Coverage of our annual awards ceremony recognizing top MSMEs in the country.",
+      title: "Coverage of our Excellence awards in MSMEs & Startups.",
+      source: "The Statesman",
+      date: "February, 2025",
+      description: "The MSME & Startup Accelerator Awards (MASA) 2025 - Kolkata Edition was a night of inspiration, honouring exceptional entrepreneurs and industry leaders at Silpo Sadan, Camac Street",
       image: photo0,
-      link: "https://businesstoday.com/masa-awards-2023"
+      link: "https://www.thestatesman.com/?s=MSME+%26+startups+awards#"
     },
     {
       id: 2,
       title: "MASA Education Conclave 2025",
       source: "Prabhat Khabar",
-      date: "February 28, 2023",
+      // date: "February 28, 2023",
       description: "Exclusive interview discussing the future of MSMEs in India.",
       image: photo1,
-      link: "https://economictimes.com/masa-interview"
+      link: "https://www.prabhatkhabar.com/business/monetary-policy-committee-reduces-repo-rate-by-25bps-new-rate-at-6-percent/"
     },
     {
       id: 3,
       title: "Women Awards",
-      source: "www.yuvashakti.com",
-      date: "January 10, 2023",
+      source: "yuvashaktinews",
+      // date: "January 10, 2023",
       description: "Feature on how our mentorship program is transforming small businesses.",
       image: photo2,
-      link: "https://forbes.com/masa-kalptaru"
+      link: "https://www.yuvashaktinews.com/"
     },
     {
       id: 4,
-      title: "MSME Times Magazine Launch Coverage",
-      source: "Entrepreneur India",
-      date: "December 5, 2022",
+      title: "Nivesh Manthan Featured in Startup Magazine",
+      source: "iBG News",
+      // date: "December 5, 2022",
       description: "Coverage of our quarterly magazine launch event in Mumbai.",
       image: photo3,
-      link: "https://entrepreneur.com/msme-times-launch"
+      link: "https://ibgnews.com/2025/03/16/%F0%9D%90%8F%F0%9D%90%AB%F0%9D%90%A2%F0%9D%90%A6%F0%9D%90%9E-%F0%9D%90%88%F0%9D%90%A7%F0%9D%90%9F%F0%9D%90%A8%F0%9D%90%AC%F0%9D%90%9E%F0%9D%90%AB%F0%9D%90%AF-%F0%9D%90%96%F0%9D%90%A2%F0%9D%90%A7/"
     },
     {
       id: 5,
-      title: "Nivesh Manthan Featured in Startup Magazine",
-      source: "Startup Magazine",
-      date: "November 20, 2022",
+      title: "MASA Women Excellence Award",
+      source: "Chronicle News",
+      // date: "November 20, 2022",
       description: "How our investor connect platform is bridging funding gaps.",
       image: photo4,
-      link: "https://startupmag.com/nivesh-manthan"
+      link: "https://www.deccanchronicle.com/"
     },
     {
       id: 6,
       title: "MASA's Impact on Regional Businesses",
-      source: "The Hindu BusinessLine",
-      date: "October 8, 2022",
-      description: "Case studies of businesses transformed through MASA initiatives.",
+      source: "ABP Ananda",
+      // date: "October 8, 2022",
+      description: "Coverage by ABP Ananda of the Panel Discussion of the ",
       image: photo5,
-      link: "https://thehindubusinessline.com/masa-impact"
+      link: "https://bengali.abplive.com/"
     }
   ];
 

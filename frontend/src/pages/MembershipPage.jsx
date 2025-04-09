@@ -41,9 +41,9 @@ Premium Facilitation For MSME Schemes |
 Banners &Brand Visibility in Events | 
 Domestic Delegation | 
 Feature in MSME TIMES | 
-Magazine & MYPOWER BRAND PODCAST`;
+Magazine &  My Power Brand Podcast`;
 
-// const platinum = ``;
+const platinum = `Complementary Networking Events for next 2yrs | 4 One-To-One Sessions | Media Features + Dedicated Case Study | Premium Facilitation for MSME Schemes | Banners & Brand Visibilty in Events | Domestic Delegation | feature in MSME Times Magazine & My Power Brand Podcast`;
 
 const patron = ` Compementary Networking Events for next 2 years.
  4 One-To-One Sessions | 
@@ -52,7 +52,7 @@ Media Features + Dedicated Case Study |
   Banners & Brand Visibility in Events | 
   Domestic Delegation | 
   Feature in MSME TIMES | 
-  Magazine & MYPOWER BRAND PODCAST`;
+  Magazine & My Power Brand Podcast`;
 
 
 const memberships = [
@@ -81,11 +81,11 @@ const memberships = [
     price: "₹49,999",
     benefit: corporate,
   },
-  // {
-  //   title: "Platinum Members",
-  //   price: "₹99,999",
-  //   benefit: "2yrs Branding visibility",
-  // },
+  {
+    title: "Platinum Members",
+    price: "₹99,999",
+    benefit: platinum,
+  },
   {
     title: "Patron Members",
     price: "₹2,99,999",
@@ -103,10 +103,10 @@ export default function MembershipPage() {
 
         <ul className="text-left max-w-2xl mx-auto mb-12 space-y-2 text-base text-white">
           <li>✓ Ecosystem for Startups and MSMEs, to grow them from idea to IPO.</li>
-          <li>✓  Get Recognitions, Awards, and validation.</li>
-          <li>✓  Be a part of growth oriented network.</li>
+          <li>✓ Get Recognitions, Awards, and validation.</li>
+          <li>✓ Be a part of growth oriented network.</li>
           <li>✓ Platform for Shared learnings, workshops, training programs.</li>
-          <li>✓  MSME Schemes, Subsidies, Policy Support.</li>
+          <li>✓ MSME Schemes, Subsidies, Policy Support.</li>
         </ul>
 
         <div className="grid md:grid-cols-3 gap-6">
