@@ -1,10 +1,23 @@
 import React, { useState } from 'react';
 import Footer from '../components/Footer';
-import masaImage from "../assets/pastEvent.jpg"; // Replace with your actual image imports
+// ---------------------------------------------------PAST IMAGES
+import past1 from "../assets/event-imgs/past1.png";
+import past2 from "../assets/event-imgs/past2.png";
+import past3 from "../assets/event-imgs/past3.png";
+import past4 from "../assets/event-imgs/past4.png";
+import past5 from "../assets/event-imgs/past5.png";
+import past6 from "../assets/event-imgs/past6.png";
+import past7 from "../assets/event-imgs/past7.png";
+import past8 from "../assets/event-imgs/past8.png";
+import past9 from "../assets/event-imgs/past9.png";
+import past10 from "../assets/event-imgs/past10.jpg";
+
+
+// ----------------------------------------------------PAST IMAGES
+// Replace with your actual image imports
 import poddar from "../assets/event-imgs/leadershipProgram.JPG";
 import upcomingEvent1 from "../assets/event-imgs/ETS.png";
 import upcomingEvent2 from "../assets/event-imgs/SPN.png";
-import upcomingEvent3 from "../assets/event-imgs/AIC.png";
 
 const EventsPage = () => {
   const [activeTab, setActiveTab] = useState('upcoming');
@@ -29,31 +42,103 @@ const EventsPage = () => {
         description: "Pitch your startup to top investors",
         fullDescription: "A night of innovation where startups present their ideas to a panel of venture capitalists and industry experts, followed by networking and feedback sessions.",
         image: upcomingEvent2
-      },
-      {
-        id: 3,
-        title: "AI Innovation Conference",
-        date: "July 20-21, 2025",
-        location: "Boston Convention Center",
-        description: "Explore the future of artificial intelligence",
-        fullDescription: "Two days of deep dives into AI trends, featuring workshops, live demos, and discussions with leading AI researchers and developers.",
-        image: upcomingEvent3
-      },
+      }
     ],
     past: [
       {
-        id: 4,
-        title: "Digital Marketing Workshop",
-        date: "March 22, 2024",
-        location: "Virtual Event",
+        id: 3,
+        title: "MASA Global Education Conclave & Awards 2025, Kolkata",
+        date: "15 February 2025",
+        location: "National Library, Kolkata",
         description: "Master the latest digital marketing strategies",
         fullDescription: "This intensive workshop covered SEO, social media marketing, and content strategy with practical case studies and actionable insights.",
-        image: masaImage
+        image: past10
+      },
+      {
+        id: 4,
+        title: "MSME & Startup Accelerator Conclave & Awards 2025",
+        date: "8 February 2025",
+        location: "National Library, Kolkata",
+        description: "Master the latest digital marketing strategies",
+        fullDescription: "This intensive workshop covered SEO, social media marketing, and content strategy with practical case studies and actionable insights.",
+        image: past9
+      },
+      {
+        id: 5,
+        title: "MASA Sanskriti Pranam 2024",
+        date: "19 December, 2024",
+        location: "Silpa Sadan, Kolkata",
+        description: "Master the latest digital marketing strategies",
+        fullDescription: "This intensive workshop covered SEO, social media marketing, and content strategy with practical case studies and actionable insights.",
+        image: past8
+      },
+      {
+        id: 6,
+        title: "MASA Metals' Conclave 2024, Bhubaneswar",
+        date: "18 September, 2024",
+        location: "Hotel New Marrion, Bhubaneshwar",
+        description: "Master the latest digital marketing strategies",
+        fullDescription: "This intensive workshop covered SEO, social media marketing, and content strategy with practical case studies and actionable insights.",
+        image: past7
+      },
+      {
+        id: 7,
+        title: "Inter College Business & Financial COnclave & Quiz 2024",
+        date: "12 September, 2024",
+        location: "IEM Auditorium, Ashram Building",
+        description: "Master the latest digital marketing strategies",
+        fullDescription: "This intensive workshop covered SEO, social media marketing, and content strategy with practical case studies and actionable insights.",
+        image: past6
+      },
+      {
+        id: 8,
+        title: "MASA Metals' Conclave 2024, Kolkata",
+        date: "August 21, 2024",
+        location: "Hotel Hindustan International, Kolkata",
+        description: "Master the latest digital marketing strategies",
+        fullDescription: "This intensive workshop covered SEO, social media marketing, and content strategy with practical case studies and actionable insights.",
+        image: past5
+      },
+      {
+        id: 9,
+        title: "Environment Quiz 2024, Kolkata",
+        date: "10 August, 2024",
+        location: "National Library, Kolkata",
+        description: "Master the latest digital marketing strategies",
+        fullDescription: "This intensive workshop covered SEO, social media marketing, and content strategy with practical case studies and actionable insights.",
+        image: past4
+      },
+      {
+        id: 10,
+        title: "MASA Conclave & Awards 2024, New Delhi",
+        date: "June 13, 2024",
+        location: "PhD Chamber of Commerce, New Delhi",
+        description: "Master the latest digital marketing strategies",
+        fullDescription: "This intensive workshop covered SEO, social media marketing, and content strategy with practical case studies and actionable insights.",
+        image: past3
+      },
+      {
+        id: 11,
+        title: "MASA Women's Excellence Conclave & Awards 2024",
+        date: "March 10, 2024",
+        location: "JW Marriott, Kolkata",
+        description: "Master the latest digital marketing strategies",
+        fullDescription: "This intensive workshop covered SEO, social media marketing, and content strategy with practical case studies and actionable insights.",
+        image: past2
+      },
+      {
+        id: 12,
+        title: "MSME & Startup Accelerator Conclave & Awards 2024",
+        date: "January 28, 2024",
+        location: "Indian Council for Cultural Relations, Kolkata",
+        description: "Master the latest digital marketing strategies",
+        fullDescription: "This intensive workshop covered SEO, social media marketing, and content strategy with practical case studies and actionable insights.",
+        image: past1
       },
     ],
     programs: [
       {
-        id: 7,
+        id: 13,
         title: "Leadership Development Program",
         date: "June 5 - July 10, 2025",
         location: "Corporate Headquarters",

@@ -1,15 +1,15 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
-import eca from "../assets/gallery-imgs/eca.jpg";
-import ecb from "../assets/gallery-imgs/ecb.jpg";
-import ecc from "../assets/gallery-imgs/ecc.jpg";
-import ecd from "../assets/gallery-imgs/ecd.jpg";
-import ece from "../assets/gallery-imgs/ece.jpg";
+import eca from "../assets/gallery-imgs/ab-1.png";
+import ecb from "../assets/gallery-imgs/ab-4.png";
+import ecc from "../assets/gallery-imgs/ab-5.png";
+import ecd from "../assets/gallery-imgs/ab-6.png";
+import ece from "../assets/gallery-imgs/ab-3.png";
 
 // Updated image data with descriptions
 const images = [
   { src: eca, desc: "First Achievement - Team Celebration" },
-  { src: ecb, desc: "Award Ceremony 2023" },
+  { src: ecb, desc: "Award Ceremony 2024" },
   { src: ecc, desc: "Project Completion Milestone" },
   { src: ecd, desc: "Innovation Award Winner" },
   { src: ece, desc: "Annual Team Summit" },
