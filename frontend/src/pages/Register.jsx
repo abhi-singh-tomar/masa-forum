@@ -22,8 +22,8 @@ const Register = () => {
     const result = await registerUser(formData);
   
     if (result.success) {
-      alert("✅ Registration Successful! Redirecting to Login...");
-      navigate("/login");
+      alert("✅ Registration Successful! we will get back to you soon.");
+      // navigate("/login");
     } else {
       alert(`❌ Error: ${result.message}`);
     }

@@ -53,7 +53,8 @@ const teamMembers = [
     image: vt,
     linkedin: "https://www.linkedin.com/in/vibhor-tandon-3092661b/",
     bio: "Risk Management,Capital Markets Leadership Coach.",
-  },{
+  },
+  {
     name: "Mr. CK Varadrajan",
     role: "Vice-President, MASA Forum",
     image: ck,
@@ -232,6 +233,32 @@ const mentors = [
   }
 ];
 
+const boardDirectors = [
+  // Your actual board members here
+  {
+    name: "Mr. Vibor Tandon",
+    role: "Vice-President, MASA Forum",
+    image: vt,
+    linkedin: "https://www.linkedin.com/in/vibhor-tandon-3092661b/",
+    bio: "Risk Management,Capital Markets Leadership Coach.",
+  },
+  {
+    name: "Mr. Vibor Tandon",
+    role: "Vice-President, MASA Forum",
+    image: vt,
+    linkedin: "https://www.linkedin.com/in/vibhor-tandon-3092661b/",
+    bio: "Risk Management,Capital Markets Leadership Coach.",
+  },
+  {
+    name: "Mr. Vibor Tandon",
+    role: "Vice-President, MASA Forum",
+    image: vt,
+    linkedin: "https://www.linkedin.com/in/vibhor-tandon-3092661b/",
+    bio: "Risk Management,Capital Markets Leadership Coach.",
+  },
+  // ...more members
+];
+
 const CarouselSection = ({ title, members }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const itemsPerSlide = 4;
@@ -308,6 +335,10 @@ const OurTeam = () => {
     <div>
       <div className="min-h-screen flex flex-col items-center justify-center bg-gray-900 text-indigo-300 p-6 pt-16">
         <h1 className="text-4xl font-bold text-yellow-400 mb-12"></h1>
+
+
+        {/**  // board of directors carsoul */} 
+        <CarouselSection title="Our Board of Directors" members={boardDirectors} />
         
         {/* Team Members Carousel */}
         <CarouselSection title="Our Board" members={teamMembers} />
