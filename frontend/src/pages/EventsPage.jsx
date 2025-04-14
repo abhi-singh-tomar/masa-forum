@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
 import Footer from '../components/Footer';
+
+// --------------------------------------------------Upcoming Images
+import upcoming1 from "../assets/event-imgs/upcoming1.png";
+// --------------------------------------------------Upcoming Images
+
 // ---------------------------------------------------PAST IMAGES
 import past1 from "../assets/event-imgs/past1.png";
 import past2 from "../assets/event-imgs/past2.png";
@@ -11,13 +16,10 @@ import past7 from "../assets/event-imgs/past7.png";
 import past8 from "../assets/event-imgs/past8.png";
 import past9 from "../assets/event-imgs/past9.png";
 import past10 from "../assets/event-imgs/past10.jpg";
-
-
 // ----------------------------------------------------PAST IMAGES
 // Replace with your actual image imports
 import poddar from "../assets/event-imgs/leadershipProgram.JPG";
-import upcomingEvent1 from "../assets/event-imgs/ETS.png";
-import upcomingEvent2 from "../assets/event-imgs/SPN.png";
+
 
 const EventsPage = () => {
   const [activeTab, setActiveTab] = useState('upcoming');
@@ -27,21 +29,12 @@ const EventsPage = () => {
     upcoming: [
       {
         id: 1,
-        title: "Annual Tech Summit",
-        date: "May 15-17, 2025",
-        location: "Convention Center, New York",
-        description: "Join industry leaders for the biggest tech event of the year",
+        title: "Eastern India Job Fair & career Expo 2025",
+        date: "May 4th-5th, 2025",
+        location: "Indian Council for Cultural Relations (ICCR), Kolkata",
+        description: "Our vision is to establish this event as the leading career & networking event in the region. Organized by Magical Mantras Pvt. Ltd in collaboration with MASA & CWBTA.",
         fullDescription: "This three-day event will feature keynote speeches from tech pioneers, hands-on workshops, and networking opportunities with industry leaders. Don't miss our exclusive product launches and panel discussions.",
-        image: upcomingEvent1
-      },
-      {
-        id: 2,
-        title: "Startup Pitch Night",
-        date: "June 10, 2025",
-        location: "Tech Hub, San Francisco",
-        description: "Pitch your startup to top investors",
-        fullDescription: "A night of innovation where startups present their ideas to a panel of venture capitalists and industry experts, followed by networking and feedback sessions.",
-        image: upcomingEvent2
+        image: upcoming1
       }
     ],
     past: [

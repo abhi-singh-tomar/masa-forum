@@ -1,11 +1,14 @@
 import React from 'react';
 
+// 5
 const basic = `3 Complementry Networking Events |
  Access to Group Webinars |
  Basic MSME guidance |
  Member only offers |
  Standard Networking access`;
 
+
+// 7
 const premium = `4 Free Networking Events |
  One-to-One Session |
  Complementary Passes to events upto one year |
@@ -14,6 +17,7 @@ const premium = `4 Free Networking Events |
  Premium Certificate of Membership |
  Exclusive MSME Perks`;
 
+//  8
 const elite = ` 5 Complementry Networking Events
  2 One-to-One Session | 
  Feature in MSME TIMES Magazine &
@@ -23,6 +27,7 @@ const elite = ` 5 Complementry Networking Events
  Elite Certificate of Membership
  Exclusive MSME Perks`;
 
+// 10
 const gold = `8 Complementary Networking Events upto one year | 
  3 One-to-One Sessions |  
  Feature in MSME TIMES Magazine & MYPOWER
@@ -34,18 +39,27 @@ const gold = `8 Complementary Networking Events upto one year |
  Elite Certificate of Membership | 
  Exclusive MSME Perks`;
 
+// 8
 const corporate = `Complementary Networking Events for next 2 years | 
 4 One-To-One Sessions | 
 Media Features + Dedicated Case Study | 
 Premium Facilitation For MSME Schemes | 
-Banners &Brand Visibility in Events | 
+Banners & Brand Visibility in Events | 
 Domestic Delegation | 
 Feature in MSME TIMES | 
 Magazine &  My Power Brand Podcast`;
 
-const platinum = `Complementary Networking Events for next 2yrs | 4 One-To-One Sessions | Media Features + Dedicated Case Study | Premium Facilitation for MSME Schemes | Banners & Brand Visibilty in Events | Domestic Delegation | feature in MSME Times Magazine & My Power Brand Podcast`;
+// 7
+const platinum = `Complementary Networking Events for next 2yrs | 
+4 One-To-One Sessions | 
+Media Features + Dedicated Case Study | 
+Premium Facilitation for MSME Schemes | 
+Banners & Brand Visibilty in Events | 
+Domestic Delegation | 
+Feature in MSME Times Magazine & My Power Brand Podcast`;
 
-const patron = ` Compementary Networking Events for next 2 years.
+// 8
+const patron = ` Compementary Networking Events for next 2 years. 
  4 One-To-One Sessions | 
 Media Features + Dedicated Case Study | 
  Premium Facilitation For MSME Schemes | 

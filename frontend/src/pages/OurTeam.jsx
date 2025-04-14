@@ -224,16 +224,10 @@ const mentors = [
     image: khiro,
     linkedin: "https://www.linkedin.com/in/khirodra/",
     bio: "Cybersecurity CEO, Board Advisor",
-  },{
-    name: "V.K.Jaitley",
-    // role: "Designation to be entered",
-    image: vk,
-    linkedin: "https://www.linkedin.com/in/jaitly/",
-    bio: "National Co-ordinator at Youth4Nation",
   }
 ];
 
-const boardDirectors = [
+const advisoryBoard = [
   // Your actual board members here
   {
     name: "Mr. Vibor Tandon",
@@ -241,6 +235,12 @@ const boardDirectors = [
     image: vt,
     linkedin: "https://www.linkedin.com/in/vibhor-tandon-3092661b/",
     bio: "Risk Management,Capital Markets Leadership Coach.",
+  },{
+    name: "V.K.Jaitley",
+    role: "National Co-ordinator at Youth4Nation",
+    image: vk,
+    linkedin: "https://www.linkedin.com/in/jaitly/",
+    // bio: ,
   },
   {
     name: "Mr. Vibor Tandon",
@@ -338,10 +338,10 @@ const OurTeam = () => {
 
 
         {/**  // board of directors carsoul */} 
-        <CarouselSection title="Our Board of Directors" members={boardDirectors} />
+        <CarouselSection title="Board of Directors" members={teamMembers} />
         
         {/* Team Members Carousel */}
-        <CarouselSection title="Our Board" members={teamMembers} />
+        <CarouselSection title="Advisory Board" members={advisoryBoard} />
         
         {/* Mentors Carousel */}
         <CarouselSection title="Our Mentors" members={mentors} />
