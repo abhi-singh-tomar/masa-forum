@@ -1,7 +1,7 @@
 import React from 'react';
 
 // 5
-const basic = `3 Complementry Networking Events |
+const basic = `3 Complementary Networking Events |
  Access to Group Webinars |
  Basic MSME guidance |
  Member only offers |
@@ -11,62 +11,63 @@ const basic = `3 Complementry Networking Events |
 // 7
 const premium = `4 Free Networking Events |
  One-to-One Session |
- Complementary Passes to events upto one year |
+ Complimentary Passes to events upto one year |
  Feature in MSME TIMES Magazine |
  Brand Visibility for one year Advisory on Subsidies & Funding |
  Premium Certificate of Membership |
  Exclusive MSME Perks`;
 
 //  8
-const elite = ` 5 Complementry Networking Events
- 2 One-to-One Session | 
- Feature in MSME TIMES Magazine &
- Complementary Passes to events upto one year | 
- Brand Visibility in few Events | 
- Advisory on Subsidies & Funding | 
- Elite Certificate of Membership
- Exclusive MSME Perks`;
+// const elite = ` 5 Complementry Networking Events
+//  2 One-to-One Session | 
+//  Feature in MSME TIMES Magazine &
+//  Complementary Passes to events upto one year | 
+//  Brand Visibility in few Events | 
+//  Advisory on Subsidies & Funding | 
+//  Elite Certificate of Membership
+//  Exclusive MSME Perks`;
 
 // 10
-const gold = `8 Complementary Networking Events upto one year | 
+const gold = `8 Complementary Networking Events upto one year |
  3 One-to-One Sessions |  
  Feature in MSME TIMES Magazine & MYPOWER
- BRAND PODCAST * | 
- Complementary Passes to events upto one year | 
- Brand Visibility for one year & Banners in few
- Events | 
- Advisory on Subsidies & Funding
- Elite Certificate of Membership | 
+ BRAND PODCAST * |
+ Complimentary Passes to events upto one year |
+ Brand Visibility for one year & Banners in few Events|
+ Advisory on Subsidies & Funding |
  Exclusive MSME Perks`;
 
 // 8
-const corporate = `Complementary Networking Events for next 2 years | 
-4 One-To-One Sessions | 
-Media Features + Dedicated Case Study | 
-Premium Facilitation For MSME Schemes | 
-Banners & Brand Visibility in Events | 
-Domestic Delegation | 
-Feature in MSME TIMES | 
-Magazine &  My Power Brand Podcast`;
+const corporate = `All benefits included in the Gold Membership Plan
+Complementary Networking Events for next 2 years |
+4 One-To-One Sessions |
+Media Features + Dedicated Case Study |
+Premium Facilitation For MSME Schemes |
+Banners & Brand Visibility in Events |
+Domestic Delegation |
+Feature in MSME TIMES `;
 
 // 7
-const platinum = `Complementary Networking Events for next 2yrs | 
-4 One-To-One Sessions | 
-Media Features + Dedicated Case Study | 
-Premium Facilitation for MSME Schemes | 
-Banners & Brand Visibilty in Events | 
-Domestic Delegation | 
+const platinum = `All benefits included in the Corporate Membership Plan
+Complementary Networking Events for next 2yrs |
+4 One-To-One Sessions |
+Media Features + Dedicated Case Study |
+Premium Facilitation for MSME Schemes |
+Banners & Brand Visibility in Events |
+Domestic Delegation |
 Feature in MSME Times Magazine & My Power Brand Podcast`;
 
 // 8
-const patron = ` Compementary Networking Events for next 2 years. 
- 4 One-To-One Sessions | 
-Media Features + Dedicated Case Study | 
- Premium Facilitation For MSME Schemes | 
-  Banners & Brand Visibility in Events | 
-  Domestic Delegation | 
-  Feature in MSME TIMES | 
-  Magazine & My Power Brand Podcast`;
+const patron = `All benefits included in the Platinum Membership Plan 
+Complimentary Networking Events for next 2 years.
+ 4 One-To-One Sessions |
+Media Features + Dedicated Case Study |
+ Premium Facilitation For MSME Schemes |
+  Banners & Brand Visibility in Events |
+  Domestic Delegation |
+  Feature in MSME TIMES |
+  Magazine & My Power Brand Podcast
+`;
 
 
 const memberships = [
@@ -80,11 +81,11 @@ const memberships = [
     price: "₹14,999",
     benefit: premium,
   },
-  {
-    title: "Elite Member",
-    price: "₹19,999",
-    benefit: elite,
-  },
+  // {
+  //   title: "Elite Member",
+  //   price: "₹19,999",
+  //   benefit: elite,
+  // },
   {
     title: "Gold Member",
     price: "₹24,999",
