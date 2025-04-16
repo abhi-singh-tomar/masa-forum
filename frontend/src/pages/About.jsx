@@ -66,7 +66,7 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.3 }}
           >
-            MASA Forum is a premier platform connecting startups, investors, and mentors, fostering innovation and growth in the entrepreneurial ecosystem.
+            A leading platform for startup and MSME acceleration, MASA Forum fosters innovation through investor connections, expert guidance, and collaborative growth.
           </motion.p>
         </div>
         <motion.div
@@ -91,15 +91,15 @@ const About = () => {
           {[{
             icon: <FaRocket className="text-yellow-400 text-5xl mb-4" />, 
             title: "Our Mission", 
-            description: "To empower startups by providing mentorship, funding, and networking opportunities for sustainable growth."
+            description: "To become the leading platform for startups and MSMEs, accelerating innovation, collaboration, and inclusive economic growth across the entrepreneurial ecosystem."
           }, {
             icon: <FaEye className="text-yellow-400 text-5xl mb-4" />, 
             title: "Our Vision", 
-            description: "To be the leading entrepreneurial platform, driving economic growth through innovation and collaboration."
+            description: "To become the leading platform for startups and MSMEs, accelerating innovation, collaboration, and inclusive economic growth across the entrepreneurial ecosystem."
           }, {
             icon: <FaLightbulb className="text-yellow-400 text-5xl mb-4" />, 
             title: "Our Values", 
-            description: "Integrity, innovation, and inclusivity guide our efforts in fostering entrepreneurial success."
+            description: "Integrity, innovation, and inclusivity are at the core of everything we do — guiding our commitment to nurturing a thriving, supportive environment for entrepreneurs and changemakers."
           }].map((item, index) => (
             <motion.div
               key={index}
