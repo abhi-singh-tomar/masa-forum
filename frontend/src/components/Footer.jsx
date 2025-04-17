@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="space-y-3">
           <h2 className="text-2xl font-extrabold tracking-tight">MASA Forum</h2>
           <p className="text-gray-400 text-sm">
-            Connecting startups, investors, and mentors.
+          A growth platform for MSMEs and startups to connect with investors and industry mentors.
           </p>
         </div>
 

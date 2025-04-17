@@ -88,18 +88,18 @@ const testimonials = [
 
 const features = [
   {
-    title: "Mentorship",
-    desc: "Guidance from industry experts.",
+    title: "Startup Mentorship",
+    desc: "Personalized guidance from  industry experts to help startups and MSMEs grow faster and smarter.",
     icon: <FaChalkboardTeacher className="text-6xl text-blue-600" />
   },
   {
     title: "Funding Opportunities",
-    desc: "Access to investment support.",
+    desc: "Connect with investors and explore funding programs tailored for startups and emerging businesses.",
      icon: <FaHandHoldingUsd className="text-6xl text-green-600" />
   },
   {
-    title: "Networking",
-    desc: "Build valuable connections.",
+    title: "Professional Networking",
+    desc: "Build meaningful connections with entrepreneurs, investors, and mentors in the startup ecosystem.",
     icon: <FaUsers className="text-6xl text-yellow-500" />
   }
 ];
@@ -237,7 +237,7 @@ const Home = () => {
       animate={{ y: 0, opacity: 1 }}
       transition={{ delay: 0.5 }}
     >
-      Empowering startups, MSMEs, and innovators with resources and mentorship.
+      Helping Startups and MSMEs Thrive with Guidance, Tools & Expert Mentorship
     </motion.p>
 
     <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
@@ -375,7 +375,7 @@ const Home = () => {
       >
         <div className="max-w-2xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-white mb-6">
-            Ready to Accelerate Your Brand?
+          Take your startup or small business to the next level with MASA Forum.
           </h2>
           <motion.div
             whileHover={{ scale: 1.05 }}
