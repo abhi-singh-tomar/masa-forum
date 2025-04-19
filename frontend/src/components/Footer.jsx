@@ -48,16 +48,16 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold border-b border-gray-700 pb-1 mb-3">Follow Us</h3>
           <div className="flex space-x-4 justify-center md:justify-start">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://m.facebook.com/masaawards/" target="_blank" rel="noopener noreferrer">
               <FaFacebook className="text-gray-400 hover:text-teal-400 transition-colors duration-300" size={22} />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            {/* <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
               <FaTwitter className="text-gray-400 hover:text-teal-400 transition-colors duration-300" size={22} />
-            </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            </a> */}
+            <a href="https://www.linkedin.com/in/masa-awards-252401296/" target="_blank" rel="noopener noreferrer">
               <FaLinkedin className="text-gray-400 hover:text-teal-400 transition-colors duration-300" size={22} />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/masaforum/" target="_blank" rel="noopener noreferrer">
               <FaInstagram className="text-gray-400 hover:text-teal-400 transition-colors duration-300" size={22} />
             </a>
           </div>
