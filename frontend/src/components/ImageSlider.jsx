@@ -8,11 +8,11 @@ import ece from "../assets/gallery-imgs/ab-3.png";
 
 // Updated image data with descriptions
 const images = [
-  { src: eca, desc: "First Achievement - Team Celebration" },
-  { src: ecb, desc: "Award Ceremony 2024" },
-  { src: ecc, desc: "Project Completion Milestone" },
-  { src: ecd, desc: "Innovation Award Winner" },
-  { src: ece, desc: "Annual Team Summit" },
+  { src: eca, desc: "First Achievement - Women MASA Marriott Kolkata" },
+  { src: ecb, desc: "Delhi MASA 2024, PhD Chambers Delhi" },
+  { src: ecc, desc: "Project Completion - Future Drivers for MSMEs" },
+  { src: ecd, desc: "Innovation Award - Sectoral Specific Conclave" },
+  { src: ece, desc: "Annual Team Summit - The rich Panel & mentor team" },
 ];
 
 const ImageSlider = () => {

@@ -1,72 +1,70 @@
 import React from 'react';
 
-// 5
 const basic = [
   "3 Complementary Networking Events",
-  "Access to Group Webinars",
-  "Basic MSME guidance",
-  "Member only offers",
-  "Standard Networking access"
+  "Access to Group Webinars & Workshops",
+  "Basic MSME Advisory on compliance, schemes & market linkage",
+  "Standard Networking Access via MASA platforms",
+  "Name in Membership Directory",
+  "Access to Exclusive Member WhatsApp & Email Groups",
+  "Monthly MSME Bulletin Subscription (Digital)"
 ];
 
-// 7
 const premium = [
   "4 Free Networking Events",
-  "One-to-One Session",
+  "One-to-One Business Mentorship Session (1 session)",
   "Complimentary Passes to events upto one year",
-  "Feature in MSME TIMES Magazine",
-  "Brand Visibility for one year",
-  "Advisory on Subsidies & Funding",
+  "Advisory on MSME Subsidies, Grants & Funding Opportunities",
   "Premium Certificate of Membership",
-  "Exclusive MSME Perks"
+  "Short Business Listing on MASA’s Website",
+  "Opportunity to Feature in MASA Member Spotlight",
+  "Priority access to Trade Missions and Industry Roundtables",
+  "Eligibility to Nominate for MASA Awards"
 ];
 
-// 10
 const gold = [
-  "8 Complementary Networking Events upto one year",
-  "3 One-to-One Sessions",
-  "Feature in MSME TIMES Magazine & MYPOWER BRAND PODCAST",
-  "Complimentary Passes to events upto one year",
-  "Brand Visibility for one year & Banners in few Events",
+  "3 One-to-One Mentorship Sessions per year",
+  "Speaking Slot opportunity in Sectorial Events",
+  "Nomination for Awards / T.V. Debates / Interviews / Govt meets",
+  "Feature Article in MSME TIMES Magazine & My Power Brand Podcast",
+  "Banners & Brand Placement at Select MASA Events",
   "Advisory on Subsidies & Funding",
-  "Exclusive MSME Perks"
+  "Priority consideration for Government Meets & Policy Dialogues"
 ];
 
-// 8
 const corporate = [
   "All benefits included in the Gold Membership Plan",
   "Complementary Networking Events for next 2 years",
-  "4 One-To-One Sessions",
-  "Media Features + Dedicated Case Study",
-  "Premium Facilitation For MSME Schemes",
-  "Banners & Brand Visibility in Events",
-  "Domestic Delegation",
-  "Feature in MSME TIMES"
+  "Dedicated Media Feature & Case Study Publication",
+  "Premium Facilitation For MSME Government Schemes",
+  "Brand Visibility for 1 year across MASA platforms",
+  "Banners & Brand Visibility in Flagship MASA Events",
+  "Priority in meetings with Indian government officials, embassies, and foreign dignitaries",
+  "Part of National & International Delegation",
+  "Featured Interview in MSME TIMES Magazine"
 ];
 
-// 7
 const platinum = [
   "All benefits included in the Corporate Membership Plan",
   "Complementary Networking Events for next 2 years",
-  "4 One-To-One Sessions",
-  "Media Features + Dedicated Case Study",
-  "Premium Facilitation for MSME Schemes",
-  "Banners & Brand Visibility in Events",
-  "Domestic Delegation",
-  "Feature in MSME Times Magazine & My Power Brand Podcast"
+  "4 One-To-One Mentorship Sessions",
+  "Dedicated Media Features & Success Story Coverage",
+  "Strategic Partnership Facilitation for MSME Schemes",
+  "Banners & Brand Presence at Major MASA Events",
+  "Participation in National & International Delegation Trips",
+  "Prominent Feature in MSME TIMES Magazine & My Power Brand Podcast"
 ];
 
-// 8
 const patron = [
   "All benefits included in the Platinum Membership Plan",
-  "Complimentary Networking Events for next 2 years",
-  "4 One-To-One Sessions",
-  "Media Features + Dedicated Case Study",
+  "Lifetime Media Features & Dedicated Case Studies",
   "Premium Facilitation For MSME Schemes",
-  "Banners & Brand Visibility in Events",
-  "Domestic Delegation",
-  "Feature in MSME TIMES Magazine & My Power Brand Podcast"
+  "Banners & Brand Visibility in all MASA Signature Events",
+  "Assured seat in the National Board as Advisor",
+  "Lifetime Feature in MSME TIMES Magazine & My Power Brand Podcast",
+  "Permanent Recognition on Social Media as a Patron Member"
 ];
+
 
 const memberships = [
   {
