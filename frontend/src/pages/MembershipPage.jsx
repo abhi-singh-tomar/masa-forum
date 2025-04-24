@@ -1,4 +1,6 @@
 import React from 'react';
+import { loadRazorpayScript } from '../utils/razorPay';
+import axios from "axios";
 
 const basic = [
   "3 Complementary Networking Events",
@@ -98,6 +100,42 @@ const memberships = [
     benefit: patron,
   },
 ];
+// Payment wala function
+const handlePayment = async (amount) => {
+  const res = await loadRazorpayScript();
+
+  if (!res) {
+    alert("Razorpay SDK failed to load. Check your connection.");
+    return;
+  }
+
+  const { data } = await axios.post("http://localhost:5000/api/payment/create-order", {
+    amount,
+  });
+
+  const options = {
+    key: "rzp_test_8rWvfXKX4rYWSy", 
+    amount: data.amount,
+    currency: "INR",
+    name: "MASA Forum",
+    description: "Membership Payment",
+    order_id: data.id,
+    handler: function (response) {
+      alert("Payment Successful! Payment ID: " + response.razorpay_payment_id);
+    },
+    prefill: {
+      name: "Test User",
+      email: "test@example.com",
+      contact: "9999999999",
+    },
+    theme: {
+      color: "#3399cc",
+    },
+  };
+
+  const razor = new window.Razorpay(options);
+  razor.open();
+};
 
 export default function MembershipPage() {
   return (
@@ -126,7 +164,7 @@ export default function MembershipPage() {
                 ))}
               </ul>
               <div className="mt-auto">
-                <button className="w-full bg-blue-600 text-white px-4 py-2 rounded-xl hover:bg-blue-700 transition">Join Now</button>
+                <button onClick={() => handlePayment(plan.price)} className="w-full bg-blue-600 text-white px-4 py-2 rounded-xl hover:bg-blue-700 transition">Join Now</button>
               </div>
             </div>
           ))}
