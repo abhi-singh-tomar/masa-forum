@@ -16,6 +16,7 @@ import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
 import WhatsAppFloatButton from "./components/WhatsAppFloatButton";
 import MasainMedia from "./pages/MasainMeida"; // Ensure correct import path
+import OurMember from "./pages/OurMember";
 
 
 
@@ -40,6 +41,7 @@ function App() {
       <Route path="/ContactUs" element={<ContactUs />} />
       <Route path="/register" element={<Register />} />
       <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/ourmembers" element={<OurMember />} /> 
        {/* Protected Dashboard Route */}
       
     </Routes>

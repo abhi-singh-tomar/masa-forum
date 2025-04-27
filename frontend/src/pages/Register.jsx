@@ -72,7 +72,7 @@ const Register = () => {
             >
               <option value="" disabled selected>Join As</option>
               <option value="mentor">Mentor</option>
-              <option value="student">Student</option>
+              <option value="student">MSME</option>
               <option value="investor">Investor</option>
               <option value="startup">Startup</option>
             </select>

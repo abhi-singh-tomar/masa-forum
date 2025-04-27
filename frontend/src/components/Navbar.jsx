@@ -74,6 +74,7 @@ function Navbar() {
                   <Link to="/about" className="block px-4 py-2 hover:bg-gray-200">Mission/Vision</Link>
                   <Link to="/team" className="block px-4 py-2 hover:bg-gray-200">Our Team</Link>
                   <Link to="/partners" className="block px-4 py-2 hover:bg-gray-200">Our Partners</Link>
+                  <Link to="/ourmembers" className="block px-4 py-2 hover:bg-gray-200">Our Members</Link>
                 </div>
               )}
             </div>

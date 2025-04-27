@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
-import { FaChalkboardTeacher, FaHandHoldingUsd, FaUsers } from "react-icons/fa";
+import { FaChalkboardTeacher, FaHandHoldingUsd, FaUsers, FaBusinessTime, FaClone, FaCube } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import { MdArrowBack, MdArrowForward } from "react-icons/md";
 import Footer from "../components/Footer";
@@ -87,6 +87,22 @@ const testimonials = [
 ];
 
 const features = [
+  {
+    title: "Startup Mentorship",
+    desc: "Personalized guidance from  industry experts to help startups and MSMEs grow faster and smarter.",
+    icon: <FaChalkboardTeacher className="text-6xl text-blue-600" />
+  },
+  {
+    title: "Funding Opportunities",
+    desc: "Connect with investors and explore funding programs tailored for startups and emerging businesses.",
+    icon: <FaHandHoldingUsd className="text-6xl text-green-600" />
+  },
+  {
+    title: "Professional Networking",
+    desc: "Build meaningful connections with entrepreneurs, investors, and mentors in the startup ecosystem.",
+    icon: <FaUsers className="text-6xl text-yellow-500" />
+  },
+
   {
     title: "Startup Mentorship",
     desc: "Personalized guidance from  industry experts to help startups and MSMEs grow faster and smarter.",
@@ -206,85 +222,85 @@ const Home = () => {
   return (
     <div className="bg-gray-900 min-h-screen">
       {/* Hero Section */}
-      <motion.section 
+      <motion.section
   className="relative h-screen flex flex-col justify-center items-center text-center px-6 pt-20 bg-black"
-  initial={{ opacity: 0 }}
-  animate={{ opacity: 1 }}
-  transition={{ duration: 1 }}
->
-  <motion.div 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
+        <motion.div
     className="relative z-10 text-white"
-    initial={{ scale: 0.9 }}
-    animate={{ scale: 1 }}
-    transition={{ duration: 0.5 }}
-  >
-    <h1 className="text-5xl md:text-6xl font-bold mb-4 drop-shadow-lg">
-      Welcome <span className="text-3xl md:text-4xl">to</span>{" "}
-      <span className="text-yellow-400">
-        {displayedText}
-        <motion.span
-          animate={{ opacity: cursorVisible ? 1 : 0 }}
-          className="ml-1"
+          initial={{ scale: 0.9 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 0.5 }}
         >
-          |
-        </motion.span>
-      </span>
-    </h1>
-    
-    <motion.p 
-      className="text-lg md:text-xl mb-8 max-w-2xl mx-auto"
-      initial={{ y: 20, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ delay: 0.5 }}
-    >
-      Helping Startups and MSMEs Thrive with Guidance, Tools & Expert Mentorship
-    </motion.p>
+          <h1 className="text-5xl md:text-6xl font-bold mb-4 drop-shadow-lg">
+            Welcome <span className="text-3xl md:text-4xl">to</span>{" "}
+            <span className="text-yellow-400">
+              {displayedText}
+              <motion.span
+                animate={{ opacity: cursorVisible ? 1 : 0 }}
+                className="ml-1"
+              >
+                |
+              </motion.span>
+            </span>
+          </h1>
 
-    <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
+          <motion.p
+            className="text-lg md:text-xl mb-8 max-w-2xl mx-auto"
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.5 }}
+          >
+            Helping Startups and MSMEs Thrive with Guidance, Tools & Expert Mentorship
+          </motion.p>
+
+          <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
       <motion.div
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
-        <Link
-          to="/contactUs"
-          className="px-6 py-3 text-lg bg-yellow-500 hover:bg-yellow-400 text-gray-900 rounded-lg font-bold border-2 border-yellow-300 hover:border-yellow-200 transition-all duration-300"
-        >
-          Event Registration
-        </Link>
-      </motion.div>
+              <Link
+                to="/contactUs"
+                className="px-6 py-3 text-lg bg-yellow-500 hover:bg-yellow-400 text-gray-900 rounded-lg font-bold border-2 border-yellow-300 hover:border-yellow-200 transition-all duration-300"
+              >
+                Event Registration
+              </Link>
+            </motion.div>
 
-      <span className="hidden sm:block text-yellow-400 text-2xl font-bold">✦</span>
-
-      <motion.div
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-      >
-        <Link
-          to="/membership"
-          className="px-6 py-3 text-lg bg-yellow-500 hover:bg-yellow-400 text-gray-900 rounded-lg font-bold border-2 border-yellow-300 hover:border-yellow-200 transition-all duration-300"
-        >
-          Membership
-        </Link>
-      </motion.div>
-
-      <span className="hidden sm:block text-yellow-400 text-2xl font-bold">✦</span>
+            <span className="hidden sm:block text-yellow-400 text-2xl font-bold">✦</span>
 
       <motion.div
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
-        <Link
-          to="/register"
-          className="px-6 py-3 text-lg bg-yellow-500 hover:bg-yellow-400 text-gray-900 rounded-lg font-bold border-2 border-yellow-300 hover:border-yellow-200 transition-all duration-300"
-        >
-          Enroll for Acceleration
-        </Link>
-      </motion.div>
-    </div>
-  </motion.div>
-</motion.section>
+              <Link
+                to="/membership"
+                className="px-6 py-3 text-lg bg-yellow-500 hover:bg-yellow-400 text-gray-900 rounded-lg font-bold border-2 border-yellow-300 hover:border-yellow-200 transition-all duration-300"
+              >
+                Membership
+              </Link>
+            </motion.div>
+
+            <span className="hidden sm:block text-yellow-400 text-2xl font-bold">✦</span>
+
+      <motion.div
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+      >
+              <Link
+                to="/register"
+                className="px-6 py-3 text-lg bg-yellow-500 hover:bg-yellow-400 text-gray-900 rounded-lg font-bold border-2 border-yellow-300 hover:border-yellow-200 transition-all duration-300"
+              >
+                Enroll for Acceleration
+              </Link>
+            </motion.div>
+          </div>
+        </motion.div>
+      </motion.section>
       {/* Features Section */}
-      <motion.section 
+      <motion.section
         className="py-20 px-6 bg-black"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -317,57 +333,57 @@ const Home = () => {
 
       {/* Testimonials Section */}
       <motion.section className="py-16 bg-black">
-  <h2 className="text-3xl font-bold text-center text-white mb-12">
-    Member Insights
-  </h2>
+        <h2 className="text-3xl font-bold text-center text-white mb-12">
+          Member Insights
+        </h2>
 
-  <div className="flex items-center justify-center gap-4 px-6">
-    <button
-      onClick={prevSlide}
-      className="p-2 bg-gray-800 rounded-full hover:bg-gray-700 transition"
-    >
-      <MdArrowBack className="text-2xl text-white" />
-    </button>
+        <div className="flex items-center justify-center gap-4 px-6">
+          <button
+            onClick={prevSlide}
+            className="p-2 bg-gray-800 rounded-full hover:bg-gray-700 transition"
+          >
+            <MdArrowBack className="text-2xl text-white" />
+          </button>
 
-    <div className="flex overflow-hidden max-w-4xl mx-auto">
-      <AnimatePresence initial={false} custom={direction}>
-        {testimonials
-          .slice(currentIndex, currentIndex + testimonialsPerPage)
-          .map((testimonial) => (
-            <motion.div
-              key={testimonial.name}
-              custom={direction}
-              variants={testimonialVariants}
-              initial="enter"
-              animate="center"
-              exit="exit"
+          <div className="flex overflow-hidden max-w-4xl mx-auto">
+            <AnimatePresence initial={false} custom={direction}>
+              {testimonials
+                .slice(currentIndex, currentIndex + testimonialsPerPage)
+                .map((testimonial) => (
+                  <motion.div
+                    key={testimonial.name}
+                    custom={direction}
+                    variants={testimonialVariants}
+                    initial="enter"
+                    animate="center"
+                    exit="exit"
               className="w-full md:w-96 p-6 bg-white rounded-xl mx-2" // Changed bg-gray-800 to bg-white
-            >
-              <div className="flex items-center mb-4">
-                <img
-                  src={testimonial.profileImage}
-                  alt={testimonial.name}
-                  className="w-12 h-12 rounded-full mr-4"
-                />
+                  >
+                    <div className="flex items-center mb-4">
+                      <img
+                        src={testimonial.profileImage}
+                        alt={testimonial.name}
+                        className="w-12 h-12 rounded-full mr-4"
+                      />
                 <h3 className="text-gray-900 font-semibold">{testimonial.name}</h3> {/* Changed text-white to text-gray-900 for contrast */}
-              </div>
+                    </div>
               <p className="text-gray-600 italic">"{testimonial.text}"</p> {/* Changed text-gray-400 to text-gray-600 for better readability */}
-            </motion.div>
-          ))}
-      </AnimatePresence>
-    </div>
+                  </motion.div>
+                ))}
+            </AnimatePresence>
+          </div>
 
-    <button
-      onClick={nextSlide}
-      className="p-2 bg-gray-800 rounded-full hover:bg-gray-700 transition"
-    >
-      <MdArrowForward className="text-2xl text-white" />
-    </button>
-  </div>
-</motion.section>
+          <button
+            onClick={nextSlide}
+            className="p-2 bg-gray-800 rounded-full hover:bg-gray-700 transition"
+          >
+            <MdArrowForward className="text-2xl text-white" />
+          </button>
+        </div>
+      </motion.section>
 
       {/* CTA Section */}
-      <motion.section 
+      <motion.section
         className="py-16 bg-black text-center"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -375,7 +391,7 @@ const Home = () => {
       >
         <div className="max-w-2xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-white mb-6">
-          Take your startup or small business to the next level with MASA Forum.
+            Take your startup or small business to the next level with MASA Forum.
           </h2>
           <motion.div
             whileHover={{ scale: 1.05 }}
