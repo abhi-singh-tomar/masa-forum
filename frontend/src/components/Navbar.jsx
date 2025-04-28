@@ -58,7 +58,7 @@ function Navbar() {
         >
           <div className="flex flex-col lg:flex-row lg:items-center">
             {/* About Dropdown */}
-            <div 
+            {/* <div 
               className="relative"
               onMouseEnter={() => handleHover("about")}
               onMouseLeave={handleLeave}
@@ -77,14 +77,40 @@ function Navbar() {
                   <Link to="/ourmembers" className="block px-4 py-2 hover:bg-gray-200">Our Members</Link>
                 </div>
               )}
-            </div>
+            </div> */}
+              <div className="relative">
+                  <button
+                    className="hover:text-yellow-500 px-4 py-2 w-full lg:w-auto text-left"
+                    onClick={() => toggleDropdown("about")}>About
+                  </button>
+              <div
+            className={`absolute lg:mt-0 bg-white text-black shadow-lg rounded-lg mt-0 p-2 min-w-[150px] z-50 transition-all duration-200 ease-in-out origin-top ${
+              dropdownOpen === "about" ? "scale-y-100 opacity-100" : "scale-y-0 opacity-0 pointer-events-none"
+            }`}
+            style={{ transformOrigin: "top" }}
+          >
+    <Link to="/about" className="block px-4 py-2 hover:bg-yellow-500">
+      Mission/Vision
+    </Link>
+    <Link to="/team" className="block px-4 py-2 hover:bg-yellow-500">
+      Our Team
+    </Link>
+    <Link to="/partners" className="block px-4 py-2 hover:bg-yellow-500">
+      Our Partners
+    </Link>
+    <Link to="/ourmembers" className="block px-4 py-2 hover:bg-yellow-500">
+      Our Members
+    </Link>
+  </div>
+</div>
 
-            <Link to="/Ourinitiatives" className="hover:text-gray-300 px-4 py-2">Our initiatives</Link>
+
+            <Link to="/Ourinitiatives" className="hover:text-yellow-500 px-4 py-2">Our initiatives</Link>
             <Link to="/membership" className="hover:text-yellow-500 px-4 py-2">Membership</Link>
-            <Link to="/events" className="hover:text-gray-300 px-4 py-2">Events</Link>
+            <Link to="/events" className="hover:text-yellow-500 px-4 py-2">Events</Link>
 
             {/* Resources Dropdown */}
-            <div 
+            {/* <div 
               className="relative"
               onMouseEnter={() => handleHover("resources")}
               onMouseLeave={handleLeave}
@@ -102,10 +128,38 @@ function Navbar() {
                   <Link to="/SchemesPage" className="block px-4 py-2 hover:bg-gray-200">Schemes</Link>
                 </div>
               )}
-            </div>
-            <Link to="/MasainMedia" className="hover:text-gray-300 px-4 py-2">Masa in Media</Link>
+            </div> */}
 
-            <Link to="/ContactUs" className="hover:text-gray-300 px-4 py-2">Contact Us</Link>
+        <div className="relative">
+          <button
+            className="hover:text-yellow-500 px-4 py-2 w-full lg:w-auto text-left"
+            onClick={() => toggleDropdown("resources")}
+          >
+            Resources
+          </button>
+
+          <div
+            className={`absolute lg:mt-0 bg-white text-black shadow-lg rounded-lg mt-0 p-2 min-w-[150px] z-50 transition-all duration-200 ease-in-out origin-top ${
+              dropdownOpen === "resources" ? "scale-y-100 opacity-100" : "scale-y-0 opacity-0 pointer-events-none"
+            }`}
+            style={{ transformOrigin: "top" }}
+          >
+            <Link to="/BlogsPage" className="block px-4 py-2 hover:bg-yellow-500">
+              Blogs
+            </Link>
+            <Link to="/MSMENews" className="block px-4 py-2 hover:bg-yellow-500">
+              MSME News
+            </Link>
+            <Link to="/SchemesPage" className="block px-4 py-2 hover:bg-yellow-500">
+              Schemes
+            </Link>
+          </div>
+        </div>
+
+
+            <Link to="/MasainMedia" className="hover:text-yellow-500 px-4 py-2">Masa in Media</Link>
+
+            <Link to="/ContactUs" className="hover:text-yellow-500 px-4 py-2">Contact Us</Link>
           </div>
         </nav>
 

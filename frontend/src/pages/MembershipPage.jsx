@@ -147,7 +147,7 @@ const handlePayment = async (amount) => {
 
 export default function MembershipPage() {
   return (
-    <div className="min-h-screen bg-gray-700 px-6 py-12 text-white">
+    <div className="min-h-screen bg-gray-900 px-6 py-12 text-white">
       <div className="max-w-6xl mx-auto text-center">
         <h1 className="text-5xl font-bold mb-4 text-yellow-500">MSME And Startups Acceleration (MASA)</h1>
         <p className="text-xl font-semibold mb-2">Join the MASA Community - Access to Excellence and Innovation!</p>
@@ -161,10 +161,10 @@ export default function MembershipPage() {
 
         <div className="grid md:grid-cols-3 gap-6">
           {membershipPlans.map((plan, index) => (
-            <div key={index} className="bg-yellow-100 p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 flex flex-col">
-              <h2 className="text-xl font-bold mb-2 text-blue-600">{plan.title}</h2>
+            <div key={index} className="bg-yellow-400 p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 flex flex-col">
+              <h2 className="text-3xl font-bold mb-2 text-blue-600">{plan.title}</h2>
               <p className="text-2xl font-semibold text-gray-800 mb-4">{plan.price}</p>
-              <ul className="text-gray-600 mb-6 flex-grow text-left space-y-2">
+              <ul className="text-gray-900 mb-6 flex-grow text-left space-y-2">
                 {plan.benefits.map((item, idx) => (
                   <li key={idx}>• {item}</li>
                 ))}
