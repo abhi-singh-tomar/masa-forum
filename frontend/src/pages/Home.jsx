@@ -6,7 +6,30 @@ import { MdArrowBack, MdArrowForward } from "react-icons/md";
 import Footer from "../components/Footer";
 import { IoClose } from "react-icons/io5";
 import { sendUserIntent } from "../api";
-import ImageSlider from "../components/ImageSlider";
+import Faqs from "../components/Faqs";
+
+const carouselImages = [
+  {
+    url: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    alt: "Business networking event",
+    caption: "Connect with Industry Leaders"
+  },
+  {
+    url: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    alt: "Startup team working",
+    caption: "Grow Your Startup with Expert Guidance"
+  },
+  {
+    url: "https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    alt: "Business meeting",
+    caption: "Access Funding Opportunities"
+  },
+  {
+    url: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    alt: "Team collaboration",
+    caption: "Join Our Vibrant Entrepreneur Community"
+  }
+];
 
 const testimonials = [
   { 
@@ -51,7 +74,7 @@ const testimonials = [
   },
   { 
     name: "Tech Founder", 
-    text: "I secured my first round of funding through MASA’s network of investors!", 
+    text: "I secured my first round of funding through MASA's network of investors!", 
     profileImage: "https://i.pravatar.cc/100?img=11" 
   },
   { 
@@ -88,8 +111,8 @@ const testimonials = [
 
 const features = [
   {
-    title: "Branding & Marketing Support",
-    desc: "Personalized guidance from  industry experts to help startups and MSMEs grow faster and smarter.",
+     title: "Startup Mentorship",
+    desc: "Personalized guidance from industry experts to help startups and MSMEs grow faster and smarter.",
     icon: <FaChalkboardTeacher className="text-6xl text-blue-600" />
   },
   {
@@ -103,27 +126,38 @@ const features = [
     icon: <FaUsers className="text-6xl text-yellow-500" />
   },
   {
-    title: "Access to National Network",
-    desc: "Personalized guidance from  industry experts to help startups and MSMEs grow faster and smarter.",
-    icon: <FaClone className="text-6xl text-blue-600" />
-  },
+{
+    title: "Business Development",
+    desc: "Access tools and resources to accelerate your business growth and market expansion.",
+    icon: <FaBusinessTime className="text-6xl text-purple-600" />
+},
+
   {
-    title: "Funding Opportunities",
-    desc: "Connect with investors and explore funding programs tailored for startups and emerging businesses.",
-     icon: <FaHandHoldingUsd className="text-6xl text-green-600" />
+    title: "Resource Library",
+    desc: "Comprehensive collection of templates, guides and case studies for entrepreneurs.",
+    icon: <FaClone className="text-6xl text-red-500" />
   },
-  {
-    title: "Government & Policy Advocacy",
-    desc: "Build meaningful connections with entrepreneurs, investors, and mentors in the startup ecosystem.",
-    icon: <FaCube className="text-6xl text-yellow-500" />
-  }
+ {
+    title: "Innovation Labs",
+    desc: "Collaborative spaces to develop and test new ideas with industry experts.",
+    icon: <FaCube className="text-6xl text-teal-500" />
+}
 ];
 
 const Home = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentCarouselIndex, setCurrentCarouselIndex] = useState(0);
   const [showPopup, setShowPopup] = useState(false);
   const [direction, setDirection] = useState(0);
   const testimonialsPerPage = 3;
+
+  // Carousel auto-rotation
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentCarouselIndex((prev) => (prev + 1) % carouselImages.length);
+    }, 6000);
+    return () => clearInterval(interval);
+  }, []);
 
   const nextSlide = () => {
     setDirection(1);
@@ -218,17 +252,72 @@ const Home = () => {
     })
   };
 
+  const carouselVariants = {
+    enter: (dir) => ({
+      opacity: 0,
+    }),
+    center: {
+      opacity: 1,
+      transition: { duration: 1 }
+    },
+    exit: {
+      opacity: 0,
+      transition: { duration: 1 }
+    }
+  };
+
   return (
     <div className="bg-gray-900 min-h-screen">
+      {/* Carousel Section */}
+      <section className="relative h-screen">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={currentCarouselIndex}
+            initial="enter"
+            animate="center"
+            exit="exit"
+            variants={carouselVariants}
+            className="absolute inset-0 w-full h-full"
+          >
+            <img 
+              src={carouselImages[currentCarouselIndex].url} 
+              alt={carouselImages[currentCarouselIndex].alt}
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+              <motion.h2 
+                className="text-4xl md:text-6xl font-bold text-white text-center px-4"
+                initial={{ y: 50, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.5 }}
+              >
+                {carouselImages[currentCarouselIndex].caption}
+              </motion.h2>
+            </div>
+          </motion.div>
+        </AnimatePresence>
+
+        {/* Carousel Indicators */}
+        <div className="absolute bottom-8 left-0 right-0 flex justify-center gap-2 z-10">
+          {carouselImages.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentCarouselIndex(index)}
+              className={`w-3 h-3 rounded-full transition-all ${currentCarouselIndex === index ? 'bg-yellow-500 w-6' : 'bg-white/50'}`}
+            />
+          ))}
+        </div>
+      </section>
+
       {/* Hero Section */}
       <motion.section
-  className="relative h-screen flex flex-col justify-center items-center text-center px-6 pt-20 bg-black"
+        className="relative py-20 flex flex-col justify-center items-center text-center px-6 bg-gray-800"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
         <motion.div
-    className="relative z-10 text-white"
+          className="relative z-10 text-white"
           initial={{ scale: 0.9 }}
           animate={{ scale: 1 }}
           transition={{ duration: 0.5 }}
@@ -256,10 +345,10 @@ const Home = () => {
           </motion.p>
 
           <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
-      <motion.div
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-      >
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
               <Link
                 to="/contactUs"
                 className="px-6 py-3 text-lg bg-yellow-500 hover:bg-yellow-400 text-gray-900 rounded-lg font-bold border-2 border-yellow-300 hover:border-yellow-200 transition-all duration-300"
@@ -270,10 +359,10 @@ const Home = () => {
 
             <span className="hidden sm:block text-yellow-400 text-2xl font-bold">✦</span>
 
-      <motion.div
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-      >
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
               <Link
                 to="/membership"
                 className="px-6 py-3 text-lg bg-yellow-500 hover:bg-yellow-400 text-gray-900 rounded-lg font-bold border-2 border-yellow-300 hover:border-yellow-200 transition-all duration-300"
@@ -284,10 +373,10 @@ const Home = () => {
 
             <span className="hidden sm:block text-yellow-400 text-2xl font-bold">✦</span>
 
-      <motion.div
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-      >
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
               <Link
                 to="/register"
                 className="px-6 py-3 text-lg bg-yellow-500 hover:bg-yellow-400 text-gray-900 rounded-lg font-bold border-2 border-yellow-300 hover:border-yellow-200 transition-all duration-300"
@@ -298,9 +387,10 @@ const Home = () => {
           </div>
         </motion.div>
       </motion.section>
+
       {/* Features Section */}
       <motion.section
-        className="py-20 px-6 bg-black"
+        className="py-20 px-6 bg-gray-800"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true, margin: "-100px" }}
@@ -313,7 +403,7 @@ const Home = () => {
           {features.map((feature, i) => (
             <motion.div
               key={feature.title}
-              className="p-6 bg-gray-800 rounded-xl"
+              className="p-6 bg-gray-900 rounded-xl"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.2 }}
@@ -328,10 +418,9 @@ const Home = () => {
           ))}
         </div>
       </motion.section>
-      <ImageSlider />
 
       {/* Testimonials Section */}
-      <motion.section className="py-16 bg-black">
+      <motion.section className="py-16 bg-gray-800">
         <h2 className="text-3xl font-bold text-center text-white mb-12">
           Member Insights
         </h2>
@@ -356,7 +445,7 @@ const Home = () => {
                     initial="enter"
                     animate="center"
                     exit="exit"
-              className="w-full md:w-96 p-6 bg-white rounded-xl mx-2" // Changed bg-gray-800 to bg-white
+                    className="w-full md:w-96 p-6 bg-white rounded-xl mx-2"
                   >
                     <div className="flex items-center mb-4">
                       <img
@@ -364,9 +453,9 @@ const Home = () => {
                         alt={testimonial.name}
                         className="w-12 h-12 rounded-full mr-4"
                       />
-                <h3 className="text-gray-900 font-semibold">{testimonial.name}</h3> {/* Changed text-white to text-gray-900 for contrast */}
+                      <h3 className="text-gray-900 font-semibold">{testimonial.name}</h3>
                     </div>
-              <p className="text-gray-600 italic">"{testimonial.text}"</p> {/* Changed text-gray-400 to text-gray-600 for better readability */}
+                    <p className="text-gray-600 italic">"{testimonial.text}"</p>
                   </motion.div>
                 ))}
             </AnimatePresence>
@@ -383,7 +472,7 @@ const Home = () => {
 
       {/* CTA Section */}
       <motion.section
-        className="py-16 bg-black text-center"
+        className="py-16 bg-gray-800 text-center"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
@@ -449,6 +538,7 @@ const Home = () => {
         )}
       </AnimatePresence>
 
+        <Faqs />
       <Footer />
     </div>
   );
