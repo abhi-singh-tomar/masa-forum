@@ -125,7 +125,7 @@ const features = [
     desc: "Build meaningful connections with entrepreneurs, investors, and mentors in the startup ecosystem.",
     icon: <FaUsers className="text-6xl text-yellow-500" />
   },
-  {
+  
 {
     title: "Business Development",
     desc: "Access tools and resources to accelerate your business growth and market expansion.",
