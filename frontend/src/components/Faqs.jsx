@@ -24,8 +24,8 @@ const FAQs = () => {
   };
 
   return (
-    <div className="bg-gray-900 text-white min-h-screen relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-800 via-gray-900 to-black opacity-50 z-0" />
+    <div className="bg-gray-800 text-white min-h-screen relative overflow-hidden">
+      <div className="absolute inset-0  z-0" />
 
       {/* FAQs Section */}
       <section className="py-20 px-10 relative z-10 max-w-5xl mx-auto">
@@ -35,7 +35,7 @@ const FAQs = () => {
 
         <div className="space-y-6">
           {faqs.map((faq, index) => (
-            <div key={index} className="bg-gray-800 p-6 rounded-xl overflow-hidden">
+            <div key={index} className="bg-gray-900 p-6 rounded-xl overflow-hidden">
               <button
                 onClick={() => toggleFAQ(index)}
                 className="w-full text-left text-xl font-semibold flex justify-between items-center"

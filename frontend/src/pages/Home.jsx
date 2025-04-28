@@ -309,7 +309,7 @@ const Home = () => {
 
       {/* Hero Section */}
       <motion.section
-        className="relative py-20 flex flex-col justify-center items-center text-center px-6 bg-black"
+        className="relative py-20 flex flex-col justify-center items-center text-center px-6 bg-gray-800"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
@@ -388,7 +388,7 @@ const Home = () => {
 
       {/* Features Section */}
       <motion.section
-        className="py-20 px-6 bg-black"
+        className="py-20 px-6 bg-gray-800"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true, margin: "-100px" }}
@@ -401,7 +401,7 @@ const Home = () => {
           {features.map((feature, i) => (
             <motion.div
               key={feature.title}
-              className="p-6 bg-gray-800 rounded-xl"
+              className="p-6 bg-gray-900 rounded-xl"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.2 }}
@@ -418,7 +418,7 @@ const Home = () => {
       </motion.section>
 
       {/* Testimonials Section */}
-      <motion.section className="py-16 bg-black">
+      <motion.section className="py-16 bg-gray-800">
         <h2 className="text-3xl font-bold text-center text-white mb-12">
           Member Insights
         </h2>
@@ -470,7 +470,7 @@ const Home = () => {
 
       {/* CTA Section */}
       <motion.section
-        className="py-16 bg-black text-center"
+        className="py-16 bg-gray-800 text-center"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
