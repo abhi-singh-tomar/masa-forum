@@ -88,25 +88,24 @@ const testimonials = [
 
 const features = [
   {
-    title: "Startup Mentorship",
+    title: "Branding & Marketing Support",
     desc: "Personalized guidance from  industry experts to help startups and MSMEs grow faster and smarter.",
     icon: <FaChalkboardTeacher className="text-6xl text-blue-600" />
   },
   {
-    title: "Funding Opportunities",
+    title: "Expert Business Mentoring",
     desc: "Connect with investors and explore funding programs tailored for startups and emerging businesses.",
-    icon: <FaHandHoldingUsd className="text-6xl text-green-600" />
+    icon: <FaBusinessTime className="text-6xl text-green-600" />
   },
   {
-    title: "Professional Networking",
+    title: "Training & Certifications",
     desc: "Build meaningful connections with entrepreneurs, investors, and mentors in the startup ecosystem.",
     icon: <FaUsers className="text-6xl text-yellow-500" />
   },
-
   {
-    title: "Startup Mentorship",
+    title: "Access to National Network",
     desc: "Personalized guidance from  industry experts to help startups and MSMEs grow faster and smarter.",
-    icon: <FaChalkboardTeacher className="text-6xl text-blue-600" />
+    icon: <FaClone className="text-6xl text-blue-600" />
   },
   {
     title: "Funding Opportunities",
@@ -114,9 +113,9 @@ const features = [
      icon: <FaHandHoldingUsd className="text-6xl text-green-600" />
   },
   {
-    title: "Professional Networking",
+    title: "Government & Policy Advocacy",
     desc: "Build meaningful connections with entrepreneurs, investors, and mentors in the startup ecosystem.",
-    icon: <FaUsers className="text-6xl text-yellow-500" />
+    icon: <FaCube className="text-6xl text-yellow-500" />
   }
 ];
 

@@ -286,9 +286,10 @@ const OurTeam = () => {
           </p>
         </div>
 
-        <TeamSection title="Board of Directors" members={teamMembers} />
-        <TeamSection title="Advisory Board" members={advisoryBoard} />
+        <TeamSection title="National Board of Directors" members={teamMembers} />
+        <TeamSection title="Regional Board of Directors" members={advisoryBoard} />
         <TeamSection title="Our Mentors" members={mentors} />
+        <TeamSection title="Advisory Board" members={advisoryBoard} />
       </div>
       <Footer />
     </div>

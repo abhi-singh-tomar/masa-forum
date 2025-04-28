@@ -36,7 +36,7 @@ const MasainMedia = () => {
       title: "Environment Quiz 2024, Kolkata",
       source: "yuvashaktinews",
       date: "10th August 2024",
-      description: "Feature on how our mentorship program is transforming small businesses.",
+      description: "The environment quiz was organized as an engaging and educational initiative to help students deepen their understanding of sustainability and conservation. It provided valuable insights and practical awareness, empowering them to make informed decisions and contribute meaningfully to environmental protection.",
       image: photo2,
       link: "https://www.yuvashaktinews.com/"
     },
