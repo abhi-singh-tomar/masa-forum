@@ -15,16 +15,16 @@ const MasainMedia = () => {
   const mediaCoverage = [
     {
       id: 1,
-      title: "Coverage of our Excellence awards in MSMEs & Startups.",
+      title: "Global Education Conclave 2025",
       source: "The Statesman",
-      date: "February 8, 2025",
+      date: "February 15, 2025",
       description: "The MSME & Startup Accelerator Awards (MASA) 2025 - Kolkata Edition was a night of inspiration, honouring exceptional entrepreneurs and industry leaders at Silpo Sadan, Camac Street",
       image: photo0,
-      link: "https://www.thestatesman.com/?s=MSME+%26+startups+awards#"
+      link: "https://heyzine.com/flip-book/e33ca50978.html"
     },
     {
       id: 2,
-      title: "Global Education Conclave 2025",
+      title: "Coverage of our Excellence awards in MSMEs & Startups.",
       source: "Prabhat Khabar",
       date: "February 8, 2025",
       description: "The MSME & Startup Accelerator Awards 2025 – Kolkata Edition took place at Silpo Sadan, Camac Street, celebrating and honouring distinguished entrepreneurs and industry leaders in an evening filled with inspiration.",
