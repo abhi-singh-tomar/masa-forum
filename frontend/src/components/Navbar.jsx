@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
-import logo from "../assets/about-us-image.png";
+import logo from "../assets/about_us.png";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
