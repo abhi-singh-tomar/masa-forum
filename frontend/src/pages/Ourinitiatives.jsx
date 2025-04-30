@@ -21,6 +21,12 @@ import nivesh from "../assets/awards-imgs/nivesh.jpg";
 import raipur from "../assets/awards-imgs/raipur.jpg";
 import jobFair from "../assets/event-imgs/upcoming1.png";
 import quiz from "../assets/awards-imgs/quizz.jpg";
+import nivesh2 from "../assets/awards-imgs/raipur-2.jpg";
+import nivesh3 from "../assets/awards-imgs/raipur9.jpg";
+import awards1 from "../assets/awards-imgs/2024.jpg";
+import awards2 from "../assets/awards-imgs/2025.JPG";
+import comingSoon from "../assets/awards-imgs/coming-soon.jpg";
+import kalpataru2 from "../assets/awards-imgs/kalpataru2.jpg";
 
 // Data
 const initiatives = [
@@ -30,8 +36,8 @@ const initiatives = [
     icon: <FaAward className="text-yellow-400 text-4xl" />,
     cards: [
       { image: awardLogo, title: "Startup of the Year", description: "Awarded to the most innovative startup." },
-      // { image: aboutImage2, title: "MSME Leader", description: "Recognizing outstanding MSME leaders." },
-      // { image: aboutImage3, title: "Innovation Excellence", description: "Celebrating technological innovation." },
+      { image: awards1, title: "MSME Leader", description: "Recognizing outstanding MSME leaders." },
+      { image: awards2, title: "Innovation Excellence", description: "Celebrating technological innovation." },
       // { image: aboutImage4, title: "Social Impact Award", description: "For significant community contributions." },
       // { image: aboutImage5, title: "Best Workplace", description: "Honoring exemplary work environments." },
     ]
@@ -56,7 +62,7 @@ const initiatives = [
       // { image: aboutImage, title: "Policy Updates", description: "Stay updated on government policies." },
       // { image: aboutImage2, title: "Success Stories", description: "Inspiring journeys of MSME growth." },
       { image: times, title: "Market Insights", description: "Trends shaping the future." },
-      // { image: aboutImage4, title: "Expert Interviews", description: "Thought leadership insights." },
+      { image: comingSoon, title: "www.msmetimes.com", description: "" },
       // { image: aboutImage5, title: "Resources Hub", description: "Tools and resources for MSMEs." },
     ]
   },
@@ -66,7 +72,7 @@ const initiatives = [
     icon: <FaChartLine className="text-yellow-400 text-4xl" />,
     cards: [
       { image: kalpataru, title: "Funding Access", description: "Connecting startups to investors." },
-      // { image: aboutImage2, title: "Mentorship Programs", description: "Guidance from industry veterans." },
+      { image: kalpataru2, title: "Mentorship Programs", description: "Guidance from industry veterans." },
       // { image: aboutImage3, title: "Business Acceleration", description: "Fast-tracking business growth." },
     ]
   },
@@ -76,8 +82,8 @@ const initiatives = [
     icon: <FaHandshake className="text-yellow-400 text-4xl" />,
     cards: [
       { image: nivesh, title: "Investor Connect", description: "Bringing founders & investors together." },
-      // { image: aboutImage2, title: "Pitch Days", description: "Live pitching events for startups." },
-      // { image: aboutImage3, title: "VC Panels", description: "Insights from venture capitalists." },
+      { image: nivesh2, title: "Pitch Days", description: "Live pitching events for startups." },
+      { image: nivesh3, title: "VC Panels", description: "Insights from venture capitalists." },
     ]
   },
   {

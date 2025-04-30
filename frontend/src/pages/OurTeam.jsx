@@ -177,7 +177,7 @@ const mentors = [
     name: "Satyajit Chakrabarti",
     image: satyajit,
     linkedin: "https://www.linkedin.com/in/csatyajit/",
-    bio: "Director at Institute of Engineering & Management (IEM), Pro Vice Chancellor at University of Engineering and Management (UEM)",
+    bio: "Director at Institute of Engineering & Management (IEM)",
   },
   {
     name: "Shaji V",

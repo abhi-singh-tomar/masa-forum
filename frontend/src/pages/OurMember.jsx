@@ -6,14 +6,15 @@ import biswa from "../assets/ourMembers-imgs/biswa.jpg";
 import rajesh from "../assets/ourMembers-imgs/rajesh.jpg";
 import sarita from "../assets/ourMembers-imgs/sarita.jpeg";
 import noPic from "../assets/ourMembers-imgs/unknown.jpg";
+import pinaki from "../assets/ourMembers-imgs/pinaki.jpg";
 
 const members = [
   {
     id: 1,
-    name: "Pinaki Ganguly",
-    photo: noPic,
-    dateJoined: "December 2024",
-    bio: "Fractals Global Services Private Limited"
+    name: "Arun Kothari",
+    photo: arun,
+    dateJoined: "April 2025",
+    bio: "Kothari Industries"
   },
   {
     id: 2,
@@ -45,10 +46,10 @@ const members = [
   },
   {
     id: 6,
-    name: "Arun Kothari",
-    photo: arun,
-    dateJoined: "April 2025",
-    bio: "Kothari Industries"
+    name: "Pinaki Ganguly",
+    photo: pinaki,
+    dateJoined: "December 2024",
+    bio: "Fractals Global Services Private Limited"
   },
   {
     id: 7,
