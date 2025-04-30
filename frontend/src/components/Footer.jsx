@@ -29,9 +29,23 @@ const Footer = () => {
             <Link to="/ContactUs" className="text-gray-400 hover:text-teal-400 transition-colors duration-300">
               Contact
             </Link>
-            <Link to="/masa-awards" className="text-gray-400 hover:text-teal-400 transition-colors duration-300 col-span-2 md:col-span-1">
-              Masa Awards
-            </Link>
+            <a
+             href="https://www.masaawards.com/"
+             className="text-gray-400 hover:text-teal-400 transition-colors duration-300 col-span-2 md:col-span-1"
+             target="_blank"  // optional: opens in a new tab
+             rel="noopener noreferrer" // security best practice when using target="_blank"
+             >
+               Masa Awards
+             </a>
+
+             <a
+             href="https://www.mantrasworld.com/"
+             className="text-gray-400 hover:text-teal-400 transition-colors duration-300 col-span-2 md:col-span-1"
+             target="_blank"  // optional: opens in a new tab
+             rel="noopener noreferrer" // security best practice when using target="_blank"
+             >
+               Mantra's World
+             </a>
           </div>
         </div>
 
