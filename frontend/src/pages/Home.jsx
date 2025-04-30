@@ -297,9 +297,9 @@ const Home = () => {
               alt={carouselImages[currentCarouselIndex].alt}
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-black/50 flex items-end pb-10 justify-center">
+            <div className="absolute inset-0 bg-black/50 flex items-center  justify-center">
               <motion.h2 
-                className="text-4xl md:text-6xl font-bold text-white text-opacity-80 text-center px-4"
+                className="text-4xl md:text-6xl font-bold text-white text-opacity-70 text-center px-4"
                 initial={{ y: 50, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.5 }}

@@ -161,7 +161,7 @@ export default function MembershipPage() {
 
         <div className="grid md:grid-cols-3 gap-6">
           {membershipPlans.map((plan, index) => (
-            <div key={index} className="bg-yellow-400 p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 flex flex-col">
+            <div key={index} className="bg-yellow-200 p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 flex flex-col">
               <h2 className="text-3xl font-bold mb-2 text-blue-600">{plan.title}</h2>
               <p className="text-2xl font-semibold text-gray-800 mb-4">{plan.price}</p>
               <ul className="text-gray-900 mb-6 flex-grow text-left space-y-2">
