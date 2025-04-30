@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FaRocket, FaLightbulb, FaEye } from "react-icons/fa";
+import { FaRocket, FaLightbulb, FaEye, FaUsers, FaHandshake, FaGavel } from "react-icons/fa";
 import Footer from "../components/Footer";
 
 const About = () => {
@@ -53,16 +53,30 @@ const About = () => {
           {[{
             icon: <FaRocket className="text-yellow-400 text-5xl mb-4" />, 
             title: "Our Mission", 
-            description: "To become the leading platform for startups and MSMEs, accelerating innovation, collaboration, and inclusive economic growth."
+            description: "To accelerate startups and MSMEs in India through funding access, mentorship, and market growth opportunities within an inclusive entrepreneurship ecosystem."
           }, {
             icon: <FaEye className="text-yellow-400 text-5xl mb-4" />, 
             title: "Our Vision", 
-            description: "Empowering startups and MSMEs to thrive through innovative support, expert guidance, and strategic partnerships."
+            description: "To be India’s leading startup accelerator and MSME platform, enabling innovation, equal opportunity, and long-term business sustainability."
           }, {
             icon: <FaLightbulb className="text-yellow-400 text-5xl mb-4" />, 
             title: "Our Values", 
-            description: "Integrity, innovation, and inclusivity drive our commitment to nurturing a thriving entrepreneurial ecosystem."
-          }].map((item, index) => (
+            description: "Driven by integrity, innovation, and inclusivity, we support grassroots startups, women entrepreneurs, and MSMEs across urban and rural India."
+          }, {
+            icon: <FaUsers className="text-yellow-400 text-5xl mb-4" />, 
+            title: "Empowering Entrepreneurs", 
+            description: "We provide tools, mentorship, and investor-ready platforms to help startups and MSMEs turn ideas into scalable, sustainable businesses."
+          }, {
+            icon: <FaHandshake className="text-yellow-400 text-5xl mb-4" />, 
+            title: "Building Investor Confidence", 
+            description: "MASA connects investors with verified startups and MSMEs, boosting visibility, credibility, and funding potential through curated pitch sessions."
+          }, {
+            icon: <FaGavel className="text-yellow-400 text-5xl mb-4" />, 
+            title: "Driving Policy & Impact", 
+            description: "We bridge entrepreneurs with government schemes, institutions, and policies that support MSME growth and startup innovation nationwide."
+          }
+        
+        ].map((item, index) => (
             <motion.div
               key={index}
               className="bg-gray-800 p-8 rounded-2xl flex flex-col items-center text-center hover:bg-gray-700 transition-all duration-300"

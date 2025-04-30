@@ -7,35 +7,48 @@ import Footer from "../components/Footer";
 import { IoClose } from "react-icons/io5";
 import { sendUserIntent } from "../api";
 import Faqs from "../components/Faqs";
+// ----Image imports----------
+import upSkill from "../assets/homePage-carousel-imgs/training.jpg";
+import network from "../assets/homePage-carousel-imgs/networking.JPG";
+import govt from "../assets/homePage-carousel-imgs/govt.jpg";
+import excel from "../assets/homePage-carousel-imgs/excellence.jpg";
+import masa from "../assets/homePage-carousel-imgs/whoWeAre.JPG";
+
+import kanika from "../assets/testimonial-imgs/kanika.png";
 
 const carouselImages = [
   {
-    url: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-    alt: "Business networking event",
-    caption: "Connect with Industry Leaders"
+    url: masa,
+    alt: "We are Ecosystem partners for MSMEs & Startups",
+    caption: "We are Ecosystem partners for MSMEs & Startups"
   },
   {
-    url: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-    alt: "Startup team working",
-    caption: "Grow Your Startup with Expert Guidance"
+    url: excel,
+    alt: "Celebrating Innovation & Business Excellence",
+    caption: "Celebrating Innovation & Business Excellence"
   },
   {
-    url: "https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-    alt: "Business meeting",
-    caption: "Access Funding Opportunities"
+    url: govt,
+    alt: "Government Schemes & Policy Support",
+    caption: "Government Schemes & Policy Support"
   },
   {
-    url: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-    alt: "Team collaboration",
-    caption: "Join Our Vibrant Entrepreneur Community"
+    url: upSkill,
+    alt: "Upskilling Workshops",
+    caption: "Upskilling Workshops"
+  },
+  {
+    url: network,
+    alt: "National Networking Access",
+    caption: "National Networking Access"
   }
 ];
 
 const testimonials = [
   { 
-    name: "Startup Founder", 
-    text: "MASA Forum has provided me with incredible networking opportunities and invaluable mentorship!", 
-    profileImage: "https://i.pravatar.cc/100?img=10" 
+    name: "Kanika Gupta", 
+    text: "I think this a perfect platform for women to come together and grow together. Do something very substantial", 
+    profileImage: kanika 
   },
   { 
     name: "Entrepreneur", 
@@ -111,35 +124,35 @@ const testimonials = [
 
 const features = [
   {
-     title: "Startup Mentorship",
-    desc: "Personalized guidance from industry experts to help startups and MSMEs grow faster and smarter.",
+     title: "Government & Policy Advocacy",
+    desc: "Stay informed on government schemes, startup-friendly policies, and MSME regulations with expert-led advocacy and guidance.",
     icon: <FaChalkboardTeacher className="text-6xl text-blue-600" />
   },
   {
-    title: "Expert Business Mentoring",
-    desc: "Connect with investors and explore funding programs tailored for startups and emerging businesses.",
+    title: "Business Mentorship by Experts ",
+    desc: "Get personalized business mentorship from industry leaders to help startups and MSMEs scale efficiently and strategically.",
     icon: <FaBusinessTime className="text-6xl text-green-600" />
   },
   {
-    title: "Training & Certifications",
-    desc: "Build meaningful connections with entrepreneurs, investors, and mentors in the startup ecosystem.",
+    title: "Skill Training & Startup Certifications",
+    desc: "Gain startup-relevant skills through expert-led training programs and industry-recognized certification courses.",
     icon: <FaUsers className="text-6xl text-yellow-500" />
   },
   
 {
-    title: "Business Development",
-    desc: "Access tools and resources to accelerate your business growth and market expansion.",
-    icon: <FaBusinessTime className="text-6xl text-purple-600" />
+    title: "Growth & Funding Opportunities",
+    desc: "Discover curated opportunities for funding, collaboration, market access, and growth tailored for startups and MSMEs.",
+    icon: <FaHandHoldingUsd className="text-6xl text-purple-600" />
 },
 
   {
-    title: "Resource Library",
-    desc: "Comprehensive collection of templates, guides and case studies for entrepreneurs.",
+    title: "Startup Branding & Marketing Tools",
+    desc: "Unlock branding strategies, marketing tools, and startup-specific resources to grow visibility and build your business identity.",
     icon: <FaClone className="text-6xl text-red-500" />
   },
  {
-    title: "Innovation Labs",
-    desc: "Collaborative spaces to develop and test new ideas with industry experts.",
+    title: "Nationwide Startup Network Access",
+    desc: "Join a powerful national network of entrepreneurs, investors, incubators, and mentors to drive your startup forward.",
     icon: <FaCube className="text-6xl text-teal-500" />
 }
 ];

@@ -53,9 +53,9 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold border-b border-gray-700 pb-1 mb-3">Contact Us</h3>
           <p className="text-gray-400 text-sm">
-            Email: <a href="mailto:info@masa.com" className="hover:text-teal-400 transition-colors duration-300">info@masa.com</a>
+            Email: <a href="connect@masaforum.com" className="hover:text-teal-400 transition-colors duration-300">connect@masaforum.com</a>
           </p>
-          <p className="text-gray-400 text-sm mt-1">Phone: +91 123 456 7890</p>
+          <p className="text-gray-400 text-sm mt-1">Phone: +91-9051498808</p>
         </div>
 
         {/* Social Media Links */}

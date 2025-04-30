@@ -1,47 +1,82 @@
 import React from "react";
 
+import piyush from "../assets/ourMembers-imgs/piyush.jpg";
+import arun from "../assets/ourMembers-imgs/arun.jpg";
+import biswa from "../assets/ourMembers-imgs/biswa.jpg";
+import rajesh from "../assets/ourMembers-imgs/rajesh.jpg";
+import sarita from "../assets/ourMembers-imgs/sarita.jpeg";
+import noPic from "../assets/ourMembers-imgs/unknown.jpg";
+
 const members = [
   {
     id: 1,
-    name: "John Doe",
-    photo: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=200",
-    dateJoined: "January 2024",
-    bio: "Passionate about community building and technology innovation."
+    name: "Pinaki Ganguly",
+    photo: noPic,
+    dateJoined: "December 2024",
+    bio: "Fractals Global Services Private Limited"
   },
   {
     id: 2,
-    name: "Jane Smith",
-    photo: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=200",
-    dateJoined: "March 2024",
-    bio: "Dedicated to creating inclusive spaces for collaboration."
+    name: "Rajesh Dalmia",
+    photo: rajesh,
+    dateJoined: "January 2025",
+    bio: "Dalmia Financial Services"
   },
   {
     id: 3,
-    name: "Alex Johnson",
-    photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200",
-    dateJoined: "April 2024",
-    bio: "Bringing technical expertise to drive our projects forward."
+    name: "Sarita Bagaria",
+    photo: sarita,
+    dateJoined: "January 2025",
+    bio: "Soulmist"
   },
   {
     id: 4,
-    name: "Maria Garcia",
-    photo: "https://images.unsplash.com/photo-1554151228-14d9def656e4?w=200",
-    dateJoined: "May 2024",
-    bio: "Creative strategist focused on growing our community impact."
+    name: "Varun Biyani",
+    photo: noPic,
+    dateJoined: "February 2025",
+    bio: "M/s SkyKing, TruckHapp Pvt Ltd"
   },
   {
     id: 5,
-    name: "David Kim",
-    photo: "https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=200",
-    dateJoined: "June 2024",
-    bio: "Ensuring our initiatives run smoothly and efficiently."
+    name: "Dr. Biswarup Chatterjee",
+    photo: biswa,
+    dateJoined: "February 2025",
+    bio: "Karyeshu Management Training"
   },
   {
     id: 6,
-    name: "Sarah Williams",
-    photo: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200",
-    dateJoined: "July 2024",
-    bio: "Building bridges with like-minded organizations."
+    name: "Arun Kothari",
+    photo: arun,
+    dateJoined: "April 2025",
+    bio: "Kothari Industries"
+  },
+  {
+    id: 7,
+    name: "Piyush Agarwal",
+    photo: piyush,
+    dateJoined: "April 2025",
+    bio: "Elixir Metals"
+  },
+  {
+    id: 8,
+    name: "Vivek Agarwal",
+    photo: noPic,
+    dateJoined: "April 2025",
+    bio: "Vivek Murarka, advocate "
+  },
+  {
+    id: 9,
+    name: "Vineet Khaitan",
+    photo: noPic,
+    dateJoined: "November 2024",
+    bio: "NaturoDiet "
+  },
+  {
+    id: 10,
+    name: "Nimish Kumar Agrawal",
+    photo: noPic,
+    dateJoined: "December 2024",
+    bio: "Tejas Spire LLP"
   }
 ];
 
