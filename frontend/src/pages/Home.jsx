@@ -10,7 +10,7 @@ import Faqs from "../components/Faqs";
 // ----Image imports----------
 import upSkill from "../assets/homePage-carousel-imgs/training.jpg";
 import network from "../assets/homePage-carousel-imgs/networking.JPG";
-import govt from "../assets/homePage-carousel-imgs/govt.jpeg";
+import govt from "../assets/homePage-carousel-imgs/govt.jpg";
 import excel from "../assets/homePage-carousel-imgs/excellence.jpg";
 import masa from "../assets/homePage-carousel-imgs/whoWeAre.JPG";
 
