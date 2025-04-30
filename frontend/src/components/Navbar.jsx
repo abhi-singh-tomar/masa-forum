@@ -19,11 +19,12 @@ function Navbar() {
     setDropdownOpen(dropdownOpen === menu ? null : menu);
   };
 
-  // Close dropdowns when clicking outside
+  // Close dropdowns and mobile menu when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
         setDropdownOpen(null);
+        setMenuOpen(false);
       }
     };
 
@@ -32,20 +33,6 @@ function Navbar() {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
-
-  // Handle hover for desktop
-  const handleHover = (menu) => {
-    if (window.innerWidth >= 1024) {
-      setDropdownOpen(menu);
-    }
-  };
-
-  // Handle mouse leave for desktop
-  const handleLeave = () => {
-    if (window.innerWidth >= 1024) {
-      setDropdownOpen(null);
-    }
-  };
 
   return (
     <div className="bg-gray-900 text-white p-4 relative">
@@ -67,11 +54,7 @@ function Navbar() {
         >
           <div className="flex flex-col lg:flex-row lg:items-center">
             {/* About Dropdown */}
-            <div
-              className="relative"
-              onMouseEnter={() => handleHover("about")}
-              onMouseLeave={handleLeave}
-            >
+            <div className="relative">
               <button
                 className="hover:text-yellow-500 px-4 py-2 w-full lg:w-auto text-left font-bold"
                 onClick={() => toggleDropdown("about")}
@@ -110,11 +93,7 @@ function Navbar() {
             </Link>
 
             {/* Resources Dropdown */}
-            <div
-              className="relative"
-              onMouseEnter={() => handleHover("resources")}
-              onMouseLeave={handleLeave}
-            >
+            <div className="relative">
               <button
                 className="hover:text-yellow-500 px-4 py-2 w-full lg:w-auto text-left font-bold"
                 onClick={() => toggleDropdown("resources")}
