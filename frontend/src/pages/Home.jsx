@@ -232,18 +232,7 @@ const Home = () => {
     };
   }, []);
 
-  // Animation variants
-  const floatVariant = {
-    float: {
-      y: [-10, 10],
-      transition: {
-        duration: 3,
-        repeat: Infinity,
-        repeatType: "reverse",
-        ease: "easeInOut"
-      }
-    }
-  };
+ 
 
   const testimonialVariants = {
     enter: (dir) => ({
