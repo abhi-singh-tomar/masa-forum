@@ -46,6 +46,15 @@ const Footer = () => {
              >
                Mantra's World
              </a>
+
+             <a
+             href="https://mantrasfoundation.org/"
+             className="text-gray-400 hover:text-teal-400 transition-colors duration-300 col-span-2 md:col-span-1"
+             target="_blank"  // optional: opens in a new tab
+             rel="noopener noreferrer" // security best practice when using target="_blank"
+             >
+               Mantras Foundation
+             </a>
           </div>
         </div>
 

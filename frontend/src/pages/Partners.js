@@ -19,6 +19,8 @@ import patrika from "../assets/partners-imgs/patrika-logo.jpg";
 import emami from "../assets/partners-imgs/emami-logo.png";
 import adhunik from "../assets/partners-imgs/adhunik-logo.jpg";
 import linc from "../assets/partners-imgs/linc-logo.png";
+import hair from "../assets/partners-imgs/hairsmart.jpg";
+import mantras from "../assets/partners-imgs/mantras.jpg";
 
 const partners = [
   {
@@ -91,6 +93,18 @@ const partners = [
     id: 12,
     name: "Rajasthan Patrika",
     logo: patrika,
+    website: "https://www.tesla.com",
+  },
+  {
+    id: 13,
+    name: "HairSmart",
+    logo: hair,
+    website: "https://www.tesla.com",
+  },
+  {
+    id: 14,
+    name: "Mantras Foundation",
+    logo: mantras,
     website: "https://www.tesla.com",
   },
 ];

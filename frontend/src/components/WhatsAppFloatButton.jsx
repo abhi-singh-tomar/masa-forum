@@ -10,7 +10,7 @@ const WhatsAppFloatButton = () => {
       className="fixed bottom-6 right-6 z-50"
     >
       <a
-        href="https://wa.me/yourgroupinvitelink" // Replace with your actual WhatsApp group invite link
+        href="https://chat.whatsapp.com/L7RZf9Wc2afKhVb95z1RS0" // Replace with your actual WhatsApp group invite link
         target="_blank"
         rel="noopener noreferrer"
         className="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-medium py-3 px-4 rounded-full shadow-lg transition-all duration-300"
