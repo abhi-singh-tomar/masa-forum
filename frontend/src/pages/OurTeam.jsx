@@ -9,7 +9,28 @@ import pragya from "../assets/ourTeam-imgs/pragya.jpg";
 import ck from "../assets/ourTeam-imgs/ck.png";
 import tr from "../assets/ourTeam-imgs/treasurer.jpg";
 import v from "../assets/ourTeam-imgs/v.png";
+import ira from "../assets/ourTeam-imgs/ira.JPG";
+import atul from "../assets/ourTeam-imgs/atul.png";
 // ----------------------------image Imports For Teams----------------------------------------
+
+// ---------------------------Regional BDs---------------------------------------
+import gKhemka from "../assets/ourTeam-imgs/BD-Delhi/gKhemka.jpg";
+import pKhemka from "../assets/ourTeam-imgs/BD-Delhi/pKhemka.jpg";
+import tanvi from "../assets/ourTeam-imgs/BD-Delhi/tanviG.jpg";
+
+import amanat from "../assets/ourTeam-imgs/BD-Raipur/amanat.jpg";
+import gauravA from "../assets/ourTeam-imgs/BD-Raipur/gauravA.jpg";
+import lalwani from "../assets/ourTeam-imgs/BD-Raipur/lalwani.jpg";
+import passary from "../assets/ourTeam-imgs/BD-Raipur/passary.jpg";
+
+import aModi from "../assets/ourTeam-imgs/BD-Indore/aModi.jpg";
+import bj from "../assets/ourTeam-imgs/BD-Indore/bj.jpg";
+
+import gm from "../assets/ourTeam-imgs/BD-Bhubneshwar/gm.jpg";
+import lenka from "../assets/ourTeam-imgs/BD-Bhubneshwar/lenka.jpg";
+
+import anshul from "../assets/ourTeam-imgs/BD-Mumbai/anshul.jpg";
+// ---------------------------Regional BDs----------------------------------------
 
 // ---------------------------- image Imports For Mentors ------------------------------------
 import ajay from "../assets/ourMentors-imgs/ajay-arora.jpeg";
@@ -66,6 +87,13 @@ const teamMembers = [
     bio: "CSR & Startup Consultant",
   },
   {
+      name: "Ms. Ira Saha",
+      role: "Director, MASA Forum",
+      image: ira,
+      linkedin: "https://www.linkedin.com/in/ira-saha-5072b6285/",
+      bio: "Ex educator @ Mangalam Vidya Niketan"
+  },
+  {
     name: "Mr. Narendra Kapadia",
     role: "Chairman, MASA Forum",
     image: v,
@@ -89,12 +117,6 @@ const mentors = [
     bio: "National Leader and Head of Investment Banking Advisory at EY",
   },
   {
-    name: "Ina Bose",
-    image: ina,
-    linkedin: "https://www.linkedin.com/in/ina-bose-6270a940/",
-    bio: "Academic and Communication Consultant.",
-  },
-  {
     name: "Dr. Dilip Kumar Gayen",
     image: dg,
     linkedin: "https://www.linkedin.com/in/dilip-kumar-gayen-consultant-quality-productivity-5912ab12/",
@@ -110,15 +132,15 @@ const mentors = [
     linkedin: "https://www.linkedin.com/in/deepak-vohra-925835160/",
     bio: "Ambassador and Special Advisor in Africa and in Ladakh",
   },{
-    name: "Dr Touseef Ahmed",
+    name: "Dr. Touseef Ahmed",
     image: touseef,
     linkedin: "https://www.linkedin.com/in/dr-touseef-ahmed-7a7a89253/",
     bio: "Secretary/Executive Director at Rotary International",
   },{
-    name: "Dr Randeep Guleria",
+    name: "Dr. Randeep Guleria",
     image: randeep,
     linkedin: "https://www.linkedin.com/",
-    bio: "Bio Details to be entered",
+    bio: "President of AIIMS Bilaspur. ",
   },{
     name: "Gaurav Gupta",
     image: gaurav,
@@ -155,7 +177,7 @@ const mentors = [
     name: "Satyajit Chakrabarti",
     image: satyajit,
     linkedin: "https://www.linkedin.com/in/csatyajit/",
-    bio: "Bio Details to be entered",
+    bio: "Director at Institute of Engineering & Management (IEM), Pro Vice Chancellor at University of Engineering and Management (UEM)",
   },
   {
     name: "Shaji V",
@@ -167,12 +189,8 @@ const mentors = [
     image: tvs,
     linkedin: "https://www.linkedin.com/in/tvsshenoy/",
     bio: "Executive in Charge at Tata Steel",
-  },{
-    name: "Praveen Khemka",
-    image: praveen,
-    linkedin: "https://www.linkedin.com/in/khemkap/",
-    bio: "Director at Tufwud | Founder at BSE",
-  },{
+  }
+  ,{
     name: "Prabal Chatterjee",
     image: prabal,
     linkedin: "https://www.linkedin.com/in/prabal-chatterjee-17759621/",
@@ -190,7 +208,7 @@ const mentors = [
     bio: "Tax Guru | Founder & Chairman KCC group",
   },
   {
-    name: "Capt Shubhendu kumar",
+    name: "Capt. Shubhendu kumar",
     image: skumar,
     linkedin: "https://www.linkedin.com/in/capt-shubhendu-kumar-tiger-049794185/",
     bio: "CEO at Corporate Access",
@@ -203,13 +221,114 @@ const mentors = [
   }
 ];
 
+const regionalBoardDelhi = [
+  {
+    name: "Dr. Tanvi Gupta",
+    image: tanvi,
+    linkedin: "https://www.linkedin.com/in/dr-tanvi-gupta-207b29217/",
+    bio: "Associate professor | Co-convenor, MSME Development Forum, Delhi | Convenor, Mantras Foundation (Delhi Chapter) ",
+  },
+  {
+    name: "Govind Khemka",
+    image: gKhemka,
+    linkedin: "https://www.linkedin.com/in/govindkhemka/",
+    bio: "Serial Entrepreneur | Startup Mentor | Business Development",
+  },
+  {
+    name: "Priyanka Khemka",
+    image: pKhemka,
+    linkedin: "https://www.linkedin.com/in/priyanka-khemka/",
+    bio: "Creative Writer",
+  },
+  // {
+  //   name: "Nidhi Bansal",
+  //   image: "",
+  //   linkedin: "",
+  //   bio: "",
+  // }
+];
+const regionalBoardRaipur = [
+  {
+    name: "Anil Passary",
+    image: passary,
+    linkedin: "https://www.linkedin.com/in/anil-passary-88945a28/",
+    bio: "Managing Director Urvarak Industries Pvt. Ltd.",
+  },
+  {
+    name: "Gaurav Agarwal",
+    image: gauravA,
+    linkedin: "https://www.linkedin.com/in/thehrgaurav/",
+    bio: "Founder @ Recex, Cxohiring.com & Cofounders Planet",
+  },
+  {
+    name: "Priya Lalwani",
+    image: lalwani,
+    linkedin: "https://www.linkedin.com/in/priya-lalwani-6367451b0/",
+    bio: "Experiential Marketing & Print Magazine Founder of Mauve",
+  },
+  {
+    name: "Aastha Amanat",
+    image: amanat,
+    linkedin: "https://www.linkedin.com/in/aastha-amanat/",
+    bio: "Co-Founder- Prasiddhi PR & Amanat Foundation | Founder- Women Web",
+  },
+];
+const regionalBoardIndore = [
+  {
+    name: "Adharsh Modi",
+    image: aModi,
+    linkedin: "https://www.linkedin.com/in/modiadarsh/",
+    bio: "Founder & CEO - Joytree Global | President BNI Brighton",
+  },
+  // {
+  //   name: "Nicky Shurekha",
+  //   image: "",
+  //   linkedin: "",
+  //   bio: "",
+  // },
+  // {
+  //   name: "Aarti Rathi",
+  //   image: "",
+  //   linkedin: "",
+  //   bio: "",
+  // },
+  {
+    name: "Capt BJ Singh",
+    image: bj,
+    linkedin: "https://www.linkedin.com/in/captbjsingh/",
+    bio: "Founder and Chief Executive Officer, at Absolute Training Solutions",
+  }
+];
+const regionalBoardBhubneshwar = [
+  {
+    name: "Gautam Mohanty",
+    image: gm,
+    linkedin: "https://www.linkedin.com/in/gautammohanty777/",
+    bio: "Senior Analyst at Accenture",
+  },
+  {
+    name: "Trinath Lenka",
+    image: lenka,
+    linkedin: "https://www.linkedin.com/in/trinath-lenka-cfp-a2343a19/",
+    bio: "Managing Director,(Wallet4wealth).TV Panelist & Columnist on Economy",
+  }
+];
+const regionalBoardMumbai = [
+  {
+    name: "Anshul Agarwal",
+    image: anshul,
+    linkedin: "https://www.linkedin.com/in/anshulagarwalca/",
+    bio: "Impact Funding | Debt fund raising | Financial Advisory ",
+  }
+];
+
 const advisoryBoard = [
   {
-    name: "Mr. Vibor Tandon",
-    role: "Vice-President, MASA Forum",
-    image: vt,
+    name: "Atul Singh",
+    role: "CSR & Sustainability Strategist | Executive Director, Mantras Foundation",
+    image: atul,
     linkedin: "https://www.linkedin.com/in/vibhor-tandon-3092661b/",
-    bio: "Risk Management,Capital Markets Leadership Coach.",
+    bio: "",
   },{
     name: "V.K.Jaitley",
     role: "National Co-ordinator at Youth4Nation",
@@ -218,19 +337,18 @@ const advisoryBoard = [
     bio: "",
   },
   {
-    name: "Mr. Vibor Tandon",
-    role: "Vice-President, MASA Forum",
-    image: vt,
-    linkedin: "https://www.linkedin.com/in/vibhor-tandon-3092661b/",
-    bio: "Risk Management,Capital Markets Leadership Coach.",
+    name: "Ina Bose",
+    role : "Academic and Communication Consultant",
+    image: ina,
+    linkedin: "https://www.linkedin.com/in/ina-bose-6270a940/",
+    bio: "",
   },
   {
-    name: "Mr. Vibor Tandon",
-    role: "Vice-President, MASA Forum",
-    image: vt,
-    linkedin: "https://www.linkedin.com/in/vibhor-tandon-3092661b/",
-    bio: "Risk Management,Capital Markets Leadership Coach.",
-  },
+    name: "Praveen Khemka",
+    image: praveen,
+    linkedin: "https://www.linkedin.com/in/khemkap/",
+    role: "Director at Tufwud | Founder at BSE",
+  }
 ];
 
 const TeamSection = ({ title, members }) => {
@@ -287,9 +405,19 @@ const OurTeam = () => {
         </div>
 
         <TeamSection title="National Board of Directors" members={teamMembers} />
-        <TeamSection title="Regional Board of Directors" members={advisoryBoard} />
-        <TeamSection title="Our Mentors" members={mentors} />
+
         <TeamSection title="Advisory Board" members={advisoryBoard} />
+
+        <TeamSection title="Our Mentors" members={mentors} />
+
+        <TeamSection title="Regional Board of Directors - Delhi" members={regionalBoardDelhi} />
+        <TeamSection title="Regional Board of Directors - Raipur" members={regionalBoardRaipur} />
+        <TeamSection title="Regional Board of Directors - Indore" members={regionalBoardIndore} />
+        <TeamSection title="Regional Board of Directors - Bhubaneswar" members={regionalBoardBhubneshwar} />
+        <TeamSection title="Regional Board of Directors - Mumbai" members={regionalBoardMumbai} />
+
+        
+        
       </div>
       <Footer />
     </div>
