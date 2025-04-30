@@ -43,21 +43,6 @@ const About = () => {
     },
   };
 
-  // Animation variants for logo
-  const logoVariants = {
-    hidden: { opacity: 0, scale: 0.8 },
-    visible: { 
-      opacity: 1, 
-      scale: 1,
-      rotate: [0, 5, -5, 0],
-      transition: { 
-        duration: 1.5,
-        ease: "easeOut",
-        rotate: { duration: 3, repeat: Infinity, repeatType: "loop" }
-      }
-    },
-  };
-
   return (
     <div className="bg-gray-900 text-white min-h-screen relative overflow-hidden">
       {/* Subtle Background Gradient */}
@@ -86,13 +71,10 @@ const About = () => {
               </motion.p>
             </div>
             <div className="md:w-1/2 flex justify-center">
-              <motion.img
+              <img
                 src={logo}
                 alt="MASA Logo"
                 className="w-64 md:w-96 h-auto"
-                variants={logoVariants}
-                initial="hidden"
-                animate="visible"
               />
             </div>
           </div>
