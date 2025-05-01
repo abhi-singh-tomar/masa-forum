@@ -45,12 +45,11 @@ function Navbar() {
   }, []);
 
   return (
-    <div className="bg-gray-900 text-white p-4 relative z-50">
-      {/* Container with max-w-6xl, no left padding */}
-      <div className="max-w-6xl mx-auto pl-0 pr-4 flex flex-col lg:flex-row lg:items-center">
-        {/* Header: Logo, Title, and Hamburger */}
-        <div className="flex justify-between items-center w-full">
-          <Link to="/" className="flex items-center gap-2 ml-0">
+    <div className="bg-gray-900 text-white p-4 sticky top-0 z-50">
+      <div className="max-w-6xl mx-auto px-0 flex flex-col lg:flex-row lg:items-center">
+        {/* Logo and hamburger */}
+        <div className="flex justify-between items-center w-full lg:w-auto">
+          <Link to="/" className="flex items-center gap-2">
             <img src={logo} alt="MASA Logo" className="h-10" />
             <span className="text-xl font-bold whitespace-nowrap">MASA Forum</span>
           </Link>
@@ -63,21 +62,22 @@ function Navbar() {
           </button>
         </div>
 
-        {/* Navigation Links and Register Button */}
+        {/* Navigation content */}
         <div
-          className={`flex flex-col lg:flex-row lg:items-center lg:gap-4 lg:justify-end w-full transition-all duration-300 ease-in-out ${
+          className={`flex flex-col lg:flex-row lg:items-center lg:flex-1 w-full transition-all duration-300 ease-in-out ${
             menuOpen ? "block mt-4" : "hidden lg:flex"
           }`}
         >
+          {/* Navigation items - shifted left with margin */}
           <nav
             ref={navRef}
-            className="flex flex-col lg:flex-row lg:items-center lg:gap-4 w-full lg:w-auto bg-gray-800 lg:bg-transparent"
+            className="flex flex-col lg:flex-row lg:items-center lg:ml-12 w-full lg:w-auto bg-gray-800 lg:bg-transparent"
           >
-            <div className="flex flex-col lg:flex-row lg:items-center lg:gap-4">
+            <div className="flex flex-col lg:flex-row lg:items-center lg:gap-6">
               {/* About Dropdown */}
               <div className="relative">
                 <button
-                  className="hover:text-yellow-500 px-2 py-2 w-full lg:w-auto text-left text-sm font-bold flex justify-between items-center lg:justify-start whitespace-nowrap"
+                  className="hover:text-yellow-500 px-3 py-2 w-full lg:w-auto text-left text-[0.95rem] font-bold flex justify-between items-center lg:justify-start whitespace-nowrap"
                   onClick={() => toggleDropdown("about")}
                 >
                   About
@@ -125,21 +125,21 @@ function Navbar() {
 
               <Link
                 to="/Ourinitiatives"
-                className="hover:text-yellow-500 px-2 py-2 text-sm font-bold whitespace-nowrap"
+                className="hover:text-yellow-500 px-3 py-2 text-[0.95rem] font-bold whitespace-nowrap"
                 onClick={handleNavItemClick}
               >
                 Our Initiatives
               </Link>
               <Link
                 to="/membership"
-                className="hover:text-yellow-500 px-2 py-2 text-sm font-bold whitespace-nowrap"
+                className="hover:text-yellow-500 px-3 py-2 text-[0.95rem] font-bold whitespace-nowrap"
                 onClick={handleNavItemClick}
               >
                 Membership
               </Link>
               <Link
                 to="/events"
-                className="hover:text-yellow-500 px-2 py-2 text-sm font-bold whitespace-nowrap"
+                className="hover:text-yellow-500 px-3 py-2 text-[0.95rem] font-bold whitespace-nowrap"
                 onClick={handleNavItemClick}
               >
                 Events
@@ -148,7 +148,7 @@ function Navbar() {
               {/* Resources Dropdown */}
               <div className="relative">
                 <button
-                  className="hover:text-yellow-500 px-2 py-2 w-full lg:w-auto text-left text-sm font-bold flex justify-between items-center lg:justify-start whitespace-nowrap"
+                  className="hover:text-yellow-500 px-3 py-2 w-full lg:w-auto text-left text-[0.95rem] font-bold flex justify-between items-center lg:justify-start whitespace-nowrap"
                   onClick={() => toggleDropdown("resources")}
                 >
                   Resources
@@ -189,14 +189,14 @@ function Navbar() {
 
               <Link
                 to="/MasainMedia"
-                className="hover:text-yellow-500 px-2 py-2 text-sm font-bold whitespace-nowrap"
+                className="hover:text-yellow-500 px-3 py-2 text-[0.95rem] font-bold whitespace-nowrap"
                 onClick={handleNavItemClick}
               >
                 MASA in Media
               </Link>
               <Link
                 to="/ContactUs"
-                className="hover:text-yellow-500 px-2 py-2 text-sm font-bold whitespace-nowrap"
+                className="hover:text-yellow-500 px-3 py-2 text-[0.95rem] font-bold whitespace-nowrap"
                 onClick={handleNavItemClick}
               >
                 Contact Us
@@ -204,27 +204,27 @@ function Navbar() {
             </div>
           </nav>
 
-          {/* Desktop Register Button */}
-          <div className="hidden lg:flex lg:items-center">
+          {/* Register Button - right aligned */}
+          <div className="hidden lg:flex lg:items-center lg:ml-auto">
             <Link
               to="/register"
-              className="bg-green-500 text-white px-3 py-2 rounded hover:bg-green-600 font-bold text-sm whitespace-nowrap"
+              className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 font-bold text-[0.95rem] whitespace-nowrap"
               onClick={handleNavItemClick}
             >
               Register
             </Link>
           </div>
+        </div>
 
-          {/* Mobile Register Button */}
-          <div className="lg:hidden bg-gray-800 px-4 pb-4">
-            <Link
-              to="/register"
-              className="block bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 text-center font-bold"
-              onClick={handleNavItemClick}
-            >
-              Register
-            </Link>
-          </div>
+        {/* Mobile Register Button */}
+        <div className={`lg:hidden bg-gray-800 px-4 pb-4 ${menuOpen ? "block" : "hidden"}`}>
+          <Link
+            to="/register"
+            className="block bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 text-center font-bold text-[0.95rem]"
+            onClick={handleNavItemClick}
+          >
+            Register
+          </Link>
         </div>
       </div>
     </div>
