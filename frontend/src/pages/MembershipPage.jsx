@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from "axios";
+import Footer from '../components/Footer';
 
 const membershipPlans = [
   {
@@ -147,6 +148,7 @@ const handlePayment = async (amount) => {
 
 export default function MembershipPage() {
   return (
+    <div>
     <div className="min-h-screen bg-gray-900 px-6 py-12 text-white">
       <div className="max-w-6xl mx-auto text-center">
         <h1 className="text-5xl font-bold mb-4 text-yellow-500">MSME And Startups Acceleration (MASA)</h1>
@@ -178,7 +180,11 @@ export default function MembershipPage() {
             </div>
           ))}
         </div>
+        
       </div>
+      
+    </div>
+    <Footer/>
     </div>
   );
 }

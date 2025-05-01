@@ -47,7 +47,7 @@ const MasainMedia = () => {
       date: "June 13, 2024",
       description: "Coverage of our quarterly magazine launch event in Mumbai.",
       image: photo3,
-      link: "https://ibgnews.com/2025/03/16/%F0%9D%90%8F%F0%9D%90%AB%F0%9D%90%A2%F0%9D%90%A6%F0%9D%90%9E-%F0%9D%90%88%F0%9D%90%A7%F0%9D%90%9F%F0%9D%90%A8%F0%9D%90%AC%F0%9D%90%9E%F0%9D%90%AB%F0%9D%90%AF-%F0%9D%90%96%F0%9D%90%A2%F0%9D%90%A7/"
+      link: "https://ibgnews.com/2025/03/16/%F0%9D%90%8F%F0%9D%90%AB%F0%9D%90%A2%F0%9D%90%A6%F0%9D%90%9E-%F0%9D%90%88%F0%9D%90%A7%F0%9D%90%9F%F0%9D%90%A8%F0%9D%90%AC%F0%9D%90%9E%F0%9D%90%AB%F0%9D%90%96%F0%9D%90%A2%F0%9D%90%A7/"
     },
     {
       id: 5,
@@ -66,6 +66,15 @@ const MasainMedia = () => {
       description: "Coverage by ABP Ananda of the Panel Discussion of the ",
       image: photo5,
       link: "https://bengali.abplive.com/"
+    },
+    {
+      id: 7,
+      title: "Inter College Business & Financial Conclave & Quiz 2024",
+      source: "Business Standard",
+      date: "April 20, 2024",
+      description: "The Inter College Business & Financial Conclave & Quiz 2024 brought together students and industry experts to discuss financial trends and compete in a dynamic quiz, fostering knowledge and innovation.",
+      image: photo2, // Reusing an existing image; replace with the correct one if available
+      link: "https://www.business-standard.com/"
     }
   ];
 
@@ -185,7 +194,6 @@ const MasainMedia = () => {
               >
                 Email Press Team
               </a>
-              
             </div>
           </motion.div>
         </div>

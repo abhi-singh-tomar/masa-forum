@@ -13,7 +13,6 @@ import network from "../assets/homePage-carousel-imgs/networking.JPG";
 import govt from "../assets/homePage-carousel-imgs/govt.jpg";
 import excel from "../assets/homePage-carousel-imgs/excellence.jpg";
 import masa from "../assets/homePage-carousel-imgs/whoWeAre.JPG";
-
 import kanika from "../assets/testimonial-imgs/kanika.png";
 
 const carouselImages = [
@@ -69,56 +68,6 @@ const testimonials = [
     name: "MSME Leader", 
     text: "This platform gave me the exposure I needed to take my business to the next level.", 
     profileImage: "https://i.pravatar.cc/100?img=50" 
-  },
-  { 
-    name: "Tech Startup", 
-    text: "Great platform to showcase your startup and get support from industry leaders!", 
-    profileImage: "https://i.pravatar.cc/100?img=60" 
-  },
-  { 
-    name: "Startup Enthusiast", 
-    text: "The guidance and networking I received at MASA Forum were truly game-changing!", 
-    profileImage: "https://i.pravatar.cc/100?img=70" 
-  },
-  { 
-    name: "Investor", 
-    text: "MASA Forum connects me with the most promising startups and visionary entrepreneurs.", 
-    profileImage: "https://i.pravatar.cc/100?img=80" 
-  },
-  { 
-    name: "Tech Founder", 
-    text: "I secured my first round of funding through MASA's network of investors!", 
-    profileImage: "https://i.pravatar.cc/100?img=11" 
-  },
-  { 
-    name: "Young Entrepreneur", 
-    text: "This platform gave me the mentorship I needed to turn my idea into reality.", 
-    profileImage: "https://i.pravatar.cc/100?img=12" 
-  },
-  { 
-    name: "Industry Expert", 
-    text: "The ecosystem here fosters collaboration and innovation like no other.", 
-    profileImage: "https://i.pravatar.cc/100?img=13" 
-  },
-  { 
-    name: "Women Entrepreneur", 
-    text: "MASA Forum has been instrumental in my startup journey, offering great support.", 
-    profileImage: "https://i.pravatar.cc/100?img=14" 
-  },
-  { 
-    name: "Blockchain Innovator", 
-    text: "This community is the best place to discuss, innovate, and grow in the blockchain space.", 
-    profileImage: "https://i.pravatar.cc/100?img=15" 
-  },
-  { 
-    name: "AgriTech Founder", 
-    text: "MASA Forum opened doors for funding and strategic partnerships in the AgriTech sector.", 
-    profileImage: "https://i.pravatar.cc/100?img=16" 
-  },
-  { 
-    name: "HealthTech Innovator", 
-    text: "A great ecosystem to learn, network, and grow in the HealthTech industry.", 
-    profileImage: "https://i.pravatar.cc/100?img=17" 
   }
 ];
 
@@ -138,23 +87,21 @@ const features = [
     desc: "Gain startup-relevant skills through expert-led training programs and industry-recognized certification courses.",
     icon: <FaUsers className="text-6xl text-yellow-500" />
   },
-  
-{
+  {
     title: "Growth & Funding Opportunities",
     desc: "Discover curated opportunities for funding, collaboration, market access, and growth tailored for startups and MSMEs.",
     icon: <FaHandHoldingUsd className="text-6xl text-purple-600" />
-},
-
+  },
   {
     title: "Startup Branding & Marketing Tools",
     desc: "Unlock branding strategies, marketing tools, and startup-specific resources to grow visibility and build your business identity.",
     icon: <FaClone className="text-6xl text-red-500" />
   },
- {
+  {
     title: "Nationwide Startup Network Access",
     desc: "Join a powerful national network of entrepreneurs, investors, incubators, and mentors to drive your startup forward.",
     icon: <FaCube className="text-6xl text-teal-500" />
-}
+  }
 ];
 
 const Home = () => {
@@ -162,7 +109,24 @@ const Home = () => {
   const [currentCarouselIndex, setCurrentCarouselIndex] = useState(0);
   const [showPopup, setShowPopup] = useState(false);
   const [direction, setDirection] = useState(0);
-  const testimonialsPerPage = 3;
+  const [testimonialsPerPage, setTestimonialsPerPage] = useState(1); // Start with 1 for mobile
+
+  // Responsive testimonial count
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 1024) {
+        setTestimonialsPerPage(3);
+      } else if (window.innerWidth >= 768) {
+        setTestimonialsPerPage(2);
+      } else {
+        setTestimonialsPerPage(1);
+      }
+    };
+
+    handleResize(); // Set initial value
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   // Carousel auto-rotation
   useEffect(() => {
@@ -232,8 +196,6 @@ const Home = () => {
     };
   }, []);
 
- 
-
   const testimonialVariants = {
     enter: (dir) => ({
       x: dir > 0 ? 500 : -500,
@@ -255,23 +217,15 @@ const Home = () => {
   };
 
   const carouselVariants = {
-    enter: (dir) => ({
-      opacity: 0,
-    }),
-    center: {
-      opacity: 1,
-      transition: { duration: 1 }
-    },
-    exit: {
-      opacity: 0,
-      transition: { duration: 1 }
-    }
+    enter: { opacity: 0 },
+    center: { opacity: 1 },
+    exit: { opacity: 0 }
   };
 
   return (
     <div className="bg-gray-900 min-h-screen">
-      {/* Carousel Section */}
-      <section className="relative h-screen">
+      {/* Carousel Section - Improved for Mobile */}
+      <section className="relative h-[60vh] sm:h-screen">
         <AnimatePresence mode="wait">
           <motion.div
             key={currentCarouselIndex}
@@ -284,11 +238,11 @@ const Home = () => {
             <img 
               src={carouselImages[currentCarouselIndex].url} 
               alt={carouselImages[currentCarouselIndex].alt}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-center"
             />
-            <div className="absolute inset-0 bg-black/50 flex items-center  justify-center">
+            <div className="absolute inset-0 bg-black/50 flex items-center justify-center px-4">
               <motion.h2 
-                className="text-4xl md:text-6xl font-bold text-white text-opacity-70 text-center px-4"
+                className="text-2xl sm:text-4xl md:text-5xl font-bold text-white text-center"
                 initial={{ y: 50, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.5 }}
@@ -311,21 +265,21 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Hero Section */}
+      {/* Hero Section - Improved for Mobile */}
       <motion.section
-        className="relative py-20 flex flex-col justify-center items-center text-center px-6 bg-gray-800"
+        className="relative py-12 sm:py-20 flex flex-col justify-center items-center text-center px-4 sm:px-6 bg-gray-800"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
         <motion.div
-          className="relative z-10 text-white"
+          className="relative z-10 text-white w-full max-w-4xl"
           initial={{ scale: 0.9 }}
           animate={{ scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <h1 className="text-5xl md:text-6xl font-bold mb-4 drop-shadow-lg">
-            Welcome <span className="text-3xl md:text-4xl">to</span>{" "}
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 drop-shadow-lg">
+            Welcome <span className="text-2xl sm:text-3xl md:text-4xl">to</span>{" "}
             <span className="text-yellow-400">
               {displayedText}
               <motion.span
@@ -338,7 +292,7 @@ const Home = () => {
           </h1>
 
           <motion.p
-            className="text-lg md:text-xl mb-8 max-w-2xl mx-auto"
+            className="text-base sm:text-lg md:text-xl mb-8 mx-auto max-w-2xl"
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.5 }}
@@ -346,14 +300,15 @@ const Home = () => {
             Helping Startups and MSMEs Thrive with Guidance, Tools & Expert Mentorship
           </motion.p>
 
-          <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center">
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              className="w-full sm:w-auto"
             >
               <Link
                 to="/contactUs"
-                className="px-6 py-3 text-lg bg-yellow-500 hover:bg-yellow-400 text-gray-900 rounded-lg font-bold border-2 border-yellow-300 hover:border-yellow-200 transition-all duration-300"
+                className="block w-full sm:w-auto px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-lg bg-yellow-500 hover:bg-yellow-400 text-gray-900 rounded-lg font-bold border-2 border-yellow-300 hover:border-yellow-200 transition-all duration-300"
               >
                 Event Registration
               </Link>
@@ -364,10 +319,11 @@ const Home = () => {
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              className="w-full sm:w-auto"
             >
               <Link
                 to="/membership"
-                className="px-6 py-3 text-lg bg-yellow-500 hover:bg-yellow-400 text-gray-900 rounded-lg font-bold border-2 border-yellow-300 hover:border-yellow-200 transition-all duration-300"
+                className="block w-full sm:w-auto px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-lg bg-yellow-500 hover:bg-yellow-400 text-gray-900 rounded-lg font-bold border-2 border-yellow-300 hover:border-yellow-200 transition-all duration-300"
               >
                 Membership
               </Link>
@@ -378,10 +334,11 @@ const Home = () => {
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              className="w-full sm:w-auto"
             >
               <Link
                 to="/register"
-                className="px-6 py-3 text-lg bg-yellow-500 hover:bg-yellow-400 text-gray-900 rounded-lg font-bold border-2 border-yellow-300 hover:border-yellow-200 transition-all duration-300"
+                className="block w-full sm:w-auto px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-lg bg-yellow-500 hover:bg-yellow-400 text-gray-900 rounded-lg font-bold border-2 border-yellow-300 hover:border-yellow-200 transition-all duration-300"
               >
                 Enroll for Acceleration
               </Link>
@@ -390,49 +347,50 @@ const Home = () => {
         </motion.div>
       </motion.section>
 
-      {/* Features Section */}
+      {/* Features Section - Improved for Mobile */}
       <motion.section
-        className="py-20 px-6 bg-gray-800"
+        className="py-12 sm:py-20 px-4 sm:px-6 bg-gray-800"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true, margin: "-100px" }}
       >
-        <h2 className="text-3xl font-bold text-center text-white mb-12">
+        <h2 className="text-2xl sm:text-3xl font-bold text-center text-white mb-8 sm:mb-12">
           Our Key Features
         </h2>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {features.map((feature, i) => (
             <motion.div
               key={feature.title}
-              className="p-6 bg-gray-900 rounded-xl"
+              className="p-4 sm:p-6 bg-gray-900 rounded-xl"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.2 }}
+              transition={{ delay: i * 0.1 }}
               viewport={{ once: true }}
             >
               <div className="text-center">
-                <div className="flex justify-center mb-4">{feature.icon}</div>
-                <h3 className="text-xl font-semibold mb-2 text-white">{feature.title}</h3>
-                <p className="text-gray-400">{feature.desc}</p>
+                <div className="flex justify-center mb-3 sm:mb-4">{feature.icon}</div>
+                <h3 className="text-lg sm:text-xl font-semibold mb-2 text-white">{feature.title}</h3>
+                <p className="text-sm sm:text-base text-gray-400">{feature.desc}</p>
               </div>
             </motion.div>
           ))}
         </div>
       </motion.section>
 
-      {/* Testimonials Section */}
-      <motion.section className="py-16 bg-gray-800">
-        <h2 className="text-3xl font-bold text-center text-white mb-12">
+      {/* Testimonials Section - Improved for Mobile */}
+      <motion.section className="py-12 sm:py-16 bg-gray-800 px-4">
+        <h2 className="text-2xl sm:text-3xl font-bold text-center text-white mb-8 sm:mb-12">
           Member Insights
         </h2>
 
-        <div className="flex items-center justify-center gap-4 px-6">
+        <div className="flex items-center justify-center gap-2 sm:gap-4">
           <button
             onClick={prevSlide}
             className="p-2 bg-gray-800 rounded-full hover:bg-gray-700 transition"
+            aria-label="Previous testimonial"
           >
-            <MdArrowBack className="text-2xl text-white" />
+            <MdArrowBack className="text-xl sm:text-2xl text-white" />
           </button>
 
           <div className="flex overflow-hidden max-w-4xl mx-auto">
@@ -447,17 +405,17 @@ const Home = () => {
                     initial="enter"
                     animate="center"
                     exit="exit"
-                    className="w-full md:w-96 p-6 bg-white rounded-xl mx-2"
+                    className="w-full min-w-full sm:min-w-[50%] lg:min-w-[33.333%] p-4 sm:p-6 bg-white rounded-xl mx-1 sm:mx-2"
                   >
-                    <div className="flex items-center mb-4">
+                    <div className="flex items-center mb-3 sm:mb-4">
                       <img
                         src={testimonial.profileImage}
                         alt={testimonial.name}
-                        className="w-12 h-12 rounded-full mr-4"
+                        className="w-10 h-10 sm:w-12 sm:h-12 rounded-full mr-3 sm:mr-4"
                       />
-                      <h3 className="text-gray-900 font-semibold">{testimonial.name}</h3>
+                      <h3 className="text-gray-900 font-semibold text-sm sm:text-base">{testimonial.name}</h3>
                     </div>
-                    <p className="text-gray-600 italic">"{testimonial.text}"</p>
+                    <p className="text-gray-600 italic text-sm sm:text-base">"{testimonial.text}"</p>
                   </motion.div>
                 ))}
             </AnimatePresence>
@@ -466,21 +424,22 @@ const Home = () => {
           <button
             onClick={nextSlide}
             className="p-2 bg-gray-800 rounded-full hover:bg-gray-700 transition"
+            aria-label="Next testimonial"
           >
-            <MdArrowForward className="text-2xl text-white" />
+            <MdArrowForward className="text-xl sm:text-2xl text-white" />
           </button>
         </div>
       </motion.section>
 
-      {/* CTA Section */}
+      {/* CTA Section - Improved for Mobile */}
       <motion.section
-        className="py-16 bg-gray-800 text-center"
+        className="py-12 sm:py-16 bg-gray-800 text-center px-4"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
       >
-        <div className="max-w-2xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-white mb-6">
+        <div className="max-w-2xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4 sm:mb-6">
             Take your startup or small business to the next level with MASA Forum.
           </h2>
           <motion.div
@@ -489,7 +448,7 @@ const Home = () => {
           >
             <Link
               to="/register"
-              className="inline-block px-8 py-3 bg-yellow-500 text-gray-900 rounded-lg font-semibold"
+              className="inline-block px-6 py-2 sm:px-8 sm:py-3 bg-yellow-500 text-gray-900 rounded-lg font-semibold text-sm sm:text-base"
             >
               Join Now
             </Link>
@@ -501,19 +460,19 @@ const Home = () => {
       <AnimatePresence>
         {showPopup && (
           <motion.div
-            className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50"
+            className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
             <motion.div
-              className="bg-white p-8 rounded-xl max-w-md relative"
+              className="bg-white p-6 sm:p-8 rounded-xl max-w-md w-full relative mx-4"
               initial={{ scale: 0.8 }}
               animate={{ scale: 1 }}
               exit={{ scale: 0.8 }}
             >
-              <h2 className="text-2xl font-bold mb-6">Why are you here?</h2>
-              <div className="space-y-4">
+              <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">Why are you here?</h2>
+              <div className="space-y-3 sm:space-y-4">
                 {[
                   "For MASA Awards",
                   "For Membership",
@@ -523,7 +482,7 @@ const Home = () => {
                   <button
                     key={option}
                     onClick={() => handlePopupSelection(option)}
-                    className="w-full py-2 px-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+                    className="w-full py-2 px-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition text-sm sm:text-base"
                   >
                     {option}
                   </button>
@@ -531,7 +490,8 @@ const Home = () => {
               </div>
               <button
                 onClick={() => setShowPopup(false)}
-                className="absolute top-4 right-4 text-gray-600 hover:text-gray-800"
+                className="absolute top-2 right-2 text-gray-600 hover:text-gray-800"
+                aria-label="Close popup"
               >
                 <IoClose size={24} />
               </button>
@@ -540,7 +500,7 @@ const Home = () => {
         )}
       </AnimatePresence>
 
-        <Faqs />
+      <Faqs />
       <Footer />
     </div>
   );
