@@ -21,6 +21,14 @@ function Navbar() {
     setDropdownOpen((prev) => (prev === menu ? null : menu));
   };
 
+  // Close menu when a nav item is clicked (mobile)
+  const handleNavItemClick = () => {
+    if (window.innerWidth < 1024) {
+      setMenuOpen(false);
+      setDropdownOpen(null);
+    }
+  };
+
   // Close dropdowns and mobile menu when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -39,94 +47,172 @@ function Navbar() {
   return (
     <div className="bg-gray-900 text-white p-4 relative z-50">
       {/* Container with max-w-6xl */}
-      <div className="container mx-auto max-w-6xl flex justify-between items-center">
-        {/* Logo & Title */}
-        <Link to="/" className="flex items-center gap-2">
-          <img src={logo} alt="MASA Logo" className="h-10" />
-          <span className="text-xl font-bold whitespace-nowrap">MASA Forum</span>
-        </Link>
+      <div className="container mx-auto max-w-6xl">
+        {/* Header: Logo, Title, and Hamburger */}
+        <div className="flex justify-between items-center">
+          <Link to="/" className="flex items-center gap-2">
+            <img src={logo} alt="MASA Logo" className="h-10" />
+            <span className="text-xl font-bold whitespace-nowrap">MASA Forum</span>
+          </Link>
+          <button
+            className="lg:hidden text-white text-2xl"
+            onClick={toggleMenu}
+            aria-label="Toggle menu"
+          >
+            {menuOpen ? <FaTimes /> : <FaBars />}
+          </button>
+        </div>
 
         {/* Navigation Links */}
         <nav
           ref={navRef}
-          className={`lg:flex lg:justify-center lg:gap-6 transition-all duration-300 ease-in-out ${
-            menuOpen ? "block" : "hidden"
-          } lg:block absolute top-full left-0 w-full bg-gray-800 lg:bg-transparent lg:static`}
+          className={`transition-all duration-300 ease-in-out lg:flex lg:justify-center lg:gap-6 lg:items-center lg:mt-0 ${
+            menuOpen ? "block mt-4" : "hidden"
+          }`}
         >
-          <div className="flex flex-col lg:flex-row lg:items-center">
+          <div className="flex flex-col lg:flex-row lg:items-center gap-0 lg:gap-6 bg-gray-800 lg:bg-transparent">
             {/* About Dropdown */}
             <div className="relative">
               <button
-                className="hover:text-yellow-500 px-4 py-2 w-full lg:w-auto text-left font-bold"
+                className="hover:text-yellow-500 px-4 py-2 w-full lg:w-auto text-left font-bold flex justify-between items-center lg:justify-start"
                 onClick={() => toggleDropdown("about")}
               >
                 About
+                <span className="lg:hidden">
+                  {dropdownOpen === "about" ? "−" : "+"}
+                </span>
               </button>
               <div
                 className={`lg:absolute bg-white text-black shadow-lg rounded-lg p-2 min-w-[150px] transform transition-all duration-200 ease-in-out origin-top ${
-                  dropdownOpen === "about" ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0 pointer-events-none"
+                  dropdownOpen === "about" 
+                    ? "max-h-96 opacity-100 scale-y-100" 
+                    : "max-h-0 opacity-0 scale-y-0 pointer-events-none overflow-hidden"
                 } lg:mt-2 mt-0`}
               >
-                <Link to="/about" className="block px-4 py-2 hover:bg-yellow-500 font-bold">
+                <Link 
+                  to="/about" 
+                  className="block px-4 py-2 hover:bg-yellow-500 font-bold"
+                  onClick={handleNavItemClick}
+                >
                   Mission/Vision
                 </Link>
-                <Link to="/team" className="block px-4 py-2 hover:bg-yellow-500 font-bold">
+                <Link 
+                  to="/team" 
+                  className="block px-4 py-2 hover:bg-yellow-500 font-bold"
+                  onClick={handleNavItemClick}
+                >
                   Our Team
                 </Link>
-                <Link to="/partners" className="block px-4 py-2 hover:bg-yellow-500 font-bold">
+                <Link 
+                  to="/partners" 
+                  className="block px-4 py-2 hover:bg-yellow-500 font-bold"
+                  onClick={handleNavItemClick}
+                >
                   Our Partners
                 </Link>
-                <Link to="/ourmembers" className="block px-4 py-2 hover:bg-yellow-500 font-bold">
+                <Link 
+                  to="/ourmembers" 
+                  className="block px-4 py-2 hover:bg-yellow-500 font-bold"
+                  onClick={handleNavItemClick}
+                >
                   Our Members
                 </Link>
               </div>
             </div>
 
-            <Link to="/Ourinitiatives" className="hover:text-yellow-500 px-4 py-2 font-bold">
+            <Link 
+              to="/Ourinitiatives" 
+              className="hover:text-yellow-500 px-4 py-2 font-bold"
+              onClick={handleNavItemClick}
+            >
               Our Initiatives
             </Link>
-            <Link to="/membership" className="hover:text-yellow-500 px-4 py-2 font-bold">
+            <Link 
+              to="/membership" 
+              className="hover:text-yellow-500 px-4 py-2 font-bold"
+              onClick={handleNavItemClick}
+            >
               Membership
             </Link>
-            <Link to="/events" className="hover:text-yellow-500 px-4 py-2 font-bold">
+            <Link 
+              to="/events" 
+              className="hover:text-yellow-500 px-4 py-2 font-bold"
+              onClick={handleNavItemClick}
+            >
               Events
             </Link>
 
             {/* Resources Dropdown */}
             <div className="relative">
               <button
-                className="hover:text-yellow-500 px-4 py-2 w-full lg:w-auto text-left font-bold"
+                className="hover:text-yellow-500 px-4 py-2 w-full lg:w-auto text-left font-bold flex justify-between items-center lg:justify-start"
                 onClick={() => toggleDropdown("resources")}
               >
                 Resources
+                <span className="lg:hidden">
+                  {dropdownOpen === "resources" ? "−" : "+"}
+                </span>
               </button>
               <div
                 className={`lg:absolute bg-white text-black shadow-lg rounded-lg p-2 min-w-[150px] transform transition-all duration-200 ease-in-out origin-top ${
-                  dropdownOpen === "resources" ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0 pointer-events-none"
+                  dropdownOpen === "resources" 
+                    ? "max-h-96 opacity-100 scale-y-100" 
+                    : "max-h-0 opacity-0 scale-y-0 pointer-events-none overflow-hidden"
                 } lg:mt-2 mt-0`}
               >
-                <Link to="/BlogsPage" className="block px-4 py-2 hover:bg-yellow-500 font-bold">
+                <Link 
+                  to="/BlogsPage" 
+                  className="block px-4 py-2 hover:bg-yellow-500 font-bold"
+                  onClick={handleNavItemClick}
+                >
                   Blogs
                 </Link>
-                <Link to="/MSMENews" className="block px-4 py-2 hover:bg-yellow-500 font-bold">
+                <Link 
+                  to="/MSMENews" 
+                  className="block px-4 py-2 hover:bg-yellow-500 font-bold"
+                  onClick={handleNavItemClick}
+                >
                   MSME News
                 </Link>
-                <Link to="/SchemesPage" className="block px-4 py-2 hover:bg-yellow-500 font-bold">
+                <Link 
+                  to="/SchemesPage" 
+                  className="block px-4 py-2 hover:bg-yellow-500 font-bold"
+                  onClick={handleNavItemClick}
+                >
                   Schemes
                 </Link>
               </div>
             </div>
 
-            <Link to="/MasainMedia" className="hover:text-yellow-500 px-4 py-2 font-bold">
+            <Link 
+              to="/MasainMedia" 
+              className="hover:text-yellow-500 px-4 py-2 font-bold"
+              onClick={handleNavItemClick}
+            >
               MASA in Media
             </Link>
-            <Link to="/ContactUs" className="hover:text-yellow-500 px-4 py-2 font-bold">
+            <Link 
+              to="/ContactUs" 
+              className="hover:text-yellow-500 px-4 py-2 font-bold"
+              onClick={handleNavItemClick}
+            >
               Contact Us
+            </Link>
+          </div>
+
+          {/* Mobile Auth Buttons - Integrated into nav */}
+          <div className="lg:hidden bg-gray-800 px-4 pb-4">
+            <Link
+              to="/register"
+              className="block bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 text-center font-bold"
+              onClick={handleNavItemClick}
+            >
+              Register
             </Link>
           </div>
         </nav>
 
-        {/* Right-Aligned Auth Buttons */}
+        {/* Desktop Auth Buttons */}
         <div className="hidden lg:flex gap-4">
           <Link
             to="/register"
@@ -135,27 +221,7 @@ function Navbar() {
             Register
           </Link>
         </div>
-
-        {/* Hamburger Button (Mobile) */}
-        <button
-          className="lg:hidden text-white text-2xl"
-          onClick={toggleMenu}
-        >
-          {menuOpen ? <FaTimes /> : <FaBars />}
-        </button>
       </div>
-
-      {/* Mobile Auth Buttons */}
-      {menuOpen && (
-        <div className="flex flex-col items-center gap-4 mt-4 lg:hidden transition-all duration-300">
-          <Link
-            to="/register"
-            className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 w-32 text-center font-bold"
-          >
-            Register
-          </Link>
-        </div>
-      )}
     </div>
   );
 }
