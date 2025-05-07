@@ -13,6 +13,7 @@ import network from "../assets/homePage-carousel-imgs/networking.JPG";
 import govt from "../assets/homePage-carousel-imgs/govt.jpg";
 import excel from "../assets/homePage-carousel-imgs/excellence.jpg";
 import masa from "../assets/homePage-carousel-imgs/whoWeAre.JPG";
+import delhi from "../assets/homePage-carousel-imgs/delhi-chap.jpg";
 import kanika from "../assets/testimonial-imgs/kanika.png";
 
 const carouselImages = [
@@ -40,6 +41,11 @@ const carouselImages = [
     url: network,
     alt: "National Networking Access",
     caption: "National Networking Access"
+  },
+  {
+    url: delhi,
+    alt: "Delhi Chapter of MASA",
+    caption: "Delhi Chapter of MASA"
   }
 ];
 
