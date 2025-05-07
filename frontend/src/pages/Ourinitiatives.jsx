@@ -38,8 +38,6 @@ const initiatives = [
       { image: awardLogo, title: "Startup of the Year", description: "Awarded to the most innovative startup." },
       { image: awards1, title: "MSME Leader", description: "Recognizing outstanding MSME leaders." },
       { image: awards2, title: "Innovation Excellence", description: "Celebrating technological innovation." },
-      // { image: aboutImage4, title: "Social Impact Award", description: "For significant community contributions." },
-      // { image: aboutImage5, title: "Best Workplace", description: "Honoring exemplary work environments." },
     ]
   },
   {
@@ -47,8 +45,6 @@ const initiatives = [
     description: "Showcasing the most influential emerging startups and MSMEs in India through comprehensive profiling and recognition.",
     icon: <FaLightbulb className="text-yellow-400 text-4xl" />,
     cards: [
-      // { image: aboutImage, title: "Brand Story", description: "Highlighting impactful brand journeys." },
-      // { image: aboutImage2, title: "Founder Spotlight", description: "Celebrating visionary entrepreneurs." },
       { image: powerBrand, title: "My Power Brand Podcasts", description: "Our podcast is a treasure trove of magical mantras that can turn your life around." },
       { image: powerBrand1, title: "Podcast shoot Day-1", description: "Ft Twirl Store Founder Sujata Chatterjee" },
       { image: powerBrand2, title: "Podcast shoot Day-6", description: "Ft Renowned matchmaker Kusum Bhandari" },
@@ -59,11 +55,8 @@ const initiatives = [
     description: "Quarterly digital magazine covering success stories, government schemes, and the latest business trends for MSMEs.",
     icon: <FaNewspaper className="text-yellow-400 text-4xl" />,
     cards: [
-      // { image: aboutImage, title: "Policy Updates", description: "Stay updated on government policies." },
-      // { image: aboutImage2, title: "Success Stories", description: "Inspiring journeys of MSME growth." },
       { image: times, title: "Market Insights", description: "Trends shaping the future." },
       { image: comingSoon, title: "www.msmetimes.com", description: "" },
-      // { image: aboutImage5, title: "Resources Hub", description: "Tools and resources for MSMEs." },
     ]
   },
   {
@@ -73,7 +66,6 @@ const initiatives = [
     cards: [
       { image: kalpataru, title: "Funding Access", description: "Connecting startups to investors." },
       { image: kalpataru2, title: "Mentorship Programs", description: "Guidance from industry veterans." },
-      // { image: aboutImage3, title: "Business Acceleration", description: "Fast-tracking business growth." },
     ]
   },
   {
@@ -153,6 +145,20 @@ const Ourinitiatives = () => {
               </motion.div>
             ))}
           </div>
+
+          {/* Know More Button for MASA Awards */}
+          {initiative.title === "MASA Awards" && (
+            <div className="text-center mt-8">
+              <a
+                href="https://masaawards.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-yellow-400 text-gray-800 font-bold py-3 px-6 rounded-full hover:bg-yellow-500 transition-colors duration-300"
+              >
+                Know More
+              </a>
+            </div>
+          )}
         </div>
       ))}
 
