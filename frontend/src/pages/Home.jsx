@@ -2,6 +2,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import { FaChalkboardTeacher, FaHandHoldingUsd, FaUsers, FaBusinessTime, FaClone, FaCube } from "react-icons/fa";
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+
 import { MdArrowBack, MdArrowForward } from "react-icons/md";
 import Footer from "../components/Footer";
 import { IoClose } from "react-icons/io5";
@@ -165,10 +167,34 @@ const Home = () => {
     }
   }, []);
 
-  const handlePopupSelection = async (option) => {
-    await sendUserIntent(option);
-    setShowPopup(false);
-  };
+
+const navigate = useNavigate();
+
+const handlePopupSelection = async (option) => {
+  await sendUserIntent(option); // Send to backend
+  setShowPopup(false);
+
+  // Navigate based on user intent
+  setTimeout(() => {
+  switch (option) {
+    case "For MASA Awards":
+      navigate("/Ourinitiatives");
+      break;
+    case "For Membership":
+      navigate("/membership");
+      break;
+    case "Startup Incubation":
+      navigate("/register");
+      break;
+    case "know About MASA":
+      navigate("/");
+      break;
+    default:
+      break;
+  }
+},300); // Delay for 300ms to allow popup to close
+};
+
 
   // Text animation
   const text = "MASA Forum";
@@ -464,48 +490,47 @@ const Home = () => {
 
       {/* Popup Modal */}
       <AnimatePresence>
-        {showPopup && (
+      {showPopup && (
+        <motion.div
+          className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-4"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+        >
           <motion.div
-            className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-4"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
+            className="bg-white p-6 sm:p-8 rounded-xl max-w-md w-full relative mx-4"
+            initial={{ scale: 0.8 }}
+            animate={{ scale: 1 }}
+            exit={{ scale: 0.8 }}
           >
-            <motion.div
-              className="bg-white p-6 sm:p-8 rounded-xl max-w-md w-full relative mx-4"
-              initial={{ scale: 0.8 }}
-              animate={{ scale: 1 }}
-              exit={{ scale: 0.8 }}
+            <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">Why are you here?</h2>
+            <div className="space-y-3 sm:space-y-4">
+              {[
+                "For MASA Awards",
+                "For Membership",
+                "Startup Incubation",
+                "know About MASA"
+              ].map((option) => (
+                <button
+                  key={option}
+                  onClick={() => handlePopupSelection(option)}
+                  className="w-full py-2 px-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition text-sm sm:text-base"
+                >
+                  {option}
+                </button>
+              ))}
+            </div>
+            <button
+              onClick={() => setShowPopup(false)}
+              className="absolute top-2 right-2 text-gray-600 hover:text-gray-800"
+              aria-label="Close popup"
             >
-              <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">Why are you here?</h2>
-              <div className="space-y-3 sm:space-y-4">
-                {[
-                  "For MASA Awards",
-                  "For Membership",
-                  "Startup Incubation",
-                  "know About MASA"
-                ].map((option) => (
-                  <button
-                    key={option}
-                    onClick={() => handlePopupSelection(option)}
-                    className="w-full py-2 px-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition text-sm sm:text-base"
-                  >
-                    {option}
-                  </button>
-                ))}
-              </div>
-              <button
-                onClick={() => setShowPopup(false)}
-                className="absolute top-2 right-2 text-gray-600 hover:text-gray-800"
-                aria-label="Close popup"
-              >
-                <IoClose size={24} />
-              </button>
-            </motion.div>
+              <IoClose size={24} />
+            </button>
           </motion.div>
-        )}
-      </AnimatePresence>
-
+        </motion.div>
+      )}
+    </AnimatePresence>
       <Faqs />
       <Footer />
     </div>
