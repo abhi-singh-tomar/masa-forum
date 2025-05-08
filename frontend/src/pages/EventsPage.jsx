@@ -16,6 +16,7 @@ import past7 from "../assets/event-imgs/past7.png";
 import past8 from "../assets/event-imgs/past8.png";
 import past9 from "../assets/event-imgs/past9.png";
 import past10 from "../assets/event-imgs/past10.jpg";
+import past11 from "../assets/event-imgs/past11.jpg";
 // ----------------------------------------------------PAST IMAGES
 // Replace with your actual image imports
 import poddar from "../assets/event-imgs/leadershipProgram.JPG";
@@ -29,15 +30,24 @@ const EventsPage = () => {
     upcoming: [
       {
         id: 1,
-        title: "Eastern India Job Fair & career Expo 2025",
-        date: "May 4th-5th, 2025",
-        location: "Indian Council for Cultural Relations (ICCR), Kolkata",
-        description: "Our vision is to establish this event as the leading career & networking event in the region. Organized by Magical Mantras Pvt. Ltd in collaboration with MASA & CWBTA.",
-        fullDescription: "This three-day event will feature keynote speeches from tech pioneers, hands-on workshops, and networking opportunities with industry leaders. Don't miss our exclusive product launches and panel discussions.",
+        title: "No upcoming events",
+        date: "",
+        location: "",
+        description: "",
+        fullDescription: "",
         image: upcoming1
       }
     ],
     past: [
+      {
+        id: 2,
+        title: "Eastern India Job Fair & career Expo 2025",
+        date: "May 4th-5th, 2025",
+        location: "Indian Council for Cultural Relations (ICCR), Kolkata",
+        description: "Our vision was to establish this event as the leading career & networking event in the region. Organized by Magical Mantras Pvt. Ltd in collaboration with MASA & CWBTA.",
+        fullDescription: "This three-day event featured keynote speeches from tech pioneers, hands-on workshops, and networking opportunities with industry leaders.",
+        image: past11
+      },
       {
         id: 3,
         title: "MASA Global Education Conclave & Awards 2025, Kolkata",
