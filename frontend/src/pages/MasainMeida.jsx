@@ -9,10 +9,20 @@ import photo2 from "../assets/masa-in-media-imgs/quiz.png";
 import photo3 from "../assets/masa-in-media-imgs/hindu.jpg";
 import photo4 from "../assets/masa-in-media-imgs/chronicle.jpg";
 import photo5 from "../assets/masa-in-media-imgs/bengalNews.jpg";
+import photo6 from "../assets/masa-in-media-imgs/job-fair.jpg";
 
 const MasainMedia = () => {
   // Sample media coverage data
   const mediaCoverage = [
+    {
+      id: 0,
+      title: "East India Career & Job Fair 2025, Kolkata",
+      source: "The Telegraph",
+      date: "4th - 5th May",
+      description: "Student at Eastern India Job Fair & Career Expo at IICR on Saturday. The two-day Eastern India Job Fair & Career Expo Kolkata 2025, in association with MSME & Startup Accelerator Pvt Ltd (MASA) and the Confederation of West Bengal Trade Association (CWBTA), connected prospective job seekers with employers.",
+      image: photo6,
+      link: "https://www.thetelegraph.com/"
+    },
     {
       id: 1,
       title: "Global Education Conclave 2025",
@@ -75,7 +85,7 @@ const MasainMedia = () => {
       description: "The Inter College Business & Financial Conclave & Quiz 2024 brought together students and industry experts to discuss financial trends and compete in a dynamic quiz, fostering knowledge and innovation.",
       image: photo2, // Reusing an existing image; replace with the correct one if available
       link: "https://www.business-standard.com/"
-    }
+    },
   ];
 
   // Featured media (for the hero section)
