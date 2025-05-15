@@ -3,6 +3,7 @@ import Footer from '../components/Footer';
 
 // --------------------------------------------------Upcoming Images
 import upcoming1 from "../assets/event-imgs/upcoming1.png";
+import upcoming2 from "../assets/event-imgs/upcoming-2.JPG";
 // --------------------------------------------------Upcoming Images
 
 // ---------------------------------------------------PAST IMAGES
@@ -30,22 +31,40 @@ const EventsPage = () => {
     upcoming: [
       {
         id: 1,
-        title: "No upcoming events",
-        date: "",
-        location: "",
+        title: "Environment Day 2025",
+        date: "5th June 2025",
+        location: "National Library, Kolkata",
         description: "",
         fullDescription: "",
-        image: upcoming1
+        image: upcoming2
+      },
+      {
+        id: 2,
+        title: "MASA Women's Excellence Conclave, Expo & Awards 2025",
+        date: "6th June 2025",
+        location: "Hotel Astor, Kolkata",
+        description: "",
+        fullDescription: "",
+        image: past2
       }
     ],
     past: [
       {
-        id: 2,
+        id: 1,
         title: "Eastern India Job Fair & career Expo 2025",
         date: "May 4th-5th, 2025",
         location: "Indian Council for Cultural Relations (ICCR), Kolkata",
         description: "Our vision was to establish this event as the leading career & networking event in the region. Organized by Magical Mantras Pvt. Ltd in collaboration with MASA & CWBTA.",
         fullDescription: "This three-day event featured keynote speeches from tech pioneers, hands-on workshops, and networking opportunities with industry leaders.",
+        image: past11
+      },
+      {
+        id: 2,
+        title: "Raipur Conclave 2025",
+        date: "April 12th - 13th, 2025",
+        location: "Hotel Sayaji Raipur",
+        description: `MASA Raipur Conclave — Connecting Entrepreneurs, Investors & Ecosystem Leaders. The MASA Raipur Conclave was conceived to address the growing need for structured support, visibility, and networking opportunities for MSMEs and startups in Chhattisgarh and surrounding regions.`,
+        fullDescription: `Additionally, the event emphasized inclusivity and women’s leadership through Women’s MASA, encouraging and recognizing women entrepreneurs as vital contributors to the region’s growth story.`,
         image: past11
       },
       {
