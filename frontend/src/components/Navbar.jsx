@@ -218,13 +218,13 @@ function Navbar() {
 
         {/* Mobile Register Button */}
         <div className={`lg:hidden bg-gray-800 px-4 pb-4 ${menuOpen ? "block" : "hidden"}`}>
-          <Link
-            to="/register"
+          <a
+            href="/register"
             className="block bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 text-center font-bold text-[0.95rem]"
-            onClick={handleNavItemClick}
+           onClick={handleNavItemClick}
           >
             Register
-          </Link>
+          </a>
         </div>
       </div>
     </div>

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Footer from '../components/Footer';
 
 // --------------------------------------------------Upcoming Images
-import upcoming1 from "../assets/event-imgs/upcoming1.png";
 import upcoming2 from "../assets/event-imgs/upcoming-2.JPG";
 // --------------------------------------------------Upcoming Images
 
