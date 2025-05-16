@@ -256,8 +256,8 @@ const handlePopupSelection = async (option) => {
 
   return (
     <div className="bg-gray-900 min-h-screen">
-      {/* Carousel Section - Improved for Mobile */}
-      <section className="relative h-[60vh] sm:h-screen">
+      {/* Carousel Section */}
+      <section className="relative h-[40vh] sm:h-screen">
         <AnimatePresence mode="wait">
           <motion.div
             key={currentCarouselIndex}
@@ -270,7 +270,7 @@ const handlePopupSelection = async (option) => {
             <img 
               src={carouselImages[currentCarouselIndex].url} 
               alt={carouselImages[currentCarouselIndex].alt}
-              className="w-full h-full object-cover object-center"
+              className="w-full h-full object-contain sm:object-cover object-center transition-all duration-500"
             />
             <div className="absolute inset-0 bg-black/50 flex items-center justify-center px-4">
               <motion.h2 
@@ -296,6 +296,7 @@ const handlePopupSelection = async (option) => {
           ))}
         </div>
       </section>
+
 
       {/* Hero Section - Improved for Mobile */}
       <motion.section
