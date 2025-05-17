@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-   const API_URL = 'https://api.masaforum.com/api';
+   const API_URL = 'https://api.masaforum.com';
 
   export const fetchData = async () => {
       try {
