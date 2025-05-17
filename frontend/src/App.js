@@ -17,6 +17,9 @@ import Dashboard from "./pages/Dashboard";
 import WhatsAppFloatButton from "./components/WhatsAppFloatButton";
 import MasainMedia from "./pages/MasainMeida"; // Ensure correct import path
 import OurMember from "./pages/OurMember";
+import TermsAndConditions from "./pages/TermsAndConditions";
+import CancellationAndRefund from "./pages/CancellationAndRefund";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 
 
@@ -30,6 +33,10 @@ function App() {
       <Route path="/about" element={<About />} />
       <Route path="/team" element={<OurTeam />} />  
       <Route path="/masainmedia" element={<MasainMedia />} />
+      <Route path="/TermsAndConditions" element={<TermsAndConditions />} />
+      <Route path="/CancellationAndRefund" element={<CancellationAndRefund />} />
+      <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+
 
       <Route path="/Partners" element={<Partners />} /> 
       <Route path="/Ourinitiatives" element={<Ourinitiatives />} />

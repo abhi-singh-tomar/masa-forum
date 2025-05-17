@@ -48,7 +48,7 @@ const Footer = () => {
               className="text-gray-400 hover:text-teal-400 transition-colors duration-300"
               onClick={handleLinkClick}
             >
-              Contact
+              Contact Us
             </Link>
             <a
               href="https://www.masaawards.com/"
@@ -76,6 +76,27 @@ const Footer = () => {
             >
               Mantras Foundation
             </a>
+            <Link 
+              to="/TermsAndConditions" 
+              className="text-gray-400 hover:text-teal-400 transition-colors duration-300"
+              onClick={handleLinkClick}
+            >
+              Terms & Conditions
+            </Link>
+            <Link 
+              to="/CancellationAndRefund" 
+              className="text-gray-400 hover:text-teal-400 transition-colors duration-300"
+              onClick={handleLinkClick}
+            >
+              CancellationAndRefund
+            </Link>
+            <Link 
+              to="/PrivacyPolicy" 
+              className="text-gray-400 hover:text-teal-400 transition-colors duration-300"
+              onClick={handleLinkClick}
+            >
+                 Privacy Policy
+            </Link>
           </div>
         </div>
 
