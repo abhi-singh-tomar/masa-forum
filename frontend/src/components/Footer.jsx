@@ -83,6 +83,13 @@ const Footer = () => {
             >
               Terms & Conditions
             </Link>
+              <Link 
+              to="/PrivacyPolicy" 
+              className="text-gray-400 hover:text-teal-400 transition-colors duration-300"
+              onClick={handleLinkClick}
+            >
+                 Privacy Policy
+            </Link>
             <Link 
               to="/CancellationAndRefund" 
               className="text-gray-400 hover:text-teal-400 transition-colors duration-300"
@@ -90,13 +97,7 @@ const Footer = () => {
             >
               CancellationAndRefund
             </Link>
-            <Link 
-              to="/PrivacyPolicy" 
-              className="text-gray-400 hover:text-teal-400 transition-colors duration-300"
-              onClick={handleLinkClick}
-            >
-                 Privacy Policy
-            </Link>
+          
           </div>
         </div>
 

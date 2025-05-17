@@ -32,7 +32,7 @@ const PrivacyPolicy = () => {
 
         <section className="mb-6">
           <h2 className="text-2xl font-semibold text-white mb-4">3. How We Use Your Information</h2>
-          <p className="text-gray-600">We may use your personal information for the following purposes:</p>
+          <p className="text-white">We may use your personal information for the following purposes:</p>
           <ul className="list-disc pl-6 text-white">
             <li className="mb-2">To respond to your inquiries and provide customer support.</li>
             <li className="mb-2">To process registrations for events, memberships, or other services offered by MASA Forum.</li>
@@ -58,7 +58,7 @@ const PrivacyPolicy = () => {
 
         <section className="mb-6">
           <h2 className="text-2xl font-semibold text-white mb-4">5. Cookies and Tracking Technologies</h2>
-          <ul className="list-disc pl-6 text-gray-600">
+          <ul className="list-disc pl-6 text-white">
             <li className="mb-2">
               Our website may use cookies and similar tracking technologies (e.g., web beacons, analytics tools) to enhance user experience, track website performance, and gather information about user activities.
             </li>
@@ -73,14 +73,14 @@ const PrivacyPolicy = () => {
 
         <section className="mb-6">
           <h2 className="text-2xl font-semibold text-white mb-4">6. Security</h2>
-          <p className="text-gray-600">
+          <p className="text-white">
             We take data security seriously and have implemented reasonable technical and organizational measures to protect your personal information from unauthorized access, loss, or misuse. However, no data transmission over the internet or method of electronic storage is 100% secure. While we strive to protect your information, we cannot guarantee absolute security.
           </p>
         </section>
 
         <section className="mb-6">
           <h2 className="text-2xl font-semibold text-white mb-4">7. Third-Party Links</h2>
-          <p className="text-gray-600">
+          <p className="text-white">
             Our website may contain links to third-party websites or services (e.g., social media platforms, payment gateways). We are not responsible for the privacy practices or content of these third-party sites. We encourage you to review the privacy policies of any site you visit via links from our website.
           </p>
         </section>
@@ -100,21 +100,21 @@ const PrivacyPolicy = () => {
 
         <section className="mb-6">
           <h2 className="text-2xl font-semibold text-white mb-4">9. Children’s Privacy</h2>
-          <p className="text-gray-600">
+          <p className="text-white">
             Our website and services are not directed to individuals under the age of 18. We do not knowingly collect personal information from children. If we become aware that a child has provided personal information, we will take steps to delete it.
           </p>
         </section>
 
         <section className="mb-6">
           <h2 className="text-2xl font-semibold text-white mb-4">10. Changes to Our Privacy Policy</h2>
-          <p className="text-gray-600">
+          <p className="text-white">
             We reserve the right to amend this Privacy Policy at any time to reflect changes in our practices or legal requirements. Any changes will be posted on this page with an updated revision date. Your continued use of our website after such changes constitutes your acceptance of the updated policy.
           </p>
         </section>
 
         <section className="mb-6">
           <h2 className="text-2xl font-semibold text-white mb-4">11. Contact Us</h2>
-          <p className="text-gray-600">
+          <p className="text-white">
             If you have questions or concerns about this Privacy Policy or the use of your personal information, please contact us at:
             <br />
             Phone:{' '}
@@ -123,7 +123,7 @@ const PrivacyPolicy = () => {
             </a>
             <br />
             Email:{' '}
-            <a href="mailto:[Insert Support Email]" className="text-blue-600 hover:underline">
+            <a href="mailto: connect@masaforum.com" className="text-blue-600 hover:underline">
               connect@masaforum.com
             </a>
             <br />
@@ -132,15 +132,13 @@ const PrivacyPolicy = () => {
         </section>
 
         <section className="mb-6">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">12. Governing Law</h2>
-          <p className="text-gray-600">
+          <h2 className="text-2xl font-semibold text-white mb-4">12. Governing Law</h2>
+          <p className="text-white">
             This Privacy Policy is governed by the laws of the Indian Judiciary. Any disputes arising from this policy will be subject to the exclusive jurisdiction of the courts in India.
           </p>
         </section>
 
-        <p className="text-center text-gray-500 italic mt-8">
-          This policy is a template and should be reviewed by a legal professional to ensure compliance with Indian laws and your specific business needs.
-        </p>
+       
       </div>
     </div>
     <Footer />
