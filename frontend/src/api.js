@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-  const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+   const API_URL = 'https://api.masaforum.com/api';
 
   export const fetchData = async () => {
       try {
@@ -97,9 +97,9 @@ import axios from 'axios';
       }
   };
 
-  export const createOrder = async (amount) => {
+  export const createOrder = async (amount, name, contact) => {
       try {
-          const response = await axios.post(`${API_URL}/payment/create-order`, { amount });
+          const response = await axios.post(`${API_URL}/payment/create-order`, { amount, name, contact });
           return response.data;
       } catch (error) {
           console.error("Error creating order:", {

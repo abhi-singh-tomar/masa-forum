@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { registerUser } from "../api";
+import Footer from '../components/Footer';
 
 const Register = () => {
   const [formData, setFormData] = useState({
@@ -28,6 +29,7 @@ const Register = () => {
   };
 
   return (
+    <div>
     <div className="min-h-screen bg-gray-900 flex items-center justify-center p-4">
       <div className="max-w-md w-full p-6 bg-gray-800 rounded-lg shadow-lg">
         <h2 className="text-2xl font-bold text-white mb-6 text-center">Register</h2>
@@ -81,7 +83,7 @@ const Register = () => {
             </div>
           </div>
 
-          <input 
+          {/* <input 
             type="password" 
             name="password" 
             placeholder="Password" 
@@ -89,7 +91,7 @@ const Register = () => {
             onChange={handleChange} 
             required 
             className="w-full p-3 bg-gray-700 border border-gray-600 rounded text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500" 
-          />
+          /> */}
 
           <button 
             type="submit" 
@@ -100,6 +102,8 @@ const Register = () => {
         </form>
         
       </div>
+    </div>
+    <Footer />
     </div>
   );
 };
