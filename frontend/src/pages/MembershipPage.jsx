@@ -1,5 +1,5 @@
 import React from 'react';
-import axios from "axios";
+import { createOrder, verifyPayment } from '../api';
 import Footer from '../components/Footer';
 
 const membershipPlans = [
@@ -106,7 +106,7 @@ const handlePayment = async (amount) => {
   }
 
   try {
-    const { data: order } = await axios.post("http://localhost:5000/api/payment/create-order", { amount });
+    const order = await createOrder(amount);
 
     const options = {
       key: "rzp_test_8rWvfXKX4rYWSy", // Replace with process.env key in production
@@ -117,12 +117,12 @@ const handlePayment = async (amount) => {
       order_id: order.id,
       handler: async function (response) {
         try {
-          const verification = await axios.post("http://localhost:5000/api/payment/verify", {
+          const verification = await verifyPayment({
             razorpay_order_id: response.razorpay_order_id,
             razorpay_payment_id: response.razorpay_payment_id,
             razorpay_signature: response.razorpay_signature,
           });
-          alert("Payment Verified: " + verification.data.message);
+          alert("Payment Verified: " + verification.message);
         } catch (err) {
           console.error("Verification failed:", err);
           alert("Payment verification failed.");
