@@ -3,6 +3,11 @@ import Footer from '../components/Footer';
 
 // --------------------------------------------------Upcoming Images
 import upcoming2 from "../assets/event-imgs/upcoming-2.JPG";
+import upcoming3 from "../assets/event-imgs/gem.png";
+import upcoming4 from "../assets/event-imgs/pitch.jpg";
+import upcoming5 from "../assets/event-imgs/pmepg.png";
+
+
 // --------------------------------------------------Upcoming Images
 
 // ---------------------------------------------------PAST IMAGES
@@ -28,6 +33,37 @@ const EventsPage = () => {
 
   const eventsData = {
     upcoming: [
+
+      {
+        id: 3,
+        title: "Gem Portal training ",
+        date: "21 May 2025",
+      //  location: "National Library, Kolkata",
+        description: "",
+        fullDescription: "",
+        image: upcoming3
+      },
+      
+       {
+        id: 4,
+        title: "Mentoring MSMEs on Pmegp",
+        date: "23 May 2025",
+      //  location: "National Library, Kolkata",
+        description: "",
+        fullDescription: "",
+        image: upcoming5
+      },
+
+      {
+        id: 5,
+        title: " Startup Pitch Session",
+        date: "24 May 2025",
+      //  location: "National Library, Kolkata",
+        description: "",
+        fullDescription: "",
+        image: upcoming4
+      },
+
       {
         id: 1,
         title: "Environment Day 2025",
@@ -37,6 +73,7 @@ const EventsPage = () => {
         fullDescription: "",
         image: upcoming2
       },
+
       {
         id: 2,
         title: "MASA Women's Excellence Conclave, Expo & Awards 2025",
