@@ -7,6 +7,7 @@ const contactRoutes = require("./routes/contactRoutes");
 const awardRoutes = require("./routes/awardRoutes");
 const authRoutes = require("./routes/authRoutes");
 const paymentRoutes = require("./routes/payment");
+const eventRoutes = require('./routes/event');
 
 dotenv.config();
 
@@ -15,7 +16,7 @@ app.use(express.json());
 
 // Configure CORS to allow only your frontend
 app.use(cors({
-    origin: ['https://masaforum.com'], // Allow only your Netlify frontend
+    origin: ['https://masaforum.com' ], // Allow only your Netlify frontend
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify allowed methods
     credentials: true // If you need to send cookies or auth headers
 }));
@@ -29,6 +30,8 @@ app.use("/api/contact", contactRoutes);
 app.use("/api/awards", awardRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/payment", paymentRoutes);
+app.use('/api/event', eventRoutes);
+
 
 // Default Route
 app.get("/", (req, res) => {

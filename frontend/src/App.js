@@ -20,6 +20,7 @@ import OurMember from "./pages/OurMember";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import CancellationAndRefund from "./pages/CancellationAndRefund";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import EventRegistrationPage from './pages/EventRegistrationPage';
 
 
 
@@ -36,6 +37,7 @@ function App() {
       <Route path="/TermsAndConditions" element={<TermsAndConditions />} />
       <Route path="/CancellationAndRefund" element={<CancellationAndRefund />} />
       <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+      <Route path="/event-registration" element={<EventRegistrationPage />} />
 
 
       <Route path="/Partners" element={<Partners />} /> 

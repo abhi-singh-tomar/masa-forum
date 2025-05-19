@@ -121,3 +121,13 @@ import axios from 'axios';
           throw error;
       }
   };
+
+  export const registerForEvent = async (formData) => {
+    try {
+        const response = await axios.post(`${API_URL}/event/register`, formData);
+        return response.data;
+    } catch (error) {
+        console.error("Error registering for event:", error);
+        throw error;
+    }
+};

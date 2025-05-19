@@ -340,7 +340,7 @@ const handlePopupSelection = async (option) => {
               className="w-full sm:w-auto"
             >
               <Link
-                to="/contactUs"
+                to="/event-registration"
                 className="block w-full sm:w-auto px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-lg bg-yellow-500 hover:bg-yellow-400 text-gray-900 rounded-lg font-bold border-2 border-yellow-300 hover:border-yellow-200 transition-all duration-300"
               >
                 Event Registration
