@@ -109,7 +109,7 @@ const handlePayment = async (amount, name, contact) => {
     const order = await createOrder(amount, name, contact);
 
     const options = {
-      key: "rzp_test_8rWvfXKX4rYWSy",
+      key: "rzp_live_E25Bkz5gTGwdAW",
       amount: order.amount,
       currency: order.currency,
       name: "MASA Forum",
@@ -170,9 +170,7 @@ export default function MembershipPage() {
 
   return (
     <div className="bg-gray-900">
-    <div className="bg-red-600 text-white text-center py-3 px-4">
-  🚧 Payments are currently unavailable. You can still submit your interest and we'll reach out to you shortly.
-</div>
+    
 
       <div className="min-h-screen px-4 py-12 text-white sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
