@@ -13,20 +13,18 @@ export default function ContactUs() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e) => {
+ const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log('Form Data:', formData);
     setLoading(true);
     setSuccess(null);
-  
     const result = await sendContactMessage(formData);
     setSuccess(result.message);
-  
     if (result.success) {
-      setFormData({ name: "", email: "", message: "" });
+        setFormData({ name: "", email: "", message: "" });
     }
-  
     setLoading(false);
-  };
+};
   
 
   return (

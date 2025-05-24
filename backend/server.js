@@ -16,7 +16,7 @@ app.use(express.json());
 
 // Configure CORS to allow only your frontend
 app.use(cors({
-    origin: ['https://masaforum.com' ], // Allow only your Netlify frontend
+    origin: ['http://localhost:3000', 'https://www.masaforum.com' ], // Allow only your Netlify frontend
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify allowed methods
     credentials: true // If you need to send cookies or auth headers
 }));

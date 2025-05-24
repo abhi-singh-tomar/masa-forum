@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-   const API_URL = 'https://api.masaforum.com/api';
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
 
   export const fetchData = async () => {
       try {
@@ -85,6 +85,7 @@ import axios from 'axios';
               method: "POST",
               headers: { "Content-Type": "application/json" },
               body: JSON.stringify(formData),
+              credentials: 'include'
           });
 
           if (!response.ok) {
