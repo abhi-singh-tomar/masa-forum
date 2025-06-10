@@ -1,9 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Footer from "../components/Footer";
-import newsImage1 from "../assets/MSME-news-imgs/sebi.jpg"
-import newsImage2 from "../assets/MSME-news-imgs/goyal.jpg"
-import newsImage3 from "../assets/MSME-news-imgs/msme-awards.jpg"
+import newsImage1 from "../assets/MSME-news-imgs/sebi.webp"
+import newsImage2 from "../assets/MSME-news-imgs/goyal.webp"
+import newsImage3 from "../assets/MSME-news-imgs/msme-awards.webp"
 
 const msmeNews = [
   {

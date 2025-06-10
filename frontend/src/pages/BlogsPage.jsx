@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import Footer from '../components/Footer';
-import blogImage1 from "../assets/blog-imgs/ira.JPG"; // Replace with your actual blog images
-import blogImage2 from "../assets/blog-imgs/tandon.jpg"
-import blogImage3 from "../assets/blog-imgs/biswarup.JPG";
-import blogImage4 from "../assets/blog-imgs/pragya.JPG";
-import blogImage5 from "../assets/blog-imgs/president.jpg";
-import blogImage6 from "../assets/blog-imgs/impact.png";
-import blogImage7 from "../assets/blog-imgs/greengrowth.png";
-import blogImage8 from "../assets/blog-imgs/empower.png";
+import blogImage1 from "../assets/blog-imgs/ira.JPG.webp"; // Replace with your actual blog images
+import blogImage2 from "../assets/blog-imgs/tandon.webp"
+import blogImage3 from "../assets/blog-imgs/biswarup.JPG.webp";
+import blogImage4 from "../assets/blog-imgs/pragya.JPG.webp";
+import blogImage5 from "../assets/blog-imgs/president.webp";
+import blogImage6 from "../assets/blog-imgs/impact.webp";
+import blogImage7 from "../assets/blog-imgs/greengrowth.webp";
+import blogImage8 from "../assets/blog-imgs/empower.webp";
 
 
 const BlogsPage = () => {

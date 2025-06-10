@@ -1,16 +1,16 @@
 import React from "react";
 import Footer from "../components/Footer";
 
-import img1 from "../assets/schemes-imgs/img1.jpg";
-import img2 from "../assets/schemes-imgs/img2.jpg";
-import img3 from "../assets/schemes-imgs/img3.jpg";
-import img4 from "../assets/schemes-imgs/img4.jpg";
-import img5 from "../assets/schemes-imgs/img5.jpg";
-import img6 from "../assets/schemes-imgs/img6.jpg";
-import img7 from "../assets/schemes-imgs/img7.jpg";
-import img8 from "../assets/schemes-imgs/img8.jpg";
-import img9 from "../assets/schemes-imgs/img9.jpg";
-import img10 from "../assets/schemes-imgs/img10.jpg";
+import img1 from "../assets/schemes-imgs/img1.webp";
+import img2 from "../assets/schemes-imgs/img2.webp";
+import img3 from "../assets/schemes-imgs/img3.webp";
+import img4 from "../assets/schemes-imgs/img4.webp";
+import img5 from "../assets/schemes-imgs/img5.webp";
+import img6 from "../assets/schemes-imgs/img6.webp";
+import img7 from "../assets/schemes-imgs/img7.webp";
+import img8 from "../assets/schemes-imgs/img8.webp";
+import img9 from "../assets/schemes-imgs/img9.webp";
+import img10 from "../assets/schemes-imgs/img10.webp";
 
 
 const schemes = [

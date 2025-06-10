@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { FaRocket, FaLightbulb, FaEye, FaUsers, FaHandshake, FaGavel } from "react-icons/fa";
 import Footer from "../components/Footer";
-import logo from "../assets/about_us.png";
+import logo from "../assets/about_us.webp";
 
 const About = () => {
   // Gradient text style

@@ -3,13 +3,13 @@ import { motion } from 'framer-motion';
 
 import Footer from '../components/Footer';
 
-import photo0 from "../assets/masa-in-media-imgs/Statesman.png";
-import photo1 from "../assets/masa-in-media-imgs/prabhat.png";
-import photo2 from "../assets/masa-in-media-imgs/quiz.png";
-import photo3 from "../assets/masa-in-media-imgs/hindu.jpg";
-import photo4 from "../assets/masa-in-media-imgs/chronicle.jpg";
-import photo5 from "../assets/masa-in-media-imgs/bengalNews.jpg";
-import photo6 from "../assets/masa-in-media-imgs/job-fair.jpg";
+import photo0 from "../assets/masa-in-media-imgs/Statesman.webp";
+import photo1 from "../assets/masa-in-media-imgs/prabhat.webp";
+import photo2 from "../assets/masa-in-media-imgs/quiz.webp";
+import photo3 from "../assets/masa-in-media-imgs/hindu.webp";
+import photo4 from "../assets/masa-in-media-imgs/chronicle.webp";
+import photo5 from "../assets/masa-in-media-imgs/bengalNews.webp";
+import photo6 from "../assets/masa-in-media-imgs/job-fair.webp";
 
 const MasainMedia = () => {
   // Sample media coverage data

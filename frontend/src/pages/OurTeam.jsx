@@ -3,59 +3,59 @@ import { FaLinkedin } from "react-icons/fa";
 import Footer from "../components/Footer";
 
 // ----------------------------image Imports For Teams----------------------------------------
-import vt from "../assets/ourTeam-imgs/VT.png";
-import sushil from "../assets/ourTeam-imgs/sushil-poddar.png";
-import pragya from "../assets/ourTeam-imgs/pragya.jpg";
-import ck from "../assets/ourTeam-imgs/ck.png";
-import tr from "../assets/ourTeam-imgs/treasurer.jpg";
-import v from "../assets/ourTeam-imgs/v.png";
-import ira from "../assets/ourTeam-imgs/ira.JPG";
-import atul from "../assets/ourTeam-imgs/atul.png";
+import vt from "../assets/ourTeam-imgs/VT.webp";
+import sushil from "../assets/ourTeam-imgs/sushil-poddar.webp";
+import pragya from "../assets/ourTeam-imgs/pragya.webp";
+import ck from "../assets/ourTeam-imgs/ck.webp";
+import tr from "../assets/ourTeam-imgs/treasurer.webp";
+import v from "../assets/ourTeam-imgs/v.webp";
+import ira from "../assets/ourTeam-imgs/ira.JPG.webp";
+import atul from "../assets/ourTeam-imgs/atul.webp";
 // ----------------------------image Imports For Teams----------------------------------------
 
 // ---------------------------Regional BDs---------------------------------------
-import gKhemka from "../assets/ourTeam-imgs/BD-Delhi/gKhemka.jpg";
-import pKhemka from "../assets/ourTeam-imgs/BD-Delhi/pKhemka.jpg";
-import tanvi from "../assets/ourTeam-imgs/BD-Delhi/tanviG.jpg";
+import gKhemka from "../assets/ourTeam-imgs/BD-Delhi/gKhemka.webp";
+import pKhemka from "../assets/ourTeam-imgs/BD-Delhi/pKhemka.webp";
+import tanvi from "../assets/ourTeam-imgs/BD-Delhi/tanviG.webp";
 
-import amanat from "../assets/ourTeam-imgs/BD-Raipur/amanat.jpg";
-import gauravA from "../assets/ourTeam-imgs/BD-Raipur/gauravA.jpg";
-import lalwani from "../assets/ourTeam-imgs/BD-Raipur/lalwani.jpg";
-import passary from "../assets/ourTeam-imgs/BD-Raipur/passary.jpg";
+import amanat from "../assets/ourTeam-imgs/BD-Raipur/amanat.webp";
+import gauravA from "../assets/ourTeam-imgs/BD-Raipur/gauravA.webp";
+import lalwani from "../assets/ourTeam-imgs/BD-Raipur/lalwani.webp";
+import passary from "../assets/ourTeam-imgs/BD-Raipur/passary.webp";
 
-import aModi from "../assets/ourTeam-imgs/BD-Indore/aModi.jpg";
-import bj from "../assets/ourTeam-imgs/BD-Indore/bj.jpg";
+import aModi from "../assets/ourTeam-imgs/BD-Indore/aModi.webp";
+import bj from "../assets/ourTeam-imgs/BD-Indore/bj.webp";
 
-import gm from "../assets/ourTeam-imgs/BD-Bhubneshwar/gm.jpg";
-import lenka from "../assets/ourTeam-imgs/BD-Bhubneshwar/lenka.jpg";
+import gm from "../assets/ourTeam-imgs/BD-Bhubneshwar/gm.webp";
+import lenka from "../assets/ourTeam-imgs/BD-Bhubneshwar/lenka.webp";
 
-import anshul from "../assets/ourTeam-imgs/BD-Mumbai/anshul.jpg";
+import anshul from "../assets/ourTeam-imgs/BD-Mumbai/anshul.webp";
 // ---------------------------Regional BDs----------------------------------------
 
 // ---------------------------- image Imports For Mentors ------------------------------------
-import ajay from "../assets/ourMentors-imgs/ajay-arora.jpeg";
-import ajit from "../assets/ourMentors-imgs/Ajit-Nayar.jpeg";
-import deepak from "../assets/ourMentors-imgs/Deepak-Vohra.jpeg";
-import touseef from "../assets/ourMentors-imgs/Dr-Touseef.jpeg";
-import randeep from "../assets/ourMentors-imgs/Dr._Randeep_Guleria.jpg";
-import gaurav from "../assets/ourMentors-imgs/Gaurav-Gupta.jpeg";
-import harsh from "../assets/ourMentors-imgs/Harsh-Vardhan-Modi.jpeg";
-import ina from "../assets/ourMentors-imgs/Ina.jpeg";
-import kamlesh from "../assets/ourMentors-imgs/Kamlesh-Jain.jpeg";
-import basu from "../assets/ourMentors-imgs/Madhumita-Basu.jpeg";
-import mamta from "../assets/ourMentors-imgs/Mamta-Bihani.jpeg";
-import pankaj from "../assets/ourMentors-imgs/pankaj-shukla.jpg";
-import satyajit from "../assets/ourMentors-imgs/Satyajit-Chakra.jpeg";
-import shaji from "../assets/ourMentors-imgs/Shaji-V.jpeg";
-import tvs from "../assets/ourMentors-imgs/TVS-SHenoy.jpeg";
-import praveen from "../assets/ourMentors-imgs/praveen-khemka.png";
-import prabal from "../assets/ourMentors-imgs/Prabal-Chatterjee.png";
-import aditya from "../assets/ourMentors-imgs/aditya-arora.jpeg";
-import sharad from "../assets/ourMentors-imgs/sharad-kohli.jpg";
-import skumar from "../assets/ourMentors-imgs/shubhendu-kumar.jpeg";
-import khiro from "../assets/ourMentors-imgs/khiro-mishra.jpeg";
-import vk from "../assets/ourMentors-imgs/vk-jaithley.jpg";
-import dg from "../assets/ourMentors-imgs/gayen.jpg"
+import ajay from "../assets/ourMentors-imgs/ajay-arora.webp";
+import ajit from "../assets/ourMentors-imgs/Ajit-Nayar.webp";
+import deepak from "../assets/ourMentors-imgs/Deepak-Vohra.webp";
+import touseef from "../assets/ourMentors-imgs/Dr-Touseef.webp";
+import randeep from "../assets/ourMentors-imgs/Dr._Randeep_Guleria.webp";
+import gaurav from "../assets/ourMentors-imgs/Gaurav-Gupta.webp";
+import harsh from "../assets/ourMentors-imgs/Harsh-Vardhan-Modi.webp";
+import ina from "../assets/ourMentors-imgs/Ina.webp";
+import kamlesh from "../assets/ourMentors-imgs/Kamlesh-Jain.webp";
+import basu from "../assets/ourMentors-imgs/Madhumita-Basu.webp";
+import mamta from "../assets/ourMentors-imgs/Mamta-Bihani.webp";
+import pankaj from "../assets/ourMentors-imgs/pankaj-shukla.webp";
+import satyajit from "../assets/ourMentors-imgs/Satyajit-Chakra.webp";
+import shaji from "../assets/ourMentors-imgs/Shaji-V.webp";
+import tvs from "../assets/ourMentors-imgs/TVS-SHenoy.webp";
+import praveen from "../assets/ourMentors-imgs/praveen-khemka.webp";
+import prabal from "../assets/ourMentors-imgs/Prabal-Chatterjee.webp";
+import aditya from "../assets/ourMentors-imgs/aditya-arora.webp";
+import sharad from "../assets/ourMentors-imgs/sharad-kohli.webp";
+import skumar from "../assets/ourMentors-imgs/shubhendu-kumar.webp";
+import khiro from "../assets/ourMentors-imgs/khiro-mishra.webp";
+import vk from "../assets/ourMentors-imgs/vk-jaithley.webp";
+import dg from "../assets/ourMentors-imgs/gayen.webp"
 // ---------------------------- image Imports For Mentors ------------------------------------
 
 const teamMembers = [

@@ -2,26 +2,26 @@ import React, { useState } from "react";
 import Footer from "../components/Footer";
 
 // --------------------------------------------------Upcoming Images
-import upcoming2 from "../assets/event-imgs/upcoming2.png";
-import upcoming3 from "../assets/event-imgs/gem.png";
-import upcoming4 from "../assets/event-imgs/pitch.jpg";
-import upcoming5 from "../assets/event-imgs/pmepg.png";
-import upcoming11 from "../assets/event-imgs/upcoming11.jpeg";
+import upcoming2 from "../assets/event-imgs/upcoming2.webp";
+import upcoming3 from "../assets/event-imgs/gem.webp";
+import upcoming4 from "../assets/event-imgs/pitch.webp";
+import upcoming5 from "../assets/event-imgs/pmepg.webp";
+import upcoming11 from "../assets/event-imgs/upcoming11.webp";
 
 // ---------------------------------------------------PAST IMAGES
-import past1 from "../assets/event-imgs/past1.png";
-import past2 from "../assets/event-imgs/past2.png";
-import past3 from "../assets/event-imgs/past3.png";
-import past4 from "../assets/event-imgs/past4.png";
-import past5 from "../assets/event-imgs/past5.png";
-import past6 from "../assets/event-imgs/past6.png";
-import past7 from "../assets/event-imgs/past7.png";
-import past8 from "../assets/event-imgs/past8.png";
-import past9 from "../assets/event-imgs/past9.png";
-import past10 from "../assets/event-imgs/past10.jpg";
-import past11 from "../assets/event-imgs/past11.jpg";
+import past1 from "../assets/event-imgs/past1.webp";
+import past2 from "../assets/event-imgs/past2.webp";
+import past3 from "../assets/event-imgs/past3.webp";
+import past4 from "../assets/event-imgs/past4.webp";
+import past5 from "../assets/event-imgs/past5.webp";
+import past6 from "../assets/event-imgs/past6.webp";
+import past7 from "../assets/event-imgs/past7.webp";
+import past8 from "../assets/event-imgs/past8.webp";
+import past9 from "../assets/event-imgs/past9.webp";
+import past10 from "../assets/event-imgs/past10.webp";
+import past11 from "../assets/event-imgs/past11.webp";
 // ----------------------------------------------------PAST IMAGES
-import poddar from "../assets/event-imgs/leadershipProgram.JPG";
+import poddar from "../assets/event-imgs/leadershipProgram.JPG.webp";
 
 const EventsPage = () => {
   const [activeTab, setActiveTab] = useState("upcoming");

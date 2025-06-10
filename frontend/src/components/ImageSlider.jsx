@@ -1,10 +1,10 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
-import eca from "../assets/gallery-imgs/ab-1.png";
-import ecb from "../assets/gallery-imgs/ab-4.png";
-import ecc from "../assets/gallery-imgs/ab-5.png";
-import ecd from "../assets/gallery-imgs/ab-6.png";
-import ece from "../assets/gallery-imgs/ab-3.png";
+import eca from "../assets/gallery-imgs/ab-1.webp";
+import ecb from "../assets/gallery-imgs/ab-4.webp";
+import ecc from "../assets/gallery-imgs/ab-5.webp";
+import ecd from "../assets/gallery-imgs/ab-6.webp";
+import ece from "../assets/gallery-imgs/ab-3.webp";
 
 // Updated image data with descriptions
 const images = [

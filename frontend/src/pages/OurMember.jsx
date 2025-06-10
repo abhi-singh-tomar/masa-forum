@@ -1,12 +1,12 @@
 import React from "react";
 
-import piyush from "../assets/ourMembers-imgs/piyush.jpg";
-import arun from "../assets/ourMembers-imgs/arun.jpg";
-import biswa from "../assets/ourMembers-imgs/biswa.jpg";
-import rajesh from "../assets/ourMembers-imgs/rajesh.jpg";
-import sarita from "../assets/ourMembers-imgs/sarita.jpeg";
-import noPic from "../assets/ourMembers-imgs/unknown.jpg";
-import pinaki from "../assets/ourMembers-imgs/pinaki.jpg";
+import piyush from "../assets/ourMembers-imgs/piyush.webp";
+import arun from "../assets/ourMembers-imgs/arun.webp";
+import biswa from "../assets/ourMembers-imgs/biswa.webp";
+import rajesh from "../assets/ourMembers-imgs/rajesh.webp";
+import sarita from "../assets/ourMembers-imgs/sarita.webp";
+import noPic from "../assets/ourMembers-imgs/unknown.webp";
+import pinaki from "../assets/ourMembers-imgs/pinaki.webp";
 
 const members = [
   {

@@ -10,13 +10,13 @@ import { IoClose } from "react-icons/io5";
 import { sendUserIntent } from "../api";
 import Faqs from "../components/Faqs";
 // ----Image imports----------
-import upSkill from "../assets/homePage-carousel-imgs/training.jpg";
-import network from "../assets/homePage-carousel-imgs/networking.JPG";
-import govt from "../assets/homePage-carousel-imgs/govt.jpg";
-import excel from "../assets/homePage-carousel-imgs/excellence.jpg";
-import masa from "../assets/homePage-carousel-imgs/whoWeAre.JPG";
-import delhi from "../assets/homePage-carousel-imgs/delhi-chap.jpg";
-import kanika from "../assets/testimonial-imgs/kanika.png";
+import upSkill from "../assets/homePage-carousel-imgs/training.webp";
+import network from "../assets/homePage-carousel-imgs/networking.JPG.webp";
+import govt from "../assets/homePage-carousel-imgs/govt.webp";
+import excel from "../assets/homePage-carousel-imgs/excellence.webp";
+import masa from "../assets/homePage-carousel-imgs/whoWeAre.JPG.webp";
+import delhi from "../assets/homePage-carousel-imgs/delhi-chap.webp";
+import kanika from "../assets/testimonial-imgs/kanika.webp";
 
 const carouselImages = [
   {

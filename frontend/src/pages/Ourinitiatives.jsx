@@ -11,22 +11,22 @@ import {
 } from "react-icons/fa";
 
 // Dummy Images (Replace with your real ones)
-import awardLogo from "../assets/awards-imgs/masa-award-img.jpg";
-import powerBrand from "../assets/awards-imgs/power-brand-img.jpg";
-import powerBrand1 from "../assets/awards-imgs/powerBrand1.JPG";
-import powerBrand2 from "../assets/awards-imgs/powerBrand2.png";
-import times from "../assets/awards-imgs/MSME-times-img.jpg";
-import kalpataru from "../assets/awards-imgs/kalpataru.jpg";
-import nivesh from "../assets/awards-imgs/nivesh.jpg";
-import raipur from "../assets/awards-imgs/raipur.jpg";
-import jobFair from "../assets/event-imgs/upcoming1.png";
-import quiz from "../assets/awards-imgs/quizz.jpg";
-import nivesh2 from "../assets/awards-imgs/raipur-2.jpg";
-import nivesh3 from "../assets/awards-imgs/raipur9.jpg";
-import awards1 from "../assets/awards-imgs/2024.jpg";
-import awards2 from "../assets/awards-imgs/2025.JPG";
-import comingSoon from "../assets/awards-imgs/coming-soon.jpg";
-import kalpataru2 from "../assets/awards-imgs/kalpataru2.jpg";
+import awardLogo from "../assets/awards-imgs/masa-award-img.webp";
+import powerBrand from "../assets/awards-imgs/power-brand-img.webp";
+import powerBrand1 from "../assets/awards-imgs/powerBrand1.JPG.webp";
+import powerBrand2 from "../assets/awards-imgs/powerBrand2.webp";
+import times from "../assets/awards-imgs/MSME-times-img.webp";
+import kalpataru from "../assets/awards-imgs/kalpataru.webp";
+import nivesh from "../assets/awards-imgs/nivesh.webp";
+import raipur from "../assets/awards-imgs/raipur.webp";
+import jobFair from "../assets/event-imgs/upcoming1.webp";
+import quiz from "../assets/awards-imgs/quizz.webp";
+import nivesh2 from "../assets/awards-imgs/raipur-2.webp";
+import nivesh3 from "../assets/awards-imgs/raipur9.webp";
+import awards1 from "../assets/awards-imgs/2024.webp";
+import awards2 from "../assets/awards-imgs/2025.JPG.webp";
+import comingSoon from "../assets/awards-imgs/coming-soon.webp";
+import kalpataru2 from "../assets/awards-imgs/kalpataru2.webp";
 
 // Data
 const initiatives = [
