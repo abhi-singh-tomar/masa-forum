@@ -16,6 +16,7 @@ const Footer = () => {
           <h2 className="text-2xl font-extrabold tracking-tight">MASA Forum</h2>
           <p className="text-gray-400 text-sm">
             A growth platform for MSMEs and startups to connect with investors and industry mentors.
+            <hr/>
           </p>
           <div className="flex items-center space-x-2">
             <img 
