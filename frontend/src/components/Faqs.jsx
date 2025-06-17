@@ -41,7 +41,50 @@ const faqs = [
   {
     question: "How can I collaborate with MASA as a mentor or investor?",
     answer: "If you're a mentor or investor interested in supporting startups and MSMEs, you can collaborate with MASA by signing up through our Partner With Us page. You'll gain access to curated pitch events, investment opportunities, and a vibrant entrepreneurial network."
-  }
+  },
+
+ {
+  question: "What does the eagle symbolize in MASA Forum’s branding?",
+  answer: `🦅 Why the Eagle Represents MASA
+
+The eagle is not just a bird — it is a symbol of resilience, transformation, vision, and fearless leadership. At MASA, we have chosen the eagle as our brand icon because it deeply reflects the journey of every entrepreneur, MSME leader, and startup founder we aim to empower.
+
+🦅 Rebirth Through Resilience
+
+At the age of 40, the eagle faces a life-defining choice — to die or to be reborn. Its talons grow too weak to hunt, its beak becomes bent, and its wings too heavy to fly. But instead of giving up, the eagle retreats to the mountaintop, breaks off its beak, sheds its feathers, and endures months of pain to emerge stronger, sharper, and renewed.  
+This is the spirit of MASA — we believe in helping businesses and founders reimagine themselves, shed what no longer serves them, and rise again with purpose and power.
+
+🦅 Mentorship Through Challenge
+
+An eagle teaches its young not by comfort but by challenge. It pushes the eaglet off the cliff, forcing it to flap, fall, and find its wings. But it never lets the eaglet crash. Just when the ground nears, the parent swoops in to lift and guide.  
+This is how MASA mentors — we believe real growth comes through risk and real learning through experience. We create environments where young businesses are encouraged to leap, but also supported with strong wings beneath them.
+
+🦅 Vision That Soars High
+
+An eagle sees its prey from miles away and chooses to fly alone, with unmatched clarity and focus. It flies above the storm, never below it.  
+This represents MASA’s role as a visionary guide — helping entrepreneurs rise above chaos, focus on what matters, and soar where others hesitate.`
+},
+
+{
+  question: "MASA Forum की ब्रांडिंग में ईगल (गरुड़) का क्या प्रतीकात्मक अर्थ है?",
+  answer: `🦅 MASA में ईगल का महत्व
+
+ईगल सिर्फ एक पक्षी नहीं है — यह दृढ़ता, रूपांतरण, दूरदृष्टि और निर्भीक नेतृत्व का प्रतीक है। MASA ने इसे अपने ब्रांड का प्रतीक इसलिए चुना है क्योंकि यह हर उस उद्यमी, MSME लीडर और स्टार्टअप संस्थापक की यात्रा को दर्शाता है, जिन्हें हम सशक्त बनाना चाहते हैं।
+
+🦅 पुनर्जन्म की प्रेरणा  
+जब ईगल 40 वर्ष का होता है, तो उसे एक कठिन निर्णय लेना पड़ता है — या तो मृत्यु स्वीकार करे या खुद को पूरी तरह बदलकर नया जीवन पाए। वह अपनी चोंच तोड़ता है, पुराने पंख गिराता है और अकेले पहाड़ों पर जाकर कई महीने तक दर्द सहकर खुद को फिर से नया बनाता है।  
+MASA भी यही मानता है — हम उद्यमों और संस्थापकों को प्रेरित करते हैं कि वे अपनी सीमाओं को तोड़ें, खुद को फिर से परिभाषित करें और नए जोश के साथ ऊंचाई तक उड़ान भरें।
+
+🦅 चुनौती से सीखने की शक्ति  
+ईगल अपने बच्चों को उड़ना सिखाने के लिए उन्हें पहाड़ से गिरा देता है — ताकि वे अपने पंखों की ताकत जानें। लेकिन वह कभी उन्हें गिरने नहीं देता। जैसे ही वे ज़मीन के करीब पहुंचते हैं, वह उड़कर उन्हें संभाल लेता है।  
+MASA mentorship भी ऐसा ही है — हम जोखिम लेने को प्रोत्साहित करते हैं, लेकिन साथ ही गाइडेंस और सुरक्षा भी देते हैं।
+
+🦅 ऊँची दृष्टि और एकाग्रता  
+ईगल मीलों दूर से अपने लक्ष्य को देख सकता है और तूफान से ऊपर उड़ता है, कभी नीचे नहीं। वह अकेले उड़ता है — शांत, केंद्रित और अडिग।  
+MASA भी यही करता है — हम आपके बिज़नेस को शोर और भ्रम से ऊपर उठाते हैं, स्पष्टता और लक्ष्य पर फोकस करते हैं, और आपको ऐसी ऊँचाई तक पहुँचाते हैं जहाँ दूसरों की उड़ान खत्म हो जाती है।`
+}
+
+
 ];
 
 
@@ -74,19 +117,24 @@ const FAQs = () => {
               </button>
 
               <AnimatePresence>
-                {openIndex === index && (
-                  <motion.div
-                    initial={{ opacity: 0, height: 0 }}
-                    animate={{ opacity: 1, height: "auto" }}
-                    exit={{ opacity: 0, height: 0 }}
-                    transition={{ duration: 0.4 }}
-                  >
-                    <p className="mt-4 text-gray-300 text-base">
-                      {faq.answer}
-                    </p>
-                  </motion.div>
-                )}
-              </AnimatePresence>
+  {openIndex === index && (
+    <motion.div
+      initial={{ opacity: 0, height: 0 }}
+      animate={{ opacity: 1, height: "auto" }}
+      exit={{ opacity: 0, height: 0 }}
+      transition={{ duration: 0.4 }}
+    >
+      <div className="mt-4 text-gray-300 text-base space-y-4">
+        {faq.answer.split("\n\n").map((paragraph, idx) => (
+          <p key={idx} className="whitespace-pre-line">
+            {paragraph}
+          </p>
+        ))}
+      </div>
+    </motion.div>
+  )}
+</AnimatePresence>
+
             </div>
           ))}
         </div>

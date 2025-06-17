@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa";
+import mantras from "../assets/mantras.png"; // Adjust the path as necessary
 
 const Footer = () => {
   // Function to handle scrolling to top on navigation
@@ -16,6 +17,24 @@ const Footer = () => {
           <p className="text-gray-400 text-sm">
             A growth platform for MSMEs and startups to connect with investors and industry mentors.
           </p>
+          <div className="flex items-center space-x-2">
+            <img 
+              src={mantras} // Replace with actual Mantra's World logo URL
+              alt="Mantra's World Logo"
+              className="h-12 w-12"
+            />
+            <p className="text-gray-400 text-xl">
+              An initiative by{" "}
+              <a
+                href="https://www.mantrasworld.com/"
+                className="text-teal-400 hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Mantras
+              </a>
+            </p>
+          </div>
         </div>
 
         {/* Quick Links - Two Columns */}
@@ -58,7 +77,6 @@ const Footer = () => {
             >
               Masa Awards
             </a>
-
             <a
               href="https://www.mantrasworld.com/"
               className="text-gray-400 hover:text-teal-400 transition-colors duration-300 col-span-2 md:col-span-1"
@@ -67,7 +85,6 @@ const Footer = () => {
             >
               Mantra's World
             </a>
-
             <a
               href="https://mantrasfoundation.org/"
               className="text-gray-400 hover:text-teal-400 transition-colors duration-300 col-span-2 md:col-span-1"
@@ -83,12 +100,12 @@ const Footer = () => {
             >
               Terms & Conditions
             </Link>
-              <Link 
+            <Link 
               to="/PrivacyPolicy" 
               className="text-gray-400 hover:text-teal-400 transition-colors duration-300"
               onClick={handleLinkClick}
             >
-                 Privacy Policy
+              Privacy Policy
             </Link>
             <Link 
               to="/CancellationAndRefund" 
@@ -97,7 +114,6 @@ const Footer = () => {
             >
               CancellationAndRefund
             </Link>
-          
           </div>
         </div>
 
