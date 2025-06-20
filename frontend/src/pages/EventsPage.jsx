@@ -7,6 +7,7 @@ import upcoming3 from "../assets/event-imgs/gem.webp";
 import upcoming4 from "../assets/event-imgs/pitch.webp";
 import upcoming5 from "../assets/event-imgs/pmepg.webp";
 import upcoming11 from "../assets/event-imgs/upcoming11.webp";
+import loanmela from "../assets/event-imgs/loanmela.png";
 
 // ---------------------------------------------------PAST IMAGES
 import past1 from "../assets/event-imgs/past1.webp";
@@ -30,17 +31,29 @@ const EventsPage = () => {
 
   const eventsData = {
     upcoming: [
-      {
+       {
         id: 1,
-        title: "Environment Day 2025",
-        date: "5th June 2025",
-        location: "National Library, Kolkata",
-        description: "",
-        fullDescription: "",
-        image: upcoming11,
+        title: "Loan Mela & BFSI Conclave-Expo",
+        date: "17th July 2025",
+        location: "Hotel Hindustan International, Kolkata",
+        description: " To register Follow this link: https://forms.gle/BEJ82htmrQzQvgm4A",
+        fullDescription:  ` 
+        India’s largest MSME-focused financial event
+        25+ Banks, NBFCs, Fintechs & Funding Experts
+        On-the-spot loan assistance & financial literacy sessions
+        Explore business funding opportunities under one roof
+       🎯 Limited seats – Secure your spot now!
+       👉 Fill out the registration form to complete your entry,
+         Organized by MASA Forum & CWBTA
+        ` ,
+        image: loanmela,
       },
-      {
-        id: 2,
+    
+    ],
+    past: [
+
+       {
+        id: 112,
         title: "MASA Women's Excellence Conclave, Expo & Awards 2025",
         date: "6th June 2025",
         location: "Hotel Astor, Kolkata",
@@ -48,8 +61,17 @@ const EventsPage = () => {
         fullDescription: "",
         image: upcoming2,
       },
-    ],
-    past: [
+
+        {
+        id: 111,
+        title: "Environment Day 2025",
+        date: "5th June 2025",
+        location: "National Library, Kolkata",
+        description: "",
+        fullDescription: "",
+        image: upcoming11,
+      },
+     
       {
         id: 16,
         title: "Startup Pitch Session",
