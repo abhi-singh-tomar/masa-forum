@@ -13,13 +13,36 @@ dotenv.config();
 
 const app = express();
 app.use(express.json());
+app.use((req, res, next) => {
+    res.header("Access-Control-Allow-Origin", "https://www.masaforum.com");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
+    res.header("Access-Control-Allow-Credentials", "true");
+    if (req.method === "OPTIONS") {
+        return res.sendStatus(204); // 👈 Preflight request ends here
+    }
+    next();
+});
 
 // Configure CORS to allow only your frontend
-app.use(cors({
-    origin: ['http://localhost:3000', 'https://masaforum.com/', 'https://www.masaforum.com' ], // Allow only your Netlify frontend
-    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify allowed methods
-    credentials: true // If you need to send cookies or auth headers
-}));
+const corsOptions = {
+    origin: function (origin, callback) {
+        // Allow requests with no origin (like mobile apps, Postman)
+        if (!origin) return callback(null, true);
+        if (
+            ['https://www.masaforum.com', 'http://localhost:3000'].indexOf(origin) !== -1
+        ) {
+            callback(null, true);
+        } else {
+            callback(new Error('Not allowed by CORS'));
+        }
+    },
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    credentials: true,
+};
+
+app.use(cors(corsOptions));
+
 
 // Connect to Database
 connectDB();
