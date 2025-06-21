@@ -80,23 +80,27 @@ const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
   };
 
   export const sendContactMessage = async (formData) => {
-      try {
-          const response = await fetch(`${API_URL}/contact`, {
-              method: "POST",
-              headers: { "Content-Type": "application/json" },
-              body: JSON.stringify(formData),
-              credentials: 'include'
-          });
+    try {
+        const response = await fetch(`${API_URL}/contact`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(formData),
+            credentials: 'include'
+        });
 
-          if (!response.ok) {
-              throw new Error("Failed to send message. Try again later.");
-          }
+        if (!response.ok) {
+            const errorData = await response.json();
+            console.error("❌ Contact form error:", errorData);
+            throw new Error(errorData?.error || "Failed to send message.");
+        }
 
-          return { success: true, message: "Message sent successfully!" };
-      } catch (error) {
-          return { success: false, message: "Error sending message. Please try again." };
-      }
-  };
+        return { success: true, message: "Message sent successfully!" };
+    } catch (error) {
+        console.error("❌ Contact form exception:", error.message);
+        return { success: false, message: error.message || "Error sending message." };
+    }
+};
+
 
   export const createOrder = async (amount, name, contact) => {
       try {
