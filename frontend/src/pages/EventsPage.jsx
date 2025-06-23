@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 // --------------------------------------------------Upcoming Images
 import upcoming2 from "../assets/event-imgs/upcoming2.webp";
 import upcoming3 from "../assets/event-imgs/gem.webp";
-import upcoming4 from "../assets/event-imgs/pitch.webp";
+// import upcoming4 from "../assets/event-imgs/pitch.webp";
 import upcoming5 from "../assets/event-imgs/pmepg.webp";
 import upcoming11 from "../assets/event-imgs/upcoming11.webp";
 import loanmela from "../assets/event-imgs/loanmela.png";
@@ -21,6 +21,8 @@ import past8 from "../assets/event-imgs/past8.webp";
 import past9 from "../assets/event-imgs/past9.webp";
 import past10 from "../assets/event-imgs/past10.webp";
 import past11 from "../assets/event-imgs/past11.webp";
+import past12 from "../assets/event-imgs/past-yoga-day.webp";
+import pastRaipur from "../assets/event-imgs/pastRaipur.webp";
 // ----------------------------------------------------PAST IMAGES
 import poddar from "../assets/event-imgs/leadershipProgram.JPG.webp";
 
@@ -51,6 +53,15 @@ const EventsPage = () => {
     
     ],
     past: [
+      {
+        id: 151,
+        title: "International Yoga Day 2025",
+        date: "21st June 2025",
+        location: "Swarnamani Banquet Hall",
+        description: "MASA & Swarnamani Pariwar celebrates International Yoga Day",
+        fullDescription: "Celebration of International Yoga Day in Swarnamani Residency. For Morning mindfulness, health and harmony",
+        image: past12,
+      },
 
        {
         id: 112,
@@ -72,30 +83,15 @@ const EventsPage = () => {
         image: upcoming11,
       },
      
-      {
-        id: 16,
-        title: "Startup Pitch Session",
-        date: "24 May 2025",
-        description: "",
-        fullDescription: "",
-        image: upcoming4,
-      },
-      {
-        id: 15,
-        title: "Mentoring MSMEs on Pmegp",
-        date: "23 May 2025",
-        description: "",
-        fullDescription: "",
-        image: upcoming5,
-      },
-      {
-        id: 14,
-        title: "Gem Portal training",
-        date: "21 May 2025",
-        description: "",
-        fullDescription: "",
-        image: upcoming3,
-      },
+      // {
+      //   id: 16,
+      //   title: "Startup Pitch Session",
+      //   date: "24 May 2025",
+      //   description: "",
+      //   fullDescription: "",
+      //   image: upcoming4,
+      // },
+      
       {
         id: 1,
         title: "Eastern India Job Fair & career Expo 2025",
@@ -116,7 +112,7 @@ const EventsPage = () => {
           "MASA Raipur Conclave — Connecting Entrepreneurs, Investors & Ecosystem Leaders. The MASA Raipur Conclave was conceived to address the growing need for structured support, visibility, and networking opportunities for MSMEs and startups in Chhattisgarh and surrounding regions.",
         fullDescription:
           "Additionally, the event emphasized inclusivity and women’s leadership through Women’s MASA, encouraging and recognizing women entrepreneurs as vital contributors to the region’s growth story.",
-        image: past11,
+        image: pastRaipur,
       },
       {
         id: 3,
@@ -229,6 +225,22 @@ const EventsPage = () => {
         fullDescription:
           "This program includes mentorship sessions, team projects, and leadership simulations designed to develop executive-level skills.",
         image: poddar,
+      },
+      {
+        id: 14,
+        title: "Gem Portal training",
+        date: "21 May 2025",
+        description: "",
+        fullDescription: "",
+        image: upcoming3,
+      },
+      {
+        id: 15,
+        title: "Mentoring MSMEs on Pmegp",
+        date: "23 May 2025",
+        description: "",
+        fullDescription: "",
+        image: upcoming5,
       },
     ],
   };
