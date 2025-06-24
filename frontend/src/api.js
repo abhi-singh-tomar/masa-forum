@@ -26,7 +26,7 @@ export const sendUserIntent = async (intent) => {
 
 export const registerUser = async (formData) => {
   try {
-    const res = await axiosInstance.post("/auth/register", formData);
+     await axiosInstance.post("/auth/register", formData);
     return { success: true, message: "Registration successful!" };
   } catch (error) {
     return {
@@ -62,7 +62,7 @@ export const applyForAward = async (formData) => {
 
 export const sendContactMessage = async (formData) => {
   try {
-    const res = await axiosInstance.post("/contact", formData);
+   await axiosInstance.post("/contact", formData);
     return { success: true, message: "Message sent successfully!" };
   } catch (error) {
     return {
