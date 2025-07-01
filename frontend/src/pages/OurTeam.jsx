@@ -91,7 +91,7 @@ const teamMembers = [
       role: "Director, MASA Forum",
       image: ira,
       linkedin: "https://www.linkedin.com/in/ira-saha-5072b6285/",
-      bio: "Ex educator @ Mangalam Vidya Niketan"
+      bio: "Strategist consultant and event curator, masa"
   },
   {
     name: "Mr. Narendra Kapadia",
