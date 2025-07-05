@@ -178,7 +178,7 @@ function Navbar() {
                   className="block px-4 py-2 hover:bg-yellow-500 font-bold text-sm"
                   onClick={handleNavItemClick}
                 >
-                  MSME News
+                  MSME Times
                 </Link>
                 <Link
                   to="/SchemesPage"

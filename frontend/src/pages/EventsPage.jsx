@@ -25,6 +25,7 @@ import past12 from "../assets/event-imgs/past-yoga-day.webp";
 import pastRaipur from "../assets/event-imgs/pastRaipur.webp";
 // ----------------------------------------------------PAST IMAGES
 import poddar from "../assets/event-imgs/leadershipProgram.JPG.webp";
+import CONNECT from "../assets/event-imgs/MASA-connect1.webp"
 
 const EventsPage = () => {
   const [activeTab, setActiveTab] = useState("upcoming");
@@ -218,6 +219,14 @@ const EventsPage = () => {
     programs: [
       {
         id: 13,
+        title: "MASA Monthly Connect",
+        date: "Every month 3rd Week Thursday",
+        description: "An offline meet at CWBTA Office for all members and non-members",
+        fullDescription: "Exact Dates details to be announced in our Whatsapp channel. This MASA CONNECT meet is to empower MSMEs & startups through monthly engagements. Be a part of nation's thriving MSMEs & Startups ecosystem",
+        image: CONNECT,
+      },
+      {
+        id: 14,
         title: "Leadership Development Program",
         date: "June 5 - July 10, 2025",
         location: "Corporate Headquarters",
@@ -227,7 +236,7 @@ const EventsPage = () => {
         image: poddar,
       },
       {
-        id: 14,
+        id: 15,
         title: "Gem Portal training",
         date: "21 May 2025",
         description: "",
@@ -235,13 +244,15 @@ const EventsPage = () => {
         image: upcoming3,
       },
       {
-        id: 15,
+        id: 16,
         title: "Mentoring MSMEs on Pmegp",
         date: "23 May 2025",
         description: "",
         fullDescription: "",
         image: upcoming5,
       },
+      
+
     ],
   };
 
