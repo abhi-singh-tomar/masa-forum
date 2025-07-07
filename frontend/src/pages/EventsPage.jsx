@@ -282,7 +282,7 @@ Explore business funding opportunities under one roof
         <div className="container mx-auto px-6 text-center relative z-10">
           <h1 className="text-5xl md:text-6xl font-extrabold mb-4 leading-tight">
             Explore Our Events for{" "}
-            <span className="text-teal-400">Startups & MSMEs</span>
+            <span className="text-teal-400">MSMEs and Startups</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             From startup pitch events and innovation workshops to MSME
