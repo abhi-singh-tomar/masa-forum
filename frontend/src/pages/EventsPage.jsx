@@ -34,23 +34,22 @@ const EventsPage = () => {
 
   const eventsData = {
     upcoming: [
-       {
-        id: 1,
-        title: "Loan Mela & BFSI Conclave-Expo",
-        date: "17th July 2025",
-        location: "Hotel Hindustan International, Kolkata",
-        description: " To register Follow this link: https://forms.gle/BEJ82htmrQzQvgm4A",
-        fullDescription:  ` 
-        India’s largest MSME-focused financial event
-        25+ Banks, NBFCs, Fintechs & Funding Experts
-        On-the-spot loan assistance & financial literacy sessions
-        Explore business funding opportunities under one roof
-       🎯 Limited seats – Secure your spot now!
-       👉 Fill out the registration form to complete your entry,
-         Organized by MASA Forum & CWBTA
-        ` ,
-        image: loanmela,
-      },
+   {
+  id: 1,
+  title: "Loan Mela & BFSI Conclave-Expo",
+  date: "17th July 2025",
+  location: "Hotel Hindustan International, Kolkata",
+  description: ' <a href="https://forms.gle/BEJ82htmrQzQvgm4A" target="_blank">Click here to register</a>',
+  fullDescription: ` 
+India’s largest MSME-focused financial event  
+25+ Banks, NBFCs, Fintechs & Funding Experts  
+On-the-spot loan assistance & financial literacy sessions  
+Explore business funding opportunities under one roof  
+🎯 Limited seats – Secure your spot now!  
+
+`,
+  image: loanmela,
+}
     
     ],
     past: [
@@ -59,7 +58,7 @@ const EventsPage = () => {
         title: "International Yoga Day 2025",
         date: "21st June 2025",
         location: "Swarnamani Banquet Hall",
-        description: "MASA & Swarnamani Pariwar celebrates International Yoga Day",
+       // description: "MASA & Swarnamani Pariwar celebrates International Yoga Day",
         fullDescription: "Celebration of International Yoga Day in Swarnamani Residency. For Morning mindfulness, health and harmony",
         image: past12,
       },
@@ -98,8 +97,8 @@ const EventsPage = () => {
         title: "Eastern India Job Fair & career Expo 2025",
         date: "May 4th-5th, 2025",
         location: "Indian Council for Cultural Relations (ICCR), Kolkata",
-        description:
-          "Our vision was to establish this event as the leading career & networking event in the region. Organized by Magical Mantras Pvt. Ltd in collaboration with MASA & CWBTA.",
+     //   description:
+         // "Our vision was to establish this event as the leading career & networking event in the region. Organized by Magical Mantras Pvt. Ltd in collaboration with MASA & CWBTA.",
         fullDescription:
           "This three-day event featured keynote speeches from tech pioneers, hands-on workshops, and networking opportunities with industry leaders.",
         image: past11,
@@ -110,9 +109,9 @@ const EventsPage = () => {
         date: "April 12th - 13th, 2025",
         location: "Hotel Sayaji Raipur",
         description:
-          "MASA Raipur Conclave — Connecting Entrepreneurs, Investors & Ecosystem Leaders. The MASA Raipur Conclave was conceived to address the growing need for structured support, visibility, and networking opportunities for MSMEs and startups in Chhattisgarh and surrounding regions.",
+          "",
         fullDescription:
-          "Additionally, the event emphasized inclusivity and women’s leadership through Women’s MASA, encouraging and recognizing women entrepreneurs as vital contributors to the region’s growth story.",
+          " MASA Raipur Conclave — Connecting Entrepreneurs, Investors & Ecosystem Leaders. The MASA Raipur Conclave was conceived to address the growing need for structured support, visibility, and networking opportunities for MSMEs and startups in Chhattisgarh and surrounding regions.Additionally, the event emphasized inclusivity and women’s leadership through Women’s MASA, encouraging and recognizing women entrepreneurs as vital contributors to the region’s growth story.",
         image: pastRaipur,
       },
       {
@@ -120,7 +119,7 @@ const EventsPage = () => {
         title: "MASA Global Education Conclave & Awards 2025, Kolkata",
         date: "15 February 2025",
         location: "National Library, Kolkata",
-        description: "Master the latest digital marketing strategies",
+        description: "",
         fullDescription:
           "This intensive workshop covered SEO, social media marketing, and content strategy with practical case studies and actionable insights.",
         image: past10,
@@ -130,7 +129,7 @@ const EventsPage = () => {
         title: "MSME & Startup Accelerator Conclave & Awards 2025",
         date: "8 February 2025",
         location: "National Library, Kolkata",
-        description: "Master the latest digital marketing strategies",
+        description: "",
         fullDescription:
           "This intensive workshop covered SEO, social media marketing, and content strategy with practical case studies and actionable insights.",
         image: past9,
@@ -140,7 +139,7 @@ const EventsPage = () => {
         title: "MASA Sanskriti Pranam 2024",
         date: "19 December, 2024",
         location: "Silpa Sadan, Kolkata",
-        description: "Master the latest digital marketing strategies",
+        description: "",
         fullDescription:
           "This intensive workshop covered SEO, social media marketing, and content strategy with practical case studies and actionable insights.",
         image: past8,
@@ -150,7 +149,7 @@ const EventsPage = () => {
         title: "MASA Metals' Conclave 2024, Bhubaneswar",
         date: "18 September, 2024",
         location: "Hotel New Marrion, Bhubaneshwar",
-        description: "Master the latest digital marketing strategies",
+        description: "",
         fullDescription:
           "This intensive workshop covered SEO, social media marketing, and content strategy with practical case studies and actionable insights.",
         image: past7,
@@ -160,7 +159,7 @@ const EventsPage = () => {
         title: "Inter College Business & Financial Conclave & Quiz 2024",
         date: "12 September, 2024",
         location: "IEM Auditorium, Ashram Building",
-        description: "Master the latest digital marketing strategies",
+        description: "",
         fullDescription:
           "This intensive workshop covered SEO, social media marketing, and content strategy with practical case studies and actionable insights.",
         image: past6,
@@ -170,7 +169,7 @@ const EventsPage = () => {
         title: "MASA Metals' Conclave 2024, Kolkata",
         date: "August 21, 2024",
         location: "Hotel Hindustan International, Kolkata",
-        description: "Master the latest digital marketing strategies",
+        description: "",
         fullDescription:
           "This intensive workshop covered SEO, social media marketing, and content strategy with practical case studies and actionable insights.",
         image: past5,
@@ -180,7 +179,7 @@ const EventsPage = () => {
         title: "Environment Quiz 2024, Kolkata",
         date: "10 August, 2024",
         location: "National Library, Kolkata",
-        description: "Master the latest digital marketing strategies",
+        description: "",
         fullDescription:
           "This intensive workshop covered SEO, social media marketing, and content strategy with practical case studies and actionable insights.",
         image: past4,
@@ -190,7 +189,7 @@ const EventsPage = () => {
         title: "MASA Conclave & Awards 2024, New Delhi",
         date: "June 13, 2024",
         location: "PhD Chamber of Commerce, New Delhi",
-        description: "Master the latest digital marketing strategies",
+        description: "",
         fullDescription:
           "This intensive workshop covered SEO, social media marketing, and content strategy with practical case studies and actionable insights.",
         image: past3,
@@ -200,7 +199,7 @@ const EventsPage = () => {
         title: "MASA Women's Excellence Conclave & Awards 2024",
         date: "March 10, 2024",
         location: "JW Marriott, Kolkata",
-        description: "Master the latest digital marketing strategies",
+        description: "",
         fullDescription:
           "This intensive workshop covered SEO, social media marketing, and content strategy with practical case studies and actionable insights.",
         image: past2,
@@ -210,7 +209,7 @@ const EventsPage = () => {
         title: "MSME & Startup Accelerator Conclave & Awards 2024",
         date: "January 28, 2024",
         location: "Indian Council for Cultural Relations, Kolkata",
-        description: "Master the latest digital marketing strategies",
+        description: "",
         fullDescription:
           "This intensive workshop covered SEO, social media marketing, and content strategy with practical case studies and actionable insights.",
         image: past1,
@@ -338,9 +337,9 @@ const EventsPage = () => {
                   {event.title}
                 </h3>
                 <p className="text-gray-400 text-sm mb-3">{event.location}</p>
-                <p className="text-gray-300 text-sm mb-4">
-                  {event.description}
-                </p>
+                <p className="text-blue-300 text-sm mb-4 "
+                  dangerouslySetInnerHTML={{ __html: event.description }} >
+               </p>
 
                 {expandedEvents.includes(event.id) && (
                   <div className="mt-4 pt-4 border-t border-gray-700 text-gray-300 text-sm animate-fade-in">
