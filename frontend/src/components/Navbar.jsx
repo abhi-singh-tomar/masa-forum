@@ -136,7 +136,7 @@ function Navbar() {
               Our Initiatives
             </Link>
             <Link
-              to="/memberships"
+              to="/membership"
               className="hover:text-yellow-500 px-3 py-2 text-[0.95rem] font-bold whitespace-nowrap"
               onClick={handleNavItemClick}
             >

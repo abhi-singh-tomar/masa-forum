@@ -124,7 +124,7 @@ const Footer = () => {
           <p className="text-gray-400 text-sm">
             Email: <a href="mailto:connect@masaforum.com" className="hover:text-teal-400 transition-colors duration-300">connect@masaforum.com</a>
           </p>
-          <p className="text-gray-400 text-sm mt-1">Phone: +91-9051498808</p>
+          <p className="text-gray-400 text-sm mt-1">Phone: +91-9147375808</p>
         </div>
 
         {/* Social Media Links */}
