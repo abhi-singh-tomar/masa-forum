@@ -7,7 +7,9 @@ import upcoming3 from "../assets/event-imgs/gem.webp";
 // import upcoming4 from "../assets/event-imgs/pitch.webp";
 import upcoming5 from "../assets/event-imgs/pmepg.webp";
 import upcoming11 from "../assets/event-imgs/upcoming11.webp";
-import loanmela from "../assets/event-imgs/loanmela.png";
+import loanmela from "../assets/event-imgs/loanmela.jpg";
+import MahaGrowth from "../assets/event-imgs/MahaGrowth.png";
+
 
 // ---------------------------------------------------PAST IMAGES
 import past1 from "../assets/event-imgs/past1.webp";
@@ -49,7 +51,17 @@ Explore business funding opportunities under one roof
 
 `,
   image: loanmela,
-}
+},
+
+{
+        id: 11,
+        title: "MahaGrowth Conclave Expo and Awards – Mumbai Edition",
+        date: "23rd August 2025",
+        location: "Hotel Sahara Star, Mumbai",
+        "description": "MSME & Startup Accelerator presents the Mumbai Edition of the MahaGrowth Conclave – a flagship platform for business innovations, investments, and recognition.",
+        "fullDescription": "The MahaGrowth Conclave Expo and Awards 2025 – Mumbai Edition is designed to unlock the future of business by bringing together industry leaders, startups, innovators, investors, and policy enablers. The event will feature panel discussions, exhibitions, networking, and award recognitions. Organized by MASA Forum, this edition aims to empower Bharat’s business backbone with a special focus on growth, innovation, and investment opportunities for startups and MSMEs.",
+        image: MahaGrowth,
+      },
     
     ],
     past: [
