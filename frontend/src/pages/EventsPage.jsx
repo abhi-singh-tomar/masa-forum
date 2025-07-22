@@ -7,7 +7,7 @@ import upcoming3 from "../assets/event-imgs/gem.webp";
 // import upcoming4 from "../assets/event-imgs/pitch.webp";
 import upcoming5 from "../assets/event-imgs/pmepg.webp";
 import upcoming11 from "../assets/event-imgs/upcoming11.webp";
-import loanmela from "../assets/event-imgs/loanmela.JPG";
+import loanmela from "../assets/event-imgs/loanmela.jpg";
 import MahaGrowth from "../assets/event-imgs/MahaGrowth.png";
 import raipurphoto from "../assets/event-imgs/raipurphoto.png";
 import jamshedpurphoto from "../assets/event-imgs/Jamshedpurphoto.png";
