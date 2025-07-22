@@ -10,18 +10,29 @@ import photo3 from "../assets/masa-in-media-imgs/hindu.webp";
 import photo4 from "../assets/masa-in-media-imgs/chronicle.webp";
 import photo5 from "../assets/masa-in-media-imgs/bengalNews.webp";
 import photo6 from "../assets/masa-in-media-imgs/job-fair.webp";
+import photo7 from "../assets/masa-in-media-imgs/newsphoto.png";
 
 const MasainMedia = () => {
   // Sample media coverage data
   const mediaCoverage = [
+     {
+      id: 8,
+      title: " Loan & Finance Mela & BFSI Conclave 2025 – Kolkata",
+      source: "Dailyhunt, AajTalkss, Akhbaar e mashriq ",
+      date: "July 17",
+      description: "India’s largest MSME-focused financial event  25+ Banks, NBFCs, Fintechs & Funding Experts On-the-spot loan assistance & financial literacy sessions Explore business funding opportunities under one roof",
+      image: photo7,
+      link: "https://dhunt.in/119oYk"
+    },
+
     {
       id: 0,
       title: "East India Career & Job Fair 2025, Kolkata",
-      source: "The Telegraph",
+      source: "YuvaShakti News",
       date: "4th - 5th May",
       description: "Student at Eastern India Job Fair & Career Expo at IICR on Saturday. The two-day Eastern India Job Fair & Career Expo Kolkata 2025, in association with MSME & Startup Accelerator Pvt Ltd (MASA) and the Confederation of West Bengal Trade Association (CWBTA), connected prospective job seekers with employers.",
       image: photo6,
-      link: "https://www.thetelegraph.com/"
+      link: "https://masaforum.com/MasainMedia"
     },
     {
       id: 1,
@@ -30,7 +41,7 @@ const MasainMedia = () => {
       date: "February 15, 2025",
       description: "The MSME & Startup Accelerator Awards (MASA) 2025 - Kolkata Edition was a night of inspiration, honouring exceptional entrepreneurs and industry leaders at Silpo Sadan, Camac Street",
       image: photo0,
-      link: "https://heyzine.com/flip-book/e33ca50978.html"
+      link: "https://masaforum.com/MasainMedia"
     },
     {
       id: 2,
@@ -39,7 +50,7 @@ const MasainMedia = () => {
       date: "February 8, 2025",
       description: "The MSME & Startup Accelerator Awards 2025 – Kolkata Edition took place at Silpo Sadan, Camac Street, celebrating and honouring distinguished entrepreneurs and industry leaders in an evening filled with inspiration.",
       image: photo1,
-      link: "https://www.prabhatkhabar.com/business/monetary-policy-committee-reduces-repo-rate-by-25bps-new-rate-at-6-percent/"
+      link: "https://masaforum.com/MasainMedia"
     },
     {
       id: 3,
@@ -48,7 +59,7 @@ const MasainMedia = () => {
       date: "10th August 2024",
       description: "The environment quiz was organized as an engaging and educational initiative to help students deepen their understanding of sustainability and conservation. It provided valuable insights and practical awareness, empowering them to make informed decisions and contribute meaningfully to environmental protection.",
       image: photo2,
-      link: "https://www.yuvashaktinews.com/"
+      link: "https://masaforum.com/MasainMedia"
     },
     {
       id: 4,
@@ -57,7 +68,7 @@ const MasainMedia = () => {
       date: "June 13, 2024",
       description: "Coverage of our quarterly magazine launch event in Mumbai.",
       image: photo3,
-      link: "https://ibgnews.com/2025/03/16/%F0%9D%90%8F%F0%9D%90%AB%F0%9D%90%A2%F0%9D%90%A6%F0%9D%90%9E-%F0%9D%90%88%F0%9D%90%A7%F0%9D%90%9F%F0%9D%90%A8%F0%9D%90%AC%F0%9D%90%9E%F0%9D%90%AB%F0%9D%90%96%F0%9D%90%A2%F0%9D%90%A7/"
+      link: "https://masaforum.com/MasainMedia"
     },
     {
       id: 5,
@@ -66,7 +77,7 @@ const MasainMedia = () => {
       date: "March 10, 2024",
       description: "How our investor connect platform is bridging funding gaps.",
       image: photo4,
-      link: "https://www.deccanchronicle.com/"
+      link: "https://masaforum.com/MasainMedia"
     },
     {
       id: 6,
@@ -75,7 +86,7 @@ const MasainMedia = () => {
       date: "January 28, 2024",
       description: "Coverage by ABP Ananda of the Panel Discussion of the ",
       image: photo5,
-      link: "https://bengali.abplive.com/"
+      link: "https://masaforum.com/MasainMedia"
     },
     {
       id: 7,
@@ -84,7 +95,7 @@ const MasainMedia = () => {
       date: "April 20, 2024",
       description: "The Inter College Business & Financial Conclave & Quiz 2024 brought together students and industry experts to discuss financial trends and compete in a dynamic quiz, fostering knowledge and innovation.",
       image: photo2, // Reusing an existing image; replace with the correct one if available
-      link: "https://www.business-standard.com/"
+      link: "https://masaforum.com/MasainMedia"
     },
   ];
 

@@ -7,8 +7,10 @@ import upcoming3 from "../assets/event-imgs/gem.webp";
 // import upcoming4 from "../assets/event-imgs/pitch.webp";
 import upcoming5 from "../assets/event-imgs/pmepg.webp";
 import upcoming11 from "../assets/event-imgs/upcoming11.webp";
-import loanmela from "../assets/event-imgs/loanmela.jpg";
+import loanmela from "../assets/event-imgs/loanmela.JPG";
 import MahaGrowth from "../assets/event-imgs/MahaGrowth.png";
+import raipurphoto from "../assets/event-imgs/raipurphoto.png";
+import jamshedpurphoto from "../assets/event-imgs/Jamshedpurphoto.png";
 
 
 // ---------------------------------------------------PAST IMAGES
@@ -36,35 +38,64 @@ const EventsPage = () => {
 
   const eventsData = {
     upcoming: [
-   {
+  
+{
+        id: 201,
+        title: "MahaGrowth Conclave Expo and Awards – Mumbai Edition",
+        date: "23rd August 2025",
+        location: "Hotel Sahara Star, Mumbai",
+         description: ' <a href="https://forms.gle/ZvngaRrdrW77zYaAA" target="_blank">Click here to register</a>',
+  fullDescription: ` 
+The JampotGrowth Conclave Expo and Awards 2025 by MASA Forum brings together industry leaders, startups, investors, and policymakers to unlock the future of business. The event features panels, exhibitions, networking, and awards — with a focus on driving growth, innovation, and investment for startups and MSMEs.
+
+`,
+        image: MahaGrowth,
+      },
+  {
+     id: 202,
+    title: "RaipurGrowth Conclave Expo and Awards - Raipur Edition",
+    date: "6th September 2025",
+   location: "Hotel Hyatt, Raipur",
+   description: ' <a href="https://forms.gle/ZvngaRrdrW77zYaAA" target="_blank">Click here to register</a>',
+  fullDescription: ` 
+The RaipurGrowth Conclave Expo and Awards 2025 by MASA Forum brings together industry leaders, startups, investors, and policymakers to unlock the future of business. The event features panels, exhibitions, networking, and awards — with a focus on driving growth, innovation, and investment for startups and MSMEs.
+
+`,
+  image: raipurphoto,
+},    
+
+       {
+     id: 203,
+    title: "JampotGrowth Conclave Expo and Awards - Jamshedpur Edition",
+    date: "12th September 2025",
+   location: "Hotel Vivanta, Jamshedpur",
+   description: ' <a href="https://forms.gle/ZvngaRrdrW77zYaAA" target="_blank">Click here to register</a>',
+  fullDescription: ` 
+The JampotGrowth Conclave Expo and Awards 2025 by MASA Forum brings together industry leaders, startups, investors, and policymakers to unlock the future of business. The event features panels, exhibitions, networking, and awards — with a focus on driving growth, innovation, and investment for startups and MSMEs.
+
+`,
+  image: jamshedpurphoto,
+},
+    
+    ],
+    past: [
+
+       {
   id: 1,
   title: "Loan Mela & BFSI Conclave-Expo",
   date: "17th July 2025",
   location: "Hotel Hindustan International, Kolkata",
-  description: ' <a href="https://forms.gle/BEJ82htmrQzQvgm4A" target="_blank">Click here to register</a>',
+  description: "",
   fullDescription: ` 
 India’s largest MSME-focused financial event  
 25+ Banks, NBFCs, Fintechs & Funding Experts  
 On-the-spot loan assistance & financial literacy sessions  
 Explore business funding opportunities under one roof  
-🎯 Limited seats – Secure your spot now!  
+ 
 
 `,
   image: loanmela,
 },
-
-{
-        id: 11,
-        title: "MahaGrowth Conclave Expo and Awards – Mumbai Edition",
-        date: "23rd August 2025",
-        location: "Hotel Sahara Star, Mumbai",
-        "description": "MSME & Startup Accelerator presents the Mumbai Edition of the MahaGrowth Conclave – a flagship platform for business innovations, investments, and recognition.",
-        "fullDescription": "The MahaGrowth Conclave Expo and Awards 2025 – Mumbai Edition is designed to unlock the future of business by bringing together industry leaders, startups, innovators, investors, and policy enablers. The event will feature panel discussions, exhibitions, networking, and award recognitions. Organized by MASA Forum, this edition aims to empower Bharat’s business backbone with a special focus on growth, innovation, and investment opportunities for startups and MSMEs.",
-        image: MahaGrowth,
-      },
-    
-    ],
-    past: [
       {
         id: 151,
         title: "International Yoga Day 2025",
