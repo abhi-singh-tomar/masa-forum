@@ -26,8 +26,12 @@ import passary from "../assets/ourTeam-imgs/BD-Raipur/passary.webp";
 import aModi from "../assets/ourTeam-imgs/BD-Indore/aModi.webp";
 import bj from "../assets/ourTeam-imgs/BD-Indore/bj.webp";
 
-import gm from "../assets/ourTeam-imgs/BD-Bhubneshwar/gm.webp";
+import gm from "../assets/ourTeam-imgs/BD-Bhubneshwar/gm.jpeg";
 import lenka from "../assets/ourTeam-imgs/BD-Bhubneshwar/lenka.webp";
+import khatua from "../assets/ourTeam-imgs/BD-Bhubneshwar/khatua.jpeg";
+import sunita from "../assets/ourTeam-imgs/BD-Bhubneshwar/sunita.jpeg";
+
+
 
 import anshul from "../assets/ourTeam-imgs/BD-Mumbai/anshul.webp";
 // ---------------------------Regional BDs----------------------------------------
@@ -280,18 +284,7 @@ const regionalBoardIndore = [
     linkedin: "https://www.linkedin.com/in/modiadarsh/",
     bio: "Founder & CEO - Joytree Global | President BNI Brighton",
   },
-  // {
-  //   name: "Nicky Shurekha",
-  //   image: "",
-  //   linkedin: "",
-  //   bio: "",
-  // },
-  // {
-  //   name: "Aarti Rathi",
-  //   image: "",
-  //   linkedin: "",
-  //   bio: "",
-  // },
+
   {
     name: "Capt BJ Singh",
     image: bj,
@@ -303,14 +296,26 @@ const regionalBoardBhubneshwar = [
   {
     name: "Gautam Mohanty",
     image: gm,
-    linkedin: "https://www.linkedin.com/in/gautammohanty777/",
-    bio: "Senior Analyst at Accenture",
+    linkedin: "https://www.linkedin.com/in/frts-gautam-mohanty-16297726a/",
+    bio: "Educationist at Founder B-SchoolForum, Ex-Officio of AIMA New Delhi and Convenor Of PHDCCI, KCCI",
   },
   {
     name: "Trinath Lenka",
     image: lenka,
     linkedin: "https://www.linkedin.com/in/trinath-lenka-cfp-a2343a19/",
     bio: "Managing Director,(Wallet4wealth).TV Panelist & Columnist on Economy",
+  },
+  {
+    name: "CS Sunita Mohanty",
+    image: sunita,
+    linkedin: "https://www.linkedin.com/in/cs-sunita-mohanty-7430891a/",
+    bio: "Executive Director-BNI,(Greater Odisha)India.",
+  },
+  {
+    name: "chidatmika khatua",
+    image: khatua,
+    linkedin: "https://www.linkedin.com/in/chidatmika-khatua-b1b50438/",
+    bio: "Founder & managing Trustee of Aryabhata B-School(Aryabhata Institute of Education & technology)",
   }
 ];
 const regionalBoardMumbai = [

@@ -1,11 +1,11 @@
 import React from "react";
 import Footer from "../components/Footer";
 import { motion } from "framer-motion";
-import { 
-  FaAward, 
-  FaLightbulb, 
-  FaNewspaper, 
-  FaHandshake, 
+import {
+  FaAward,
+  FaLightbulb,
+  FaNewspaper,
+  FaHandshake,
   FaChartLine,
   FaCalendarAlt
 } from "react-icons/fa";
@@ -17,7 +17,7 @@ import powerBrand1 from "../assets/awards-imgs/powerBrand1.JPG.webp";
 import powerBrand2 from "../assets/awards-imgs/powerBrand2.webp";
 import times from "../assets/awards-imgs/MSME-times-img.webp";
 import kalpataru from "../assets/awards-imgs/kalpataru.webp";
-import nivesh from "../assets/awards-imgs/nivesh.webp";
+import nivesh from "../assets/awards-imgs/niveshmanthan.png";
 import raipur from "../assets/awards-imgs/raipur.webp";
 import jobFair from "../assets/event-imgs/upcoming1.webp";
 import quiz from "../assets/awards-imgs/quizz.webp";
@@ -25,7 +25,7 @@ import nivesh2 from "../assets/awards-imgs/raipur-2.webp";
 import nivesh3 from "../assets/awards-imgs/raipur9.webp";
 import awards1 from "../assets/awards-imgs/2024.webp";
 import awards2 from "../assets/awards-imgs/2025.JPG.webp";
-import comingSoon from "../assets/awards-imgs/coming-soon.webp";
+import comingSoon from "../assets/awards-imgs/timesmsme.png";
 import kalpataru2 from "../assets/awards-imgs/kalpataru2.webp";
 
 // Data
@@ -56,7 +56,7 @@ const initiatives = [
     icon: <FaNewspaper className="text-yellow-400 text-4xl" />,
     cards: [
       { image: times, title: "Market Insights", description: "Trends shaping the future." },
-      { image: comingSoon, title: "www.msmetimes.com", description: "" },
+      { image: comingSoon, title: "Join Our WhatsApp Channel", description: " Click image to join whatsapp channel " },
     ]
   },
   {
@@ -123,27 +123,51 @@ const Ourinitiatives = () => {
 
           {/* Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {initiative.cards.map((card, cardIndex) => (
-              <motion.div
-                key={cardIndex}
-                className="bg-gray-800/50 backdrop-blur-lg rounded-2xl overflow-hidden shadow-2xl hover:scale-105 transform transition-all duration-300 border border-gray-700/50"
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: cardIndex * 0.1 }}
-                viewport={{ once: true }}
-                whileHover={{ scale: 1.03 }}
-              >
+            {initiative.cards.map((card, cardIndex) => {
+              const isPowerBrand = initiative.title === "My Power Brand";
+              const isNiveshManthan = initiative.title === "Nivesh Manthan";
+              const isMSMETimes = initiative.title === "MSME Times";
+              const link =
+                isPowerBrand
+                  ? "https://www.youtube.com/results?search_query=my+power+brand"
+                  : isNiveshManthan
+                  ? "https://docs.google.com/forms/d/e/1FAIpQLSe7E-YehACGn_K8neq4HDZ4PseBDMhQs2SmEn_aHdju7ymOSA/viewform"
+                  : isMSMETimes
+                  ? "https://whatsapp.com/channel/0029VbAqsGzD8SE05iGcWq28"
+                  : null;
+
+              const imageElement = (
                 <img
                   src={card.image}
                   alt={card.title}
                   className="w-full h-60 object-cover"
                 />
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold text-yellow-400 mb-3">{card.title}</h3>
-                  <p className="text-gray-300">{card.description}</p>
-                </div>
-              </motion.div>
-            ))}
+              );
+
+              return (
+                <motion.div
+                  key={cardIndex}
+                  className="bg-gray-800/50 backdrop-blur-lg rounded-2xl overflow-hidden shadow-2xl hover:scale-105 transform transition-all duration-300 border border-gray-700/50"
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: cardIndex * 0.1 }}
+                  viewport={{ once: true }}
+                  whileHover={{ scale: 1.03 }}
+                >
+                  {link ? (
+                    <a href={link} target="_blank" rel="noopener noreferrer">
+                      {imageElement}
+                    </a>
+                  ) : (
+                    imageElement
+                  )}
+                  <div className="p-6">
+                    <h3 className="text-2xl font-bold text-yellow-400 mb-3">{card.title}</h3>
+                    <p className="text-gray-300">{card.description}</p>
+                  </div>
+                </motion.div>
+              );
+            })}
           </div>
 
           {/* Know More Button for MASA Awards */}

@@ -57,26 +57,8 @@ const testimonials = [
     text: "I think this a perfect platform for women to come together and grow together. Do something very substantial", 
     profileImage: kanika 
   },
-  { 
-    name: "Entrepreneur", 
-    text: "With MASA, I got access to funding and mentorship that helped scale my business.", 
-    profileImage: "https://i.pravatar.cc/100?img=20" 
-  },
-  { 
-    name: "Business Owner", 
-    text: "The connections I've built here are priceless. It's an amazing platform for startups!", 
-    profileImage: "https://i.pravatar.cc/100?img=30" 
-  },
-  { 
-    name: "Innovator", 
-    text: "I found amazing investors and mentors through MASA Forum. Highly recommended!", 
-    profileImage: "https://i.pravatar.cc/100?img=40" 
-  },
-  { 
-    name: "MSME Leader", 
-    text: "This platform gave me the exposure I needed to take my business to the next level.", 
-    profileImage: "https://i.pravatar.cc/100?img=50" 
-  }
+  
+   
 ];
 
 const features = [
