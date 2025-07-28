@@ -34,6 +34,19 @@ import sunita from "../assets/ourTeam-imgs/BD-Bhubneshwar/sunita.jpeg";
 
 
 import anshul from "../assets/ourTeam-imgs/BD-Mumbai/anshul.webp";
+import aashish from "../assets/ourTeam-imgs/BD-Mumbai/AashieshTavkarr.jpg";
+import aiyappan from "../assets/ourTeam-imgs/BD-Mumbai/aiyappan.jpg";
+import AyushGoyal from "../assets/ourTeam-imgs/BD-Mumbai/AyushGoyal.webp";
+import Gaurav_Singh from "../assets/ourTeam-imgs/BD-Mumbai/Gaurav_Singh.jpg";
+import JayanthiNatarajan from "../assets/ourTeam-imgs/BD-Mumbai/JayanthiNatarajan.jpg";
+import MandeepSingh from "../assets/ourTeam-imgs/BD-Mumbai/MandeepSingh.jpg";
+import Pradhan from "../assets/ourTeam-imgs/BD-Mumbai/Pradhan.jpg";
+import RajSukheja from "../assets/ourTeam-imgs/BD-Mumbai/RajSukheja.jpg";
+import RohanTurior from "../assets/ourTeam-imgs/BD-Mumbai/RohanTurior.png";
+import SanjayK from "../assets/ourTeam-imgs/BD-Mumbai/SanjayK.jpeg";
+
+
+
 // ---------------------------Regional BDs----------------------------------------
 
 // ---------------------------- image Imports For Mentors ------------------------------------
@@ -59,7 +72,8 @@ import sharad from "../assets/ourMentors-imgs/sharad-kohli.webp";
 import skumar from "../assets/ourMentors-imgs/shubhendu-kumar.webp";
 import khiro from "../assets/ourMentors-imgs/khiro-mishra.webp";
 import vk from "../assets/ourMentors-imgs/vk-jaithley.webp";
-import dg from "../assets/ourMentors-imgs/gayen.webp"
+import dg from "../assets/ourMentors-imgs/gayen.webp";
+
 // ---------------------------- image Imports For Mentors ------------------------------------
 
 const teamMembers = [
@@ -324,7 +338,68 @@ const regionalBoardMumbai = [
     image: anshul,
     linkedin: "https://www.linkedin.com/in/anshulagarwalca/",
     bio: "Impact Funding | Debt fund raising | Financial Advisory ",
+  },
+   {
+    name: "Shashank Pradhan",
+    image: Pradhan,
+    linkedin: "https://www.linkedin.com/in/shashank-pradhan-b48334240/",
+    bio: "Founder CEO at fundgini Pvt Ltd",
+  },
+  {
+    name: "Ayush Goyal",
+    image: AyushGoyal,
+    linkedin: "http://www.linkedin.com/passionforgoal",
+    bio: "Managing general partner at Induckt ventures  ",
+  },
+  {
+    name: "Raj Sukheja ",
+    image: RajSukheja,
+    linkedin: "http://www.linkedin.com/in/rajsukheja",
+    bio: "CXO | Red Mammoth Ventures LLP  ",
+  },
+  {
+    name: " Dr. Aashiesh Tavkarr",
+    image: aashish,
+    linkedin: "http://linkedin.com/in/tavkarr",
+    bio: "Psychotherapist And Leadership Coach | Metanoia Holistic Leadership Institute",
+  },
+  {
+    name: "Aiyappan",
+    image: aiyappan,
+    linkedin: "https://www.linkedin.com/in/aiyappan/",
+    bio: "Founder & CEO at Congruent Services",
+  },
+  {
+    name: "Gaurav Singh",
+    image: Gaurav_Singh,
+    linkedin: "https://www.linkedin.com/in/gauravsingh2805/",
+    bio: "Chairman & CEO at GR",
+  },
+  {
+    name: "Jayanthi Natarajan",
+    image: JayanthiNatarajan,
+    linkedin: "",
+    bio: "Academic coordinator  SSSM higher secondary school chithode  ",
+  },
+  {
+    name: "Mandeep M Singh",
+    image: MandeepSingh,
+    linkedin: "https://www.linkedin.com/in/mandeepmsingh/",
+    bio: "General Partner, Induckt Vision Fund | Induckt Ventures",
+  },
+  {
+    name: "Sanjay Kimbahune ",
+    image: SanjayK,
+    linkedin: "https://www.linkedin.com/in/sanjay-kimbahune-91b669/?lipi=urn%3Ali%3Apage%3Ap_mwlite_my_network%3B8Z4audiaT6uG9mSwJIukhw%3D%3D",
+    bio: "Senior Scientist | TCS ",
+  },
+  {
+    name: "Rohan Turior",
+    image: RohanTurior,
+    linkedin: "https://www.linkedin.com/in/rohanturior?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    bio: "Founding Partner | INNOIPS",
   }
+  
 ];
 
 const advisoryBoard = [
