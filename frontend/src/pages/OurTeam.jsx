@@ -44,6 +44,7 @@ import Pradhan from "../assets/ourTeam-imgs/BD-Mumbai/Pradhan.jpg";
 import RajSukheja from "../assets/ourTeam-imgs/BD-Mumbai/RajSukheja.jpg";
 import RohanTurior from "../assets/ourTeam-imgs/BD-Mumbai/RohanTurior.png";
 import SanjayK from "../assets/ourTeam-imgs/BD-Mumbai/SanjayK.jpeg";
+import Rachna from "../assets/ourTeam-imgs/BD-Mumbai/Rachna.JPG";
 
 
 
@@ -379,7 +380,7 @@ const regionalBoardMumbai = [
     name: "Jayanthi Natarajan",
     image: JayanthiNatarajan,
     linkedin: "",
-    bio: "Academic coordinator  SSSM higher secondary school chithode  ",
+    bio: "Academic coordinator | SSSM higher secondary school chithode  ",
   },
   {
     name: "Mandeep M Singh",
@@ -398,6 +399,12 @@ const regionalBoardMumbai = [
     image: RohanTurior,
     linkedin: "https://www.linkedin.com/in/rohanturior?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     bio: "Founding Partner | INNOIPS",
+  },
+  {
+    name: "Rachna Lachke Bagwe",
+    image: Rachna,
+    linkedin: "https://www.facebook.com/share/1B2VbJJQ1n/?mibextid=wwXIfr",
+    bio: "Founder  |  Rachna Arts & Creations",
   }
   
 ];

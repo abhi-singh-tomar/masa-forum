@@ -21,6 +21,7 @@ import TermsAndConditions from "./pages/TermsAndConditions";
 import CancellationAndRefund from "./pages/CancellationAndRefund";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import EventRegistrationPage from './pages/EventRegistrationPage';
+import MahagrowthPage from "./pages/MahagrowthPage";
 
 
 
@@ -38,7 +39,9 @@ function App() {
       <Route path="/CancellationAndRefund" element={<CancellationAndRefund />} />
       <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
       <Route path="/event-registration" element={<EventRegistrationPage />} />
+      <Route path="/mahagrowth" element={<MahagrowthPage />} />
 
+      {/* Additional Routes */}
 
       <Route path="/Partners" element={<Partners />} /> 
       <Route path="/Ourinitiatives" element={<Ourinitiatives />} />
