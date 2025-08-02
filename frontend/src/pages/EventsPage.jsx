@@ -317,132 +317,131 @@ Explore business funding opportunities under one roof
     setSelectedImage(null);
   };
 
-  return (
-    <div className="min-h-screen bg-gray-900 text-gray-100">
-      {/* Hero Section */}
-      <section className="relative py-24 bg-gradient-to-b from-gray-800 to-gray-900">
-        <div className="absolute inset-0 bg-black opacity-30"></div>
-        <div className="container mx-auto px-6 text-center relative z-10">
-          <h1 className="text-5xl md:text-6xl font-extrabold mb-4 leading-tight">
-            Explore Our Events for{" "}
-            <span className="text-teal-400">MSMEs and Startups</span>
-          </h1>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            From startup pitch events and innovation workshops to MSME
-            accelerator programs — discover hands-on opportunities that drive
-            real growth.
-          </p>
-        </div>
-      </section>
+ return (
+  <div className="min-h-screen bg-gray-900 text-gray-100">
+    {/* Compact Hero Section */}
+    <section className="relative py-12">
+      <div className="absolute inset-0 bg-gray-900 opacity-30"></div>
+      <div className="container mx-auto px-6 text-center relative z-10">
+        <h1 className="text-2xl md:text-3xl font-extrabold mb-2 leading-tight">
+          Explore Our Events for{" "}
+          <span className="text-teal-400">MSMEs and Startups</span>
+        </h1>
+        <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+          From startup pitch events and innovation workshops to MSME
+          accelerator programs — discover hands-on opportunities that drive
+          real growth.
+        </p>
+      </div>
+    </section>
 
-      {/* Main Content */}
-      <section className="container mx-auto px-6 py-16">
-        {/* Tab Navigation */}
-        <div className="flex justify-center mb-12 bg-gray-800 rounded-full p-2 max-w-md mx-auto shadow-lg">
-          {Object.keys(eventsData).map((tab) => (
-            <button
-              key={tab}
-              className={`flex-1 py-3 px-4 rounded-full text-sm font-semibold uppercase tracking-wide transition-all duration-300 ${
-                activeTab === tab
-                  ? "bg-teal-500 text-white shadow-md"
-                  : "text-gray-400 hover:text-white hover:bg-gray-700"
-              }`}
-              onClick={() => {
-                setActiveTab(tab);
-                setExpandedEvents([]);
-              }}
-            >
-              {tab}
-            </button>
-          ))}
-        </div>
+    {/* Main Content */}
+    <section className="container mx-auto -mt-8 px-6 py-8">
+      {/* Tab Navigation */}
+      <div className="flex justify-center mb-8 bg-gray-800 rounded-full p-1 max-w-md mx-auto shadow-lg">
+        {Object.keys(eventsData).map((tab) => (
+          <button
+            key={tab}
+            className={`flex-1 py-2 px-4 rounded-full text-xs sm:text-sm font-semibold uppercase tracking-wide transition-all duration-300 ${
+              activeTab === tab
+                ? "bg-teal-500 text-white shadow-md"
+                : "text-gray-400 hover:text-white hover:bg-gray-700"
+            }`}
+            onClick={() => {
+              setActiveTab(tab);
+              setExpandedEvents([]);
+            }}
+          >
+            {tab}
+          </button>
+        ))}
+      </div>
 
-        {/* Events Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {eventsData[activeTab].map((event) => (
-            <div
-              key={event.id}
-              className="bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-1"
-            >
-              <div className="relative h-56">
-                <img
-                  src={event.image}
-                  alt={event.title}
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105 cursor-pointer"
-                  onClick={() => openImageModal(event.image)} // Open modal on click
-                />
-                <span className="absolute top-4 right-4 bg-teal-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
-                  {event.date}
-                </span>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-white mb-2">
-                  {event.title}
-                </h3>
-                <p className="text-gray-400 text-sm mb-3">{event.location}</p>
-                <p className="text-blue-300 text-sm mb-4 "
-                  dangerouslySetInnerHTML={{ __html: event.description }} >
-               </p>
-
-                {expandedEvents.includes(event.id) && (
-                  <div className="mt-4 pt-4 border-t border-gray-700 text-gray-300 text-sm animate-fade-in">
-                    {event.fullDescription}
-                  </div>
-                )}
-
-                <button
-                  className={`text-sm font-semibold transition-colors duration-300 ${
-                    expandedEvents.includes(event.id)
-                      ? "text-gray-400 hover:text-white"
-                      : "text-teal-400 hover:text-teal-300"
-                  }`}
-                  onClick={() => toggleEventExpansion(event.id)}
-                >
-                  {expandedEvents.includes(event.id)
-                    ? "Show Less"
-                    : "Read More"}
-                </button>
-              </div>
+      {/* Events Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {eventsData[activeTab].map((event) => (
+          <div
+            key={event.id}
+            className="bg-gray-800 rounded-xl overflow-hidden shadow-lg transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+          >
+            <div className="relative h-48">
+              <img
+                src={event.image}
+                alt={event.title}
+                className="w-full h-full object-cover transition-transform duration-500 hover:scale-105 cursor-pointer"
+                onClick={() => openImageModal(event.image)}
+              />
+              <span className="absolute top-3 right-3 bg-teal-500 text-white text-xs font-semibold px-2 py-1 rounded-full">
+                {event.date}
+              </span>
             </div>
-          ))}
-        </div>
-      </section>
+            <div className="p-5">
+              <h3 className="text-lg font-bold text-white mb-1">
+                {event.title}
+              </h3>
+              <p className="text-gray-400 text-s mb-2">{event.location}</p>
+              <p 
+                className="text-blue-300 text-s mb-3"
+                dangerouslySetInnerHTML={{ __html: event.description }}
+              ></p>
 
-      {/* Image Modal */}
-      {selectedImage && (
-        <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
-          <div className="relative max-w-4xl w-full mx-4">
-            <img
-              src={selectedImage}
-              alt="Full size event"
-              className="w-full h-auto max-h-[80vh] object-contain rounded-lg"
-            />
-            <button
-              className="absolute top-4 right-4 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 transition-colors"
-              onClick={closeImageModal}
-            >
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              {expandedEvents.includes(event.id) && (
+                <div className="mt-3 pt-3 border-t border-gray-700 text-gray-300 text-s animate-fade-in">
+                  {event.fullDescription}
+                </div>
+              )}
+
+              <button
+                className={`text-s font-semibold transition-colors duration-300 ${
+                  expandedEvents.includes(event.id)
+                    ? "text-gray-400 hover:text-white"
+                    : "text-teal-400 hover:text-teal-300"
+                }`}
+                onClick={() => toggleEventExpansion(event.id)}
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
+                {expandedEvents.includes(event.id) ? "Show Less" : "Read More"}
+              </button>
+            </div>
           </div>
-        </div>
-      )}
+        ))}
+      </div>
+    </section>
 
-      <Footer />
-    </div>
-  );
+    {/* Image Modal (unchanged) */}
+    {selectedImage && (
+      <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
+        <div className="relative max-w-4xl w-full mx-4">
+          <img
+            src={selectedImage}
+            alt="Full size event"
+            className="w-full h-auto max-h-[80vh] object-contain rounded-lg"
+          />
+          <button
+            className="absolute top-4 right-4 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 transition-colors"
+            onClick={closeImageModal}
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    )}
+
+    <Footer />
+  </div>
+);
 };
 
 export default EventsPage;

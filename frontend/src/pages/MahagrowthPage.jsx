@@ -265,8 +265,7 @@ const MahagrowthPage = () => {
   `}</style>
 </motion.section>
 
-
- <motion.section
+<motion.section
   initial={{ opacity: 0, y: 20 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ delay: 0.3 }}
@@ -278,9 +277,9 @@ const MahagrowthPage = () => {
   </div>
 
   {/* Main Container */}
-  <div className="relative bg-white/90 backdrop-blur-sm border border-gray-200/80 rounded-3xl shadow-xl overflow-hidden transition-all duration-300 group-hover:shadow-2xl group-hover:border-blue-200">
+  <div className="relative bg-white/90 backdrop-blur-sm border border-gray-200/80 rounded-3xl shadow-xl overflow-visible transition-all duration-300 group-hover:shadow-2xl group-hover:border-blue-200">
     {/* Content with proper padding */}
-    <div className="py-12 px-6 sm:px-8 relative">
+    <div className="py-12 px-6 sm:px-8 relative mb-20">
       {/* Headline with more space below */}
       <div className="text-center mb-16 sm:mb-20">
         <motion.h3 
@@ -297,10 +296,8 @@ const MahagrowthPage = () => {
         ></motion.div>
       </div>
 
-      {/* Circular Layout Container with adjusted size */}
-      <div className="relative w-full h-[380px] sm:h-[420px] flex justify-center items-center mx-auto" 
-           style={{ maxWidth: 'calc(100% - 40px)' }}>
-        
+      {/* Circular Layout Container with responsive size */}
+      <div className="relative w-full aspect-square flex justify-center items-center mx-auto max-w-[90vw] sm:max-w-[420px]">
         {/* Central elements */}
         <motion.div 
           animate={{ 
@@ -313,14 +310,15 @@ const MahagrowthPage = () => {
           }}
           className="absolute w-20 h-20 sm:w-24 sm:h-24 rounded-full border-2 border-dashed border-gray-200/60"
         ></motion.div>
-        
+
         <div className="absolute w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-gradient-to-br from-blue-100 to-white shadow-inner flex items-center justify-center">
           <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-blue-600 animate-pulse"></div>
         </div>
 
         {eventSegments.map((segment, i) => {
+          const isMobile = window.innerWidth < 640;
+          const radius = isMobile ? 100 : 180;
           const angle = (i / eventSegments.length) * 2 * Math.PI - Math.PI / 2;
-          const radius = Math.min(180, window.innerWidth < 640 ? 140 : 180); // Responsive radius
           const x = radius * Math.cos(angle);
           const y = radius * Math.sin(angle);
 
@@ -334,7 +332,6 @@ const MahagrowthPage = () => {
                 height: '140px',
               }}
             >
-              {/* Segment Node - Smaller on mobile */}
               <motion.div
                 initial={{ scale: 0.8, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
@@ -357,6 +354,9 @@ const MahagrowthPage = () => {
     </div>
   </div>
 </motion.section>
+
+
+
 
       {/* 4. Register Now */}
    <motion.section
