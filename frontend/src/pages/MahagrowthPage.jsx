@@ -606,7 +606,7 @@ const MahagrowthPage = () => {
   {/* Contact CTA */}
   <div className="mt-16 pt-8 border-t border-gray-100 text-center">
     <p className="text-gray-500 text-sm">
-      Interested in becoming a partner? <a href="masaforum.com/ContactUs" className="text-blue-600 hover:underline">Contact us</a>
+      Interested in becoming a partner? <a href="/ContactUs" className="text-blue-600 hover:underline">Contact us</a>
     </p>
   </div>
 </motion.section>
