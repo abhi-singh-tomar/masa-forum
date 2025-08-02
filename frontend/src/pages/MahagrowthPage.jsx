@@ -2,15 +2,67 @@ import  { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiArrowRight, FiArrowLeft, FiDownload} from 'react-icons/fi';
 
+import excel from "../assets/homePage-carousel-imgs/excellence.webp";
+import loanmela from "../assets/event-imgs/loanmela.jpg";
+import pastRaipur from "../assets/event-imgs/pastRaipur.webp";
+
+import carasoul from "../assets/mahagrowth/carasoul.webp";
+import carasoul2 from "../assets/mahagrowth/carasoul2.jpg";
+
+
+import partner1 from "../assets/mahagrowth/fundgini.jpg";
+import partner2 from "../assets/mahagrowth/iccibi.png";
+import partner3 from "../assets/mahagrowth/nselogo.png";
+
+import support1 from "../assets/mahagrowth/apeiron.jpg";
+import support2 from "../assets/mahagrowth/arthsanket.jpg";
+import support3 from "../assets/mahagrowth/bigredlog.jpg";
+import support4 from "../assets/mahagrowth/CEI.jpg";
+import support5 from "../assets/mahagrowth/gr.png";
+import support6 from "../assets/mahagrowth/icex.jpg";
+import support7 from "../assets/mahagrowth/indiatechnews.jpg";
+import support8 from "../assets/mahagrowth/indukt_log.jpg";
+import support9 from "../assets/mahagrowth/institute.jpg";
+import support10 from "../assets/mahagrowth/parifound.jpg";
+import support11 from "../assets/mahagrowth/rachnaarts.jpg";
+import support12 from "../assets/mahagrowth/redmammothcopy.jpg";
+
+import vt from "../assets/ourTeam-imgs/VT.webp";
+import sushil from "../assets/ourTeam-imgs/sushil-poddar.webp";
+import pragya from "../assets/ourTeam-imgs/pragya.webp";
+import ck from "../assets/ourTeam-imgs/ck.webp";
+import tr from "../assets/ourTeam-imgs/treasurer.webp";
+import v from "../assets/ourTeam-imgs/v.webp";
+import ira from "../assets/ourTeam-imgs/ira.JPG.webp";
+import anshul from "../assets/ourTeam-imgs/BD-Mumbai/anshul.webp";
+import aashish from "../assets/ourTeam-imgs/BD-Mumbai/AashieshTavkarr.jpg";
+import aiyappan from "../assets/ourTeam-imgs/BD-Mumbai/aiyappan.jpg";
+import AyushGoyal from "../assets/ourTeam-imgs/BD-Mumbai/AyushGoyal.webp";
+import Gaurav_Singh from "../assets/ourTeam-imgs/BD-Mumbai/Gaurav_Singh.jpg";
+import JayanthiNatarajan from "../assets/ourTeam-imgs/BD-Mumbai/JayanthiNatarajan.jpg";
+import MandeepSingh from "../assets/ourTeam-imgs/BD-Mumbai/MandeepSingh.jpg";
+import Pradhan from "../assets/ourTeam-imgs/BD-Mumbai/Pradhan.jpg";
+import RajSukheja from "../assets/ourTeam-imgs/BD-Mumbai/RajSukheja.jpg";
+import RohanTurior from "../assets/ourTeam-imgs/BD-Mumbai/RohanTurior.png";
+import SanjayK from "../assets/ourTeam-imgs/BD-Mumbai/SanjayK.jpeg";
+import Rachna from "../assets/ourTeam-imgs/BD-Mumbai/Rachna.JPG";
+import ravindra from "../assets/ourTeam-imgs/BD-Mumbai/ravindra.png";
+import girish from "../assets/ourTeam-imgs/BD-Mumbai/girish.jpg";
+
+
+
+
+
+
+
+
+
 const MahagrowthPage = () => {
   // Carousel state
   const [currentSlide, setCurrentSlide] = useState(0);
   const [direction, setDirection] = useState(1); // 1 for forward, -1 for backward
   const images = [
-    'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80',
-    'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80',
-    'https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80',
-    'https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80',
+    excel, loanmela, pastRaipur
   ];
 
   // Auto-slide effect
@@ -35,10 +87,10 @@ const MahagrowthPage = () => {
   // Event segments with icons
   const eventSegments = [
     { title: 'MSME & Startup Showcase', icon: '🏢' },
-    { title: 'Policy Dialogue', icon: '🗣️' },
+    { title: 'Panel Discussions', icon: '🗣️' },
     { title: 'Investor Meet – Nivesh Manthan', icon: '💼' },
-    { title: 'Networking Sessions', icon: '🤝' },
-    { title: 'Innovation Workshops', icon: '🔧' },
+    { title: 'keynote address', icon: '🤝' },
+    { title: 'Mumbai MASA Board Launch', icon: '🚀' },
     { title: 'Awards Ceremony', icon: '🏆' },
   ];
 
@@ -89,7 +141,7 @@ const MahagrowthPage = () => {
       </div>
 
       {/* 2. Event Details & Brochure */}
-     <motion.section 
+    <motion.section 
   initial={{ opacity: 0, y: 20 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ delay: 0.2 }}
@@ -108,60 +160,88 @@ const MahagrowthPage = () => {
       boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.1)',
       borderColor: 'rgba(99, 102, 241, 0.5)'
     }}
-    className="relative bg-white/80 backdrop-blur-sm border border-gray-200 rounded-2xl shadow-sm overflow-hidden max-w-4xl mx-auto"
+    className="relative bg-white/80 backdrop-blur-sm border border-gray-200 rounded-2xl shadow-sm overflow-hidden max-w-6xl mx-auto"
   >
     {/* Gradient border top */}
     <div className="h-1 bg-gradient-to-r from-blue-600 to-purple-600"></div>
-    
-    {/* Content */}
-    <div className="space-y-8 py-12 px-6 sm:px-12 text-center">
-      <motion.h2 
-        whileHover={{ scale: 1.02 }}
-        className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent inline-block"
-      >
-        MahaGrowth Conclave, Expo & Awards
-      </motion.h2>
-      
-      <motion.p 
-        whileHover={{ scale: 1.01 }}
-        className="text-gray-700 text-lg font-bold leading-relaxed max-w-3xl mx-auto"
-      >
-        The MahaGrowth Conclave, Expo & Awards is Maharashtra's premier business event, bringing together industry leaders, entrepreneurs, and innovators. This dynamic platform fosters collaboration, showcases groundbreaking ideas, and celebrates excellence in MSMEs, startups, and investment ecosystems.
-      </motion.p>
-      
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
-        {[
-          { label: 'Date', value: 'August 15-16, 2025', icon: '📅' },
-          { label: 'Venue', value: 'Bombay Exhibition Centre', icon: '📍' },
-          { label: 'Timing', value: '9:00 AM - 6:00 PM IST', icon: '⏰' }
-        ].map((item, index) => (
-          <motion.div 
-            key={index}
-            whileHover={{ y: -5, boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)' }}
-            className="bg-white p-4 rounded-xl shadow-sm border border-gray-100 hover:border-blue-200 transition-all"
+
+    {/* Content Area Split in 2 Columns */}
+    <div className="py-12 px-6 sm:px-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        {/* Left Column - Event Info */}
+        <div className="space-y-6 text-center md:text-left">
+          <motion.h2 
+            whileHover={{ scale: 1.02 }}
+            className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent inline-block"
           >
-            <div className="text-2xl mb-2">{item.icon}</div>
-            <p className="text-gray-500 font-medium">{item.label}</p>
-            <p className="text-lg font-semibold">{item.value}</p>
+            MahaGrowth Conclave, Expo & Awards
+          </motion.h2>
+
+          <motion.p 
+            whileHover={{ scale: 1.01 }}
+            className="text-gray-700 text-lg font-bold leading-relaxed"
+          >
+            The MahaGrowth Conclave Expo and Awards 2025 by MASA Forum brings together industry leaders, startups, investors, and policymakers to unlock the future of business. The event features panels, exhibitions, networking, and awards — with a focus on driving growth, innovation, and investment for startups and MSMEs.
+          </motion.p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            {[
+              { label: 'Date', value: 'August 23, 2025', icon: '📅' },
+              { label: 'Venue', value: 'NSE ATRIUM, EXCHANGE PLAZA - MUMBAI', icon: '📍' },
+              { label: 'Timing', value: '11:00 AM - 5:00 PM IST', icon: '⏰' }
+            ].map((item, index) => (
+              <motion.div 
+                key={index}
+                whileHover={{ y: -5, boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)' }}
+                className="bg-white p-4 rounded-xl shadow-sm border border-gray-100 hover:border-blue-200 transition-all text-center"
+              >
+                <div className="text-2xl mb-2">{item.icon}</div>
+                <p className="text-gray-500 font-medium">{item.label}</p>
+                <p className="text-lg font-semibold">{item.value}</p>
+              </motion.div>
+            ))}
+          </div>
+
+          <motion.div 
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="inline-block mt-4"
+          >
+            <a
+              href="https://drive.google.com/file/d/1eAn2N1uO95H_M8JM2P-2uCotMrnj0ClY/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg hover:shadow-lg transition-all group"
+            >
+              <FiDownload className="w-5 h-5 group-hover:animate-bounce" />
+              <span className="font-medium">Download Brochure</span>
+            </a>
           </motion.div>
-        ))}
-      </div>
-      
-      <motion.div 
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-        className="inline-block"
-      >
-        <a
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-lg hover:shadow-lg transition-all group"
+        </div>
+
+        {/* Right Column - Stylish Image Stack */}
+        <motion.div 
+          initial={{ scale: 0.95 }}
+          whileInView={{ scale: 1 }}
+          transition={{ duration: 0.4 }}
+          className="flex flex-col gap-6 justify-center items-center relative"
         >
-          <FiDownload className="w-5 h-5 group-hover:animate-bounce" />
-          <span className="font-medium">Download Brochure</span>
-        </a>
-      </motion.div>
+          <div className="w-80 h-60 rounded-2xl overflow-hidden shadow-xl border-4 border-white transform rotate-2">
+            <img 
+              src={carasoul} 
+              alt="Event Preview 1" 
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="w-80 h-60 rounded-2xl overflow-hidden shadow-xl border-4 border-white transform -rotate-2 -translate-y-6">
+            <img 
+              src={carasoul2} 
+              alt="Event Preview 2" 
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </motion.div>
+      </div>
     </div>
   </motion.div>
 
@@ -184,6 +264,7 @@ const MahagrowthPage = () => {
     }
   `}</style>
 </motion.section>
+
 
  <motion.section
   initial={{ opacity: 0, y: 20 }}
@@ -298,38 +379,38 @@ const MahagrowthPage = () => {
             {
               title: 'MSME/Startup Pods',
               description: 'Showcase your innovation to investors and partners',
-              price: '₹4,999',
+              price: '₹50,000',
               features: ['3m × 3m dedicated space', 'Featured in event catalog', '2 delegate passes', 'Investor pitch session'],
               color: 'bg-gradient-to-br from-orange-500 to-red-600',
               icon: '🏢',
-              link: '#'
+              link: 'https://forms.gle/hiToKyMn2XPgndWX9'
             },
             {
               title: 'Exhibitor Booth',
               description: 'Display your products to thousands of attendees',
-              price: '₹9,999',
+              price: '₹15,000',
               features: ['10×10 ft premium booth', 'Custom branding', 'Conference access', 'Lead capture system'],
               color: 'bg-gradient-to-br from-teal-500 to-blue-600',
               icon: '🎪',
-              link: '#'
+              link: 'https://forms.gle/hiToKyMn2XPgndWX9'
             },
             {
-              title: 'Investor Connect',
+              title: 'Nives Manthan - Investor Connect',
               description: 'Access to exclusive investor networking',
-              price: '₹2,499',
+              price: '₹15,000',
               features: ['Pre-scheduled meetings', 'Pitch deck review', 'Investor directory', 'Private lounge access'],
               color: 'bg-gradient-to-br from-purple-500 to-pink-600',
               icon: '💼',
-              link: '#'
+              link: 'https://forms.gle/m1rbZZo3NGz5PBeo8'
             },
             {
-              title: 'MASA Awards',
+              title: 'MASA Award Nominee',
               description: 'Nominate for industry recognition',
-              price: '₹1,499',
+              price: '₹7,000',
               features: ['15 award categories', 'Jury evaluation', 'Award ceremony', 'Media coverage'],
               color: 'bg-gradient-to-br from-yellow-500 to-orange-600',
               icon: '🏆',
-              link: '#'
+              link: 'https://forms.gle/gwrnqjuamzeEL7Tr7'
             },
           ].map((card, i) => (
             <motion.div
@@ -356,8 +437,9 @@ const MahagrowthPage = () => {
                 
                 {/* Price */}
                 <div className="mb-6">
-                  <span className="text-sm text-white/70">Starting at</span>
+                  
                   <p className="text-3xl font-bold text-white">{card.price}</p>
+                  <p className="text-sm text-white/80">18 % GST Will be Additional</p>
                 </div>
                 
                 {/* Features list */}
@@ -399,27 +481,27 @@ const MahagrowthPage = () => {
           {[
             {
               title: 'VIP Experience',
-              price: '₹999',
+              price: '₹3,500',
               benefits: ['Premium seating', 'VIP lounge access', 'Exclusive dinner', 'Priority registration'],
               color: 'from-purple-600 via-indigo-600 to-blue-600',
               icon: '👑',
-              link: '#'
+              link: 'https://forms.gle/7oVyydBogJbCnPXn9'
             },
             {
               title: 'Standard Delegate',
-              price: '₹499',
+              price: '₹1,500',
               benefits: ['Full conference access', 'Lunch included', 'Goodie bag', 'All sessions'],
               color: 'from-blue-500 via-cyan-500 to-teal-500',
               icon: '🎟️',
-              link: '#'
+              link: 'https://forms.gle/7oVyydBogJbCnPXn9'
             },
             {
               title: 'Student Pass',
-              price: '₹199',
+              price: '₹250',
               benefits: ['Conference access', 'Student networking', 'Workshop access', 'Mentorship sessions'],
               color: 'from-green-500 via-teal-500 to-emerald-500',
               icon: '🎓',
-              link: '#'
+              link: 'https://forms.gle/7oVyydBogJbCnPXn9'
             },
           ].map((card, i) => (
             <motion.div
@@ -433,10 +515,12 @@ const MahagrowthPage = () => {
                 
                 {/* Title and price */}
                 <h5 className="text-2xl font-bold text-white mb-2">{card.title}</h5>
-                <p className="text-3xl font-bold text-white mb-6">{card.price}</p>
+                <p className="text-3xl font-bold text-white mb-1">{card.price}</p>
+                <p className="text-sm text-white/80">18% GST Will be Additional</p>
+
                 
                 {/* Benefits list */}
-                <ul className="space-y-3 mb-8">
+                <ul className="space-y-3 mb-8 mt-4">
                   {card.benefits.map((benefit, j) => (
                     <li key={j} className="flex items-start">
                       <div className="w-5 h-5 mr-2 mt-0.5 flex-shrink-0 rounded-full bg-white/20 flex items-center justify-center">
@@ -465,13 +549,13 @@ const MahagrowthPage = () => {
       </div>
     </motion.section>
       {/* 5. Partners Section */}
-     <motion.section 
+    <motion.section 
   initial={{ opacity: 0, y: 20 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ delay: 0.5 }}
-  className="max-w-6xl mx-auto space-y-16 py-12 px-6"
+  className="max-w-7xl mx-auto space-y-16 py-12 px-4"
 >
-  {/* Organizing Partners */}
+  {/* Organising Partners */}
   <div className="text-center">
     <h3 className="text-3xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
       Organising Partners
@@ -479,28 +563,18 @@ const MahagrowthPage = () => {
     <p className="text-gray-600 max-w-2xl mx-auto mb-10">
       Our event is made possible with the support of these esteemed organizations
     </p>
-    <div className="flex flex-wrap justify-center gap-10">
-      {[
-        { name: 'Maharashtra Government', logo: 'https://via.placeholder.com/160x80?text=Maharashtra+Govt' },
-        { name: 'MSME Ministry', logo: 'https://via.placeholder.com/160x80?text=MSME+Ministry' },
-        { name: 'Startup India', logo: 'https://via.placeholder.com/160x80?text=Startup+India' }
-      ].map((partner, i) => (
-        <motion.div
+    <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 md:gap-8">
+      {[partner3, partner1, partner2].map((logo, i) => (
+        <div
           key={i}
-          whileHover={{ y: -5 }}
-          className="group relative"
+          className="w-40 h-20 bg-white rounded-lg shadow-sm flex items-center justify-center p-2 border border-gray-200"
         >
-          <div className="w-48 h-24 bg-white rounded-xl shadow-md flex items-center justify-center p-4 border border-gray-100 hover:border-blue-200 transition-all">
-            <img 
-              src={partner.logo} 
-              alt={partner.name}
-              className="max-h-full max-w-full object-contain filter grayscale group-hover:grayscale-0 transition-all"
-            />
-          </div>
-          <div className="absolute -bottom-6 left-0 right-0 text-xs text-gray-500 opacity-0 group-hover:opacity-100 transition-opacity">
-            {partner.name}
-          </div>
-        </motion.div>
+          <img 
+            src={logo}
+            alt={`Organising Partner ${i + 1}`}
+            className="max-h-full max-w-full object-contain"
+          />
+        </div>
       ))}
     </div>
   </div>
@@ -513,34 +587,23 @@ const MahagrowthPage = () => {
     <p className="text-gray-600 max-w-2xl mx-auto mb-10">
       Special thanks to our supporting partners for their contributions
     </p>
-    <div className="flex flex-wrap justify-center gap-8">
-      {[
-        { name: 'Tech Mahindra', logo: 'https://via.placeholder.com/120x60?text=Tech+Mahindra' },
-        { name: 'SBI Bank', logo: 'https://via.placeholder.com/120x60?text=SBI+Bank' },
-        { name: 'Times Group', logo: 'https://via.placeholder.com/120x60?text=Times+Group' },
-        { name: 'Nasscom', logo: 'https://via.placeholder.com/120x60?text=Nasscom' }
-      ].map((partner, i) => (
-        <motion.div
+    <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 md:gap-8">
+      {[support1, support2, support3, support4, support5, support6, support7, support8, support9, support10, support11, support12].map((logo, i) => (
+        <div
           key={i}
-          whileHover={{ scale: 1.05 }}
-          className="group relative"
+          className="w-36 h-20 bg-white rounded-lg shadow-sm flex items-center justify-center p-2 border border-gray-200"
         >
-          <div className="w-36 h-20 bg-white rounded-lg shadow-sm flex items-center justify-center p-3 border border-gray-100 hover:border-purple-200 transition-all">
-            <img 
-              src={partner.logo} 
-              alt={partner.name}
-              className="max-h-full max-w-full object-contain opacity-80 group-hover:opacity-100 transition-all"
-            />
-          </div>
-          <div className="absolute -bottom-6 left-0 right-0 text-xs text-gray-500 opacity-0 group-hover:opacity-100 transition-opacity">
-            {partner.name}
-          </div>
-        </motion.div>
+          <img 
+            src={logo}
+            alt={`Supporting Partner ${i + 1}`}
+            className="max-h-full max-w-full object-contain"
+          />
+        </div>
       ))}
     </div>
   </div>
 
-  {/* Additional decorative element */}
+  {/* Contact CTA */}
   <div className="mt-16 pt-8 border-t border-gray-100 text-center">
     <p className="text-gray-500 text-sm">
       Interested in becoming a partner? <a href="#" className="text-blue-600 hover:underline">Contact us</a>
@@ -548,46 +611,67 @@ const MahagrowthPage = () => {
   </div>
 </motion.section>
 
+
       {/* 6. Executive Team */}
       <motion.section 
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.6 }}
-        className="max-w-6xl mx-auto text-center"
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.6 }}
+  className="max-w-6xl mx-auto text-center py-12 px-4"
+>
+  <h3 className="text-2xl font-bold mb-12 relative">
+    <span className="relative z-10 px-4 bg-gray-50">Executive Team</span>
+    <span className="absolute top-1/2 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent z-0"></span>
+  </h3>
+
+  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
+    {[
+      { name: 'Mr. Narendra Kapadia', designation: 'Chairman', organisation: 'MASA Forum', img: v },
+      { name: 'Mr. Sushil Poddar', designation: 'President', organisation:'MASA Forum', img: sushil },
+      { name: 'Mr. CK Varadrajan', designation: 'Vice-President',organisation: 'MASA Forum', img: ck },
+      { name: 'Vibhor Tandon', designation: 'Vice-President', organisation: 'MASA Forum', img: vt },
+      { name: 'Ms. Pragya Jhunjhunwala', designation: 'General Secretary', organisation: 'MASA Forum', img: pragya },
+      { name: 'Mr. Pradeep Luhariwala', designation: 'Treasurer', organisation: 'MASA Forum', img: tr },
+      { name: 'Ms. Ira Saha', designation: 'Director', organisation: 'MASA Forum',img: ira },
+      { name: 'Anshul Agarwal', designation: 'Financial Advisory', organisation: 'Chartered Accountant', img: anshul },
+      { name: 'Shashank Pradhan', designation: 'Founder CEO', organisation: 'fundgini Pvt Ltd', img: Pradhan },
+      { name: 'Dr. Girish', designation: 'Chairman',organisation: 'ICCIBI', img: girish },
+      { name: 'Dr. Aashiesh Tavkarr', designation: 'Psychotherapist And Leadership Coach',organisation: 'Metanoia Holistic Leadership Institute', img: aashish },
+      { name: 'Aiyappan', designation: 'Founder & CEO', organisation: 'Congruent Services', img: aiyappan },
+      { name: 'Ayush Goyal', designation: 'Managing general partner', organisation: ' Induckt ventures', img: AyushGoyal },
+      { name: 'Gaurav Singh', designation: 'Chairman & CEO', organisation: 'GR', img: Gaurav_Singh },
+      { name: 'Jayanthi Natarajan', designation: 'Academic coordinator',organisation: 'SSSM higher secondary school chithode', img: JayanthiNatarajan },
+      { name: 'Mandeep M Singh', designation: 'General Partner', organisation: 'Induckt Ventures', img: MandeepSingh },
+      { name: 'Raj Sukheja', designation: 'CXO', organisation: 'Red Mammoth Ventures',img: RajSukheja },
+      { name: 'Rohan Turior', designation: 'Founding Partner', organisation: 'INNOIPS', img: RohanTurior },
+      { name: 'Sanjay Kimbahune', designation: 'Senior Scientist', organisation: ' TCS',img: SanjayK },
+      { name: 'Rachna Lachke Bagwe', designation: 'Founder', organisation: 'Rachna Arts & Creations',img: Rachna },
+      { name: 'Ravindra Jadhav', designation: 'COO & Chief Deal Maker',organisation: 'Fundgini.com', img: ravindra },
+      
+    ].map((member, i) => (
+      <motion.div 
+        key={i}
+        whileHover={{ y: -5 }}
+        className="space-y-4"
       >
-        <h3 className="text-2xl font-bold mb-12 relative">
-          <span className="relative z-10 px-4 bg-gray-50">Executive Team</span>
-          <span className="absolute top-1/2 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent z-0"></span>
-        </h3>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
-          {[
-            { name: 'John Doe', designation: 'Event Director', img: 'https://randomuser.me/api/portraits/men/1.jpg' },
-            { name: 'Jane Smith', designation: 'Program Coordinator', img: 'https://randomuser.me/api/portraits/women/1.jpg' },
-            { name: 'Amit Patel', designation: 'Sponsorship Head', img: 'https://randomuser.me/api/portraits/men/2.jpg' },
-            { name: 'Priya Sharma', designation: 'Marketing Lead', img: 'https://randomuser.me/api/portraits/women/2.jpg' },
-            { name: 'Rahul Verma', designation: 'Operations Manager', img: 'https://randomuser.me/api/portraits/men/3.jpg' },
-          ].map((member, i) => (
-            <motion.div 
-              key={i}
-              whileHover={{ y: -5 }}
-              className="space-y-4"
-            >
-              <div className="relative mx-auto w-24 h-24">
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full blur-md opacity-75"></div>
-                <img
-                  src={member.img}
-                  alt={member.name}
-                  className="relative w-24 h-24 rounded-full object-cover border-4 border-white shadow-md"
-                />
-              </div>
-              <div>
-                <p className="font-semibold">{member.name}</p>
-                <p className="text-sm text-gray-600">{member.designation}</p>
-              </div>
-            </motion.div>
-          ))}
+        <div className="relative mx-auto w-24 h-24">
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full blur-md opacity-75"></div>
+          <img
+            src={member.img}
+            alt={member.name}
+            className="relative w-24 h-24 rounded-full object-cover border-4 border-white shadow-md"
+          />
         </div>
-      </motion.section>
+        <div>
+          <p className="font-semibold">{member.name}</p>
+          <p className="text-sm text-gray-600">{member.designation}</p>
+          <p className="text-sm text-gray-600">{member.organisation}</p>
+        </div>
+      </motion.div>
+    ))}
+  </div>
+</motion.section>
+
 
       {/* CTA Section */}
       

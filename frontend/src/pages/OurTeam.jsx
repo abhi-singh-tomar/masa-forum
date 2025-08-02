@@ -45,6 +45,10 @@ import RajSukheja from "../assets/ourTeam-imgs/BD-Mumbai/RajSukheja.jpg";
 import RohanTurior from "../assets/ourTeam-imgs/BD-Mumbai/RohanTurior.png";
 import SanjayK from "../assets/ourTeam-imgs/BD-Mumbai/SanjayK.jpeg";
 import Rachna from "../assets/ourTeam-imgs/BD-Mumbai/Rachna.JPG";
+import ravindra from "../assets/ourTeam-imgs/BD-Mumbai/ravindra.png";
+import girish from "../assets/ourTeam-imgs/BD-Mumbai/girish.jpg";
+
+
 
 
 
@@ -405,7 +409,20 @@ const regionalBoardMumbai = [
     image: Rachna,
     linkedin: "https://www.facebook.com/share/1B2VbJJQ1n/?mibextid=wwXIfr",
     bio: "Founder  |  Rachna Arts & Creations",
-  }
+  },
+  {
+    name: "Ravindra Jadhav",
+    image: ravindra,
+    linkedin: "https://www.linkedin.com",
+    bio: "COO & Chief Deal Maker Fundgini.com ",
+  },
+  {
+    name: "Dr. Girish",
+    image: girish,
+    linkedin: "",
+    bio: "Chairman | ICCIBI ",
+  },
+
   
 ];
 

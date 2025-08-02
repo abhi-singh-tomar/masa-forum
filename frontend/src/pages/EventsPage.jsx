@@ -8,7 +8,7 @@ import upcoming3 from "../assets/event-imgs/gem.webp";
 import upcoming5 from "../assets/event-imgs/pmepg.webp";
 import upcoming11 from "../assets/event-imgs/upcoming11.webp";
 import loanmela from "../assets/event-imgs/loanmela.jpg";
-import MahaGrowth from "../assets/event-imgs/MahaGrowth.png";
+import MahaGrowth from "../assets/event-imgs/newmahagrowth.png";
 import raipurphoto from "../assets/event-imgs/raipurphoto.png";
 import jamshedpurphoto from "../assets/event-imgs/Jamshedpurphoto.png";
 
@@ -46,7 +46,7 @@ const EventsPage = () => {
         location: "Hotel Sahara Star, Mumbai",
          description: ' <a href="https://forms.gle/ZvngaRrdrW77zYaAA" target="_blank">Click here to register</a>',
   fullDescription: ` 
-The JampotGrowth Conclave Expo and Awards 2025 by MASA Forum brings together industry leaders, startups, investors, and policymakers to unlock the future of business. The event features panels, exhibitions, networking, and awards — with a focus on driving growth, innovation, and investment for startups and MSMEs.
+The MahaGrowth Conclave Expo and Awards 2025 by MASA Forum brings together industry leaders, startups, investors, and policymakers to unlock the future of business. The event features panels, exhibitions, networking, and awards — with a focus on driving growth, innovation, and investment for startups and MSMEs.
 
 `,
         image: MahaGrowth,
