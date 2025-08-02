@@ -104,7 +104,7 @@ const MahagrowthPage = () => {
   ];
 
   // Calculate circle positions for Event Spectrum
-  const getCirclePositions = () => {
+  const circlePositions =getCirclePositions = () => {
     const isMobile = windowSize.width < 640;
     const containerWidth = spectrumRef.current?.clientWidth || 300;
     const radius = isMobile ? containerWidth * 0.35 : containerWidth * 0.25;
