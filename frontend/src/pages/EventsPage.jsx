@@ -43,7 +43,7 @@ const EventsPage = () => {
         id: 201,
         title: "MahaGrowth Conclave Expo and Awards – Mumbai Edition",
         date: "23rd August 2025",
-        location: "Hotel Sahara Star, Mumbai",
+        location: "NSE ATRIUM, EXCHANGE PLAZA, Mumbai",
          description: ' <a href="/MahaGrowth">Click here to register</a>',
   fullDescription: ` 
 The MahaGrowth Conclave Expo and Awards 2025 by MASA Forum brings together industry leaders, startups, investors, and policymakers to unlock the future of business. The event features panels, exhibitions, networking, and awards — with a focus on driving growth, innovation, and investment for startups and MSMEs.

@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiArrowRight, FiArrowLeft, FiDownload } from 'react-icons/fi';
+import Footer from '../components/Footer';
 
 import excel from "../assets/homePage-carousel-imgs/excellence.webp";
 import loanmela from "../assets/event-imgs/loanmela.jpg";
@@ -107,6 +108,7 @@ const MahagrowthPage = () => {
  
 
   return (
+    <div>
     <div className="px-4 md:px-16 py-8 space-y-16 bg-gray-50">
       {/* 1. Hero Carousel */}
       <div className="relative w-full h-[200px] sm:h-[300px] md:h-[400px] rounded-2xl shadow-xl overflow-hidden">
@@ -179,7 +181,7 @@ const MahagrowthPage = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                   {[
                     { label: 'Date', value: 'August 23, 2025', icon: '📅' },
-                    { label: 'Venue', value: 'NSE ATRIUM, MUMBAI', icon: '📍' },
+                    { label: 'Venue', value: 'NSE ATRIUM, EXCHANGE PLAZA, MUMBAI', icon: '📍' },
                     { label: 'Timing', value: '11:00 AM - 5:00 PM', icon: '⏰' }
                   ].map((item, index) => (
                     <motion.div 
@@ -406,7 +408,7 @@ const MahagrowthPage = () => {
                         <svg className="w-4 h-4 sm:w-5 sm:h-5 mt-0.5 mr-2 text-white/80 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                         </svg>
-                        <span className="text-white/90 text-xs sm:text-sm">{feature}</span>
+                        <span className="text-white/90 text-xl font-bold sm:text-sm">{feature}</span>
                       </li>
                     ))}
                   </ul>
@@ -441,7 +443,7 @@ const MahagrowthPage = () => {
               },
               {
                 title: 'Standard Delegate',
-                price: '₹1,500',
+                price: '₹1,000',
                 benefits: ['Full conference access', 'Lunch included', 'Goodie bag', 'All sessions'],
                 color: 'from-blue-500 via-cyan-500 to-teal-500',
                 icon: '🎟️',
@@ -608,6 +610,8 @@ const MahagrowthPage = () => {
           ))}
         </div>
       </motion.section>
+    </div>
+          <Footer />
     </div>
   );
 };
