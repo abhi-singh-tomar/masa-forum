@@ -435,7 +435,7 @@ const MahagrowthPage = () => {
             {[
               {
                 title: 'VIP Experience',
-                price: '₹3,500',
+                price: '₹2,500',
                 benefits: ['Premium seating', 'VIP lounge access', 'Exclusive dinner', 'Priority registration'],
                 color: 'from-purple-600 via-indigo-600 to-blue-600',
                 icon: '👑',
