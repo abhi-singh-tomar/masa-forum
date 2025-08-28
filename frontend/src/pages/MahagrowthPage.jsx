@@ -1,4 +1,4 @@
-import { useState, useEffect, lazy, Suspense } from 'react';
+import { useState, useEffect, lazy, Suspense, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiArrowRight, FiArrowLeft, FiUsers, FiAward } from 'react-icons/fi';
 import mum1 from '../assets/mumbai-masa/mum1.webp';
@@ -9,7 +9,6 @@ import mum20 from '../assets/mumbai-masa/mum20.jpg';
 import mum21 from '../assets/mumbai-masa/mum21.jpg';
 import powerbrand from '../assets/powerbrand.png';
 import LiteYouTube from "../components/LiteYouTube";
-
 import mum12 from '../assets/mumbai-masa/mum12-min.webp';
 import mum13 from '../assets/mumbai-masa/mum13-min.webp';
 import mum14 from '../assets/mumbai-masa/mum14-min.webp';
@@ -22,10 +21,6 @@ import mum19 from '../assets/mumbai-masa/mum19-min.webp';
 // Lazy load the Footer component
 const Footer = lazy(() => import('../components/Footer'));
 
-
-// Import optimized images
-
-
 // Loading component for Suspense fallback
 const LoadingSpinner = () => (
   <div className="flex justify-center items-center py-10">
@@ -35,7 +30,9 @@ const LoadingSpinner = () => (
 
 const MahagrowthPage = () => {
   // ---------- Hero Carousel ----------
-  const gallery = [mum1, mum3, mum5, mum12, mum13, mum14, mum15, mum16, mum2, mum17, mum18, mum19, mum20, mum21];
+  const gallery = useMemo(() => [
+    mum1, mum3, mum5, mum12, mum13, mum14, mum15, mum16, mum2, mum17, mum18, mum19, mum20, mum21
+  ], []);
   const [current, setCurrent] = useState(0);
   const [dir, setDir] = useState(1);
   const [isLoading, setIsLoading] = useState(true);
@@ -96,7 +93,7 @@ const MahagrowthPage = () => {
                   key={current}
                   src={gallery[current]}
                   alt={`Slide ${current + 1}`}
-                  className="w-full h-full object-contain  bg-gray-200"
+                  className="w-full h-full object-contain bg-gray-200"
                   custom={dir}
                   initial={{ opacity: 0, x: dir > 0 ? 100 : -100 }}
                   animate={{ opacity: 1, x: 0 }}
@@ -255,65 +252,63 @@ const MahagrowthPage = () => {
       </section>
 
       {/* ===== MyPowerBrand Podcast Section ===== */}
-<section className="max-w-6xl mx-auto px-4 md:px-16 py-16">
-  <motion.div
-    initial={{ opacity: 0, y: 50 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true }}
-    transition={{ duration: 0.7 }}
-    className="relative bg-white/90 backdrop-blur-sm border border-gray-200 rounded-2xl shadow-lg overflow-hidden"
-  >
-    <div className="h-1 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500" />
-    <div className="p-6 sm:p-12 space-y-10 text-center">
-      <div className="space-y-4">
-        {/* Replace src with actual logo */}
-        <img
-  src={powerbrand}
-  alt="MyPowerBrand Logo"
-  className="mx-auto h-28 md:h-32 object-contain"
-/>
-<p className="text-sm text-gray-600 mt-3 italic text-center">
-  An initiative by <span className="font-semibold text-pink-600">MASA Forum</span>
-</p>
-        <h2 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-pink-500 to-red-600 bg-clip-text text-transparent">
-          MyPowerBrand Podcast
-        </h2>
-        <p className="text-gray-700 max-w-3xl mx-auto text-lg leading-relaxed">
-          Showcasing changemakers, entrepreneurs & industry leaders who built their
-          brands from scratch. Watch past episodes and nominate yourself or someone inspiring
-          for the next feature.
-        </p>
-      </div>
+      <section className="max-w-6xl mx-auto px-4 md:px-16 py-16">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+          className="relative bg-white/90 backdrop-blur-sm border border-gray-200 rounded-2xl shadow-lg overflow-hidden"
+        >
+          <div className="h-1 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500" />
+          <div className="p-6 sm:p-12 space-y-10 text-center">
+            <div className="space-y-4">
+              <img
+                src={powerbrand}
+                alt="MyPowerBrand Logo"
+                className="mx-auto h-28 md:h-32 object-contain"
+              />
+              <p className="text-sm text-gray-600 mt-3 italic text-center">
+                An initiative by <span className="font-semibold text-pink-600">MASA Forum</span>
+              </p>
+              <h2 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-pink-500 to-red-600 bg-clip-text text-transparent">
+                MyPowerBrand Podcast
+              </h2>
+              <p className="text-gray-700 max-w-3xl mx-auto text-lg leading-relaxed">
+                Showcasing changemakers, entrepreneurs & industry leaders who built their
+                brands from scratch. Watch past episodes and nominate yourself or someone inspiring
+                for the next feature.
+              </p>
+            </div>
 
-      {/* Lite YouTube embeds */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {[
-          { id: "vupFdZH_rj0", title: "Episode 1" },
-          { id: "hsn3ihKhwkQ", title: "Episode 2" },
-          { id: "CEj0tZZm1sk", title: "Episode 3" },
-          { id: "pcYYNI_0wrU", title: "Episode 4" },
-          { id: "zz2pYzgw7pc", title: "Episode 5" },
-        ].map((v, i) => (
-          <LiteYouTube key={i} id={v.id} title={v.title} />
-        ))}
-      </div>
+            {/* Lite YouTube embeds */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+              {[
+                { id: "vupFdZH_rj0", title: "Episode 1" },
+                { id: "hsn3ihKhwkQ", title: "Episode 2" },
+                { id: "CEj0tZZm1sk", title: "Episode 3" },
+                { id: "pcYYNI_0wrU", title: "Episode 4" },
+                { id: "zz2pYzgw7pc", title: "Episode 5" },
+              ].map((v, i) => (
+                <LiteYouTube key={i} id={v.id} title={v.title} />
+              ))}
+            </div>
 
-      <motion.a
-        href="https://forms.gle/RNa99CqMaQaGfrqY9"
-        whileHover={{
-          scale: 1.05,
-          boxShadow: "0 10px 25px -5px rgba(236, 72, 153, 0.4)",
-        }}
-        whileTap={{ scale: 0.95 }}
-        className="inline-flex items-center gap-3 bg-gradient-to-r from-pink-500 to-red-600 text-white px-8 py-4 rounded-xl shadow-lg text-lg font-semibold border-2 border-white overflow-hidden group"
-      >
-        <span className="relative z-10">Nominate Yourself</span>
-        <FiArrowRight className="w-6 h-6 relative z-10 transition-transform duration-300 group-hover:translate-x-1" />
-      </motion.a>
-    </div>
-  </motion.div>
-</section>
-
+            <motion.a
+              href="https://forms.gle/RNa99CqMaQaGfrqY9"
+              whileHover={{
+                scale: 1.05,
+                boxShadow: "0 10px 25px -5px rgba(236, 72, 153, 0.4)",
+              }}
+              whileTap={{ scale: 0.95 }}
+              className="inline-flex items-center gap-3 bg-gradient-to-r from-pink-500 to-red-600 text-white px-8 py-4 rounded-xl shadow-lg text-lg font-semibold border-2 border-white overflow-hidden group"
+            >
+              <span className="relative z-10">Nominate Yourself</span>
+              <FiArrowRight className="w-6 h-6 relative z-10 transition-transform duration-300 group-hover:translate-x-1" />
+            </motion.a>
+          </div>
+        </motion.div>
+      </section>
 
       {/* Lazy loaded Footer with Suspense */}
       <Suspense fallback={<LoadingSpinner />}>
