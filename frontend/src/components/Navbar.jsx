@@ -150,6 +150,14 @@ function Navbar() {
               Events
             </Link>
 
+            <Link
+              to="/MahaGrowth"
+              className="hover:text-yellow-500 px-3 py-2 text-[0.95rem] font-bold whitespace-nowrap"
+              onClick={handleNavItemClick}
+            >
+              Mumbai MASA
+            </Link>
+
             {/* Resources Dropdown */}
             <div className="relative">
               <button

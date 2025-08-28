@@ -1,13 +1,6 @@
 import { useState, useEffect, lazy, Suspense } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiArrowRight, FiArrowLeft, FiUsers, FiAward } from 'react-icons/fi';
-
-// Lazy load the Footer component
-const Footer = lazy(() => import('../components/Footer'));
-import LiteYouTube from "../components/LiteYouTube";
-
-
-// Import optimized images
 import mum1 from '../assets/mumbai-masa/mum1.webp';
 import mum2 from '../assets/mumbai-masa/mum2.webp';
 import mum3 from '../assets/mumbai-masa/mum3.webp';
@@ -15,6 +8,7 @@ import mum5 from '../assets/mumbai-masa/mum5.webp';
 import mum20 from '../assets/mumbai-masa/mum20.jpg';
 import mum21 from '../assets/mumbai-masa/mum21.jpg';
 import powerbrand from '../assets/powerbrand.png';
+import LiteYouTube from "../components/LiteYouTube";
 
 import mum12 from '../assets/mumbai-masa/mum12-min.webp';
 import mum13 from '../assets/mumbai-masa/mum13-min.webp';
@@ -24,6 +18,13 @@ import mum16 from '../assets/mumbai-masa/mum16-min.webp';
 import mum17 from '../assets/mumbai-masa/mum17-min.webp';
 import mum18 from '../assets/mumbai-masa/mum18-min.webp';
 import mum19 from '../assets/mumbai-masa/mum19-min.webp';
+
+// Lazy load the Footer component
+const Footer = lazy(() => import('../components/Footer'));
+
+
+// Import optimized images
+
 
 // Loading component for Suspense fallback
 const LoadingSpinner = () => (
