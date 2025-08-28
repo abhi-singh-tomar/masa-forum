@@ -32,7 +32,7 @@ const Register = () => {
     <div>
     <div className="min-h-screen bg-gray-900 flex items-center justify-center p-4">
       <div className="max-w-md w-full p-6 bg-gray-800 rounded-lg shadow-lg">
-        <h2 className="text-2xl font-bold text-white mb-6 text-center">Register</h2>
+        <h2 className="text-2xl font-bold text-white mb-6 text-center">Join As a Member</h2>
         <form onSubmit={handleSubmit} className="space-y-4">
           <input 
             type="text" 
@@ -82,17 +82,7 @@ const Register = () => {
               </svg>
             </div>
           </div>
-
-          {/* <input 
-            type="password" 
-            name="password" 
-            placeholder="Password" 
-            value={formData.password} 
-            onChange={handleChange} 
-            required 
-            className="w-full p-3 bg-gray-700 border border-gray-600 rounded text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500" 
-          /> */}
-
+          
           <button 
             type="submit" 
             className="w-full p-3 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-800"
@@ -109,3 +99,5 @@ const Register = () => {
 };
 
 export default Register;
+
+
