@@ -38,19 +38,6 @@ const EventsPage = () => {
 
   const eventsData = {
     upcoming: [
-  
-{
-        id: 201,
-        title: "MahaGrowth Conclave Expo and Awards – Mumbai Edition",
-        date: "23rd August 2025",
-        location: "NSE ATRIUM, EXCHANGE PLAZA, Mumbai",
-         description: ' <a href="/MahaGrowth">Click here to register</a>',
-  fullDescription: ` 
-The MahaGrowth Conclave Expo and Awards 2025 by MASA Forum brings together industry leaders, startups, investors, and policymakers to unlock the future of business. The event features panels, exhibitions, networking, and awards — with a focus on driving growth, innovation, and investment for startups and MSMEs.
-
-`,
-        image: MahaGrowth,
-      },
   {
      id: 202,
     title: "RaipurGrowth Conclave Expo and Awards - Raipur Edition",
@@ -79,6 +66,19 @@ The JampotGrowth Conclave Expo and Awards 2025 by MASA Forum brings together ind
     
     ],
     past: [
+
+      {
+        id: 201,
+        title: "MahaGrowth Conclave Expo and Awards – Mumbai Edition",
+        date: "23rd August 2025",
+        location: "NSE ATRIUM, EXCHANGE PLAZA, Mumbai",
+         description: ' <a href="/MahaGrowth">Click here to View Event</a>',
+  fullDescription: ` 
+The MahaGrowth Conclave Expo and Awards 2025 by MASA Forum brings together industry leaders, startups, investors, and policymakers to unlock the future of business. The event features panels, exhibitions, networking, and awards — with a focus on driving growth, innovation, and investment for startups and MSMEs.
+
+`,
+        image: MahaGrowth,
+      },
 
        {
   id: 1,
