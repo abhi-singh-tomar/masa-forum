@@ -1,29 +1,26 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Footer from "../components/Footer";
-import newsImage1 from "../assets/MSME-news-imgs/sebi.webp"
-import newsImage2 from "../assets/MSME-news-imgs/goyal.webp"
-import newsImage3 from "../assets/MSME-news-imgs/msme-awards.webp"
 
 const msmeNews = [
   {
     title: "India's Market Regulator Tightens Rules for IPOs of Small Firms",
     date: "March 21, 2025",
-    image: newsImage1,
+    image: "/images/MSME-news-imgs/sebi.webp",
     description: "SEBI introduces stricter guidelines for SME IPOs to ensure transparency and investor protection.",
     link: "https://www.reuters.com/markets/asia/indias-market-regulator-tightens-rules-ipos-small-firms-2024-12-18/",
   },
   {
     title: "Piyush Goyal Emphasizes MSME Sector's Key Role in Driving Services Exports and Creating Jobs",
     date: "March 21, 2025",
-    image: newsImage2,
+    image: "/images/MSME-news-imgs/goyal.webp",
     description: "Commerce Minister highlights MSMEs as a crucial force in India's export and employment sectors.",
     link: "https://www.business-standard.com/markets/capital-market-news/piyush-goyal-emphasizes-msme-sector-s-key-role-in-driving-services-exports-and-creating-jobs-125032100483_1.html",
   },
   {
     title: "ET MSME Awards 2024: Meet the 20 Winners of India's Biggest MSME Awards",
     date: "March 21, 2025",
-    image: newsImage3,
+    image: "/images/MSME-news-imgs/msme-awards.webp",
     description: "Recognizing outstanding MSMEs that are shaping India's business landscape.",
     link: "https://m.economictimes.com/small-biz/et-msme-awards-2024-meet-the-20-winners-of-indias-biggest-msme-awards/articleshow/119287122.cms",
   },

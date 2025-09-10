@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa";
-import mantras from "../assets/mantras.png"; // Adjust the path as necessary
 
 const Footer = () => {
   // Function to handle scrolling to top on navigation
@@ -20,7 +19,7 @@ const Footer = () => {
           </p>
           <div className="flex items-center space-x-2">
             <img 
-              src={mantras} // Replace with actual Mantra's World logo URL
+              src="/images/mantras.png" // Replace with actual Mantra's World logo URL
               alt="Mantra's World Logo"
               className="h-12 w-12"
             />

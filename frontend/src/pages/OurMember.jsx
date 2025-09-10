@@ -1,81 +1,73 @@
 import React from "react";
 
-import piyush from "../assets/ourMembers-imgs/piyush.webp";
-import arun from "../assets/ourMembers-imgs/arun.webp";
-import biswa from "../assets/ourMembers-imgs/biswa.webp";
-import rajesh from "../assets/ourMembers-imgs/rajesh.webp";
-import sarita from "../assets/ourMembers-imgs/sarita.webp";
-import noPic from "../assets/ourMembers-imgs/unknown.webp";
-import pinaki from "../assets/ourMembers-imgs/pinaki.webp";
-
 const members = [
   {
     id: 1,
     name: "Arun Kothari",
-    photo: arun,
+    photo: "/images/ourMembers-imgs/arun.webp",
     dateJoined: "April 2025",
     bio: "Kothari Industries"
   },
   {
     id: 2,
     name: "Rajesh Dalmia",
-    photo: rajesh,
+    photo: "/images/ourMembers-imgs/rajesh.webp",
     dateJoined: "January 2025",
     bio: "Dalmia Financial Services"
   },
   {
     id: 3,
     name: "Sarita Bagaria",
-    photo: sarita,
+    photo: "/images/ourMembers-imgs/sarita.webp",
     dateJoined: "January 2025",
     bio: "Soulmist"
   },
   {
     id: 4,
     name: "Varun Biyani",
-    photo: noPic,
+    photo: "/images/ourMembers-imgs/unknown.webp",
     dateJoined: "February 2025",
     bio: "M/s SkyKing, TruckHapp Pvt Ltd"
   },
   {
     id: 5,
     name: "Dr. Biswarup Chatterjee",
-    photo: biswa,
+    photo: "/images/ourMembers-imgs/biswa.webp",
     dateJoined: "February 2025",
     bio: "Karyeshu Management Training"
   },
   {
     id: 6,
     name: "Pinaki Ganguly",
-    photo: pinaki,
+    photo: "/images/ourMembers-imgs/pinaki.webp",
     dateJoined: "December 2024",
     bio: "Fractals Global Services Private Limited"
   },
   {
     id: 7,
     name: "Piyush Agarwal",
-    photo: piyush,
+    photo: "/images/ourMembers-imgs/piyush.webp",
     dateJoined: "April 2025",
     bio: "Elixir Metals"
   },
   {
     id: 8,
     name: "Vivek Agarwal",
-    photo: noPic,
+    photo: "/images/ourMembers-imgs/unknown.webp",
     dateJoined: "April 2025",
     bio: "Vivek Murarka, advocate "
   },
   {
     id: 9,
     name: "Vineet Khaitan",
-    photo: noPic,
+    photo: "/images/ourMembers-imgs/unknown.webp",
     dateJoined: "November 2024",
     bio: "NaturoDiet "
   },
   {
     id: 10,
     name: "Nimish Kumar Agrawal",
-    photo: noPic,
+    photo: "/images/ourMembers-imgs/unknown.webp",
     dateJoined: "December 2024",
     bio: "Tejas Spire LLP"
   }

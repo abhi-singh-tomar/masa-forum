@@ -1,36 +1,6 @@
 import React, { useState } from "react";
 import Footer from "../components/Footer";
 
-// --------------------------------------------------Upcoming Images
-import upcoming2 from "../assets/event-imgs/upcoming2.webp";
-import upcoming3 from "../assets/event-imgs/gem.webp";
-// import upcoming4 from "../assets/event-imgs/pitch.webp";
-import upcoming5 from "../assets/event-imgs/pmepg.webp";
-import upcoming11 from "../assets/event-imgs/upcoming11.webp";
-import loanmela from "../assets/event-imgs/loanmela.jpg";
-import MahaGrowth from "../assets/event-imgs/newmahagrowth.png";
-import raipurphoto from "../assets/event-imgs/raipurphoto.png";
-import jamshedpurphoto from "../assets/event-imgs/Jamshedpurphoto.png";
-
-
-// ---------------------------------------------------PAST IMAGES
-import past1 from "../assets/event-imgs/past1.webp";
-import past2 from "../assets/event-imgs/past2.webp";
-import past3 from "../assets/event-imgs/past3.webp";
-import past4 from "../assets/event-imgs/past4.webp";
-import past5 from "../assets/event-imgs/past5.webp";
-import past6 from "../assets/event-imgs/past6.webp";
-import past7 from "../assets/event-imgs/past7.webp";
-import past8 from "../assets/event-imgs/past8.webp";
-import past9 from "../assets/event-imgs/past9.webp";
-import past10 from "../assets/event-imgs/past10.webp";
-import past11 from "../assets/event-imgs/past11.webp";
-import past12 from "../assets/event-imgs/past-yoga-day.webp";
-import pastRaipur from "../assets/event-imgs/pastRaipur.webp";
-// ----------------------------------------------------PAST IMAGES
-import poddar from "../assets/event-imgs/leadershipProgram.JPG.webp";
-import CONNECT from "../assets/event-imgs/MASA-connect1.webp"
-
 const EventsPage = () => {
   const [activeTab, setActiveTab] = useState("upcoming");
   const [expandedEvents, setExpandedEvents] = useState([]);
@@ -48,7 +18,7 @@ const EventsPage = () => {
 The RaipurGrowth Conclave Expo and Awards 2025 by MASA Forum brings together industry leaders, startups, investors, and policymakers to unlock the future of business. The event features panels, exhibitions, networking, and awards — with a focus on driving growth, innovation, and investment for startups and MSMEs.
 
 `,
-  image: raipurphoto,
+  image: "/images/event-imgs/raipurphoto.png",
 },    
 
        {
@@ -61,7 +31,7 @@ The RaipurGrowth Conclave Expo and Awards 2025 by MASA Forum brings together ind
 The JampotGrowth Conclave Expo and Awards 2025 by MASA Forum brings together industry leaders, startups, investors, and policymakers to unlock the future of business. The event features panels, exhibitions, networking, and awards — with a focus on driving growth, innovation, and investment for startups and MSMEs.
 
 `,
-  image: jamshedpurphoto,
+  image: "/images/event-imgs/Jamshedpurphoto.png",
 },
     
     ],
@@ -77,7 +47,7 @@ The JampotGrowth Conclave Expo and Awards 2025 by MASA Forum brings together ind
 The MahaGrowth Conclave Expo and Awards 2025 by MASA Forum brings together industry leaders, startups, investors, and policymakers to unlock the future of business. The event features panels, exhibitions, networking, and awards — with a focus on driving growth, innovation, and investment for startups and MSMEs.
 
 `,
-        image: MahaGrowth,
+        image: "/images/event-imgs/newmahagrowth.png",
       },
 
        {
@@ -94,7 +64,7 @@ Explore business funding opportunities under one roof
  
 
 `,
-  image: loanmela,
+  image: "/images/event-imgs/loanmela.jpg",
 },
       {
         id: 151,
@@ -103,7 +73,7 @@ Explore business funding opportunities under one roof
         location: "Swarnamani Banquet Hall",
        // description: "MASA & Swarnamani Pariwar celebrates International Yoga Day",
         fullDescription: "Celebration of International Yoga Day in Swarnamani Residency. For Morning mindfulness, health and harmony",
-        image: past12,
+        image: "/images/event-imgs/past-yoga-day.webp",
       },
 
        {
@@ -113,7 +83,7 @@ Explore business funding opportunities under one roof
         location: "Hotel Astor, Kolkata",
         description: "",
         fullDescription: "",
-        image: upcoming2,
+        image: "/images/event-imgs/upcoming2.webp",
       },
 
         {
@@ -123,7 +93,7 @@ Explore business funding opportunities under one roof
         location: "National Library, Kolkata",
         description: "",
         fullDescription: "",
-        image: upcoming11,
+        image: "/images/event-imgs/upcoming11.webp",
       },
      
       // {
@@ -144,7 +114,7 @@ Explore business funding opportunities under one roof
          // "Our vision was to establish this event as the leading career & networking event in the region. Organized by Magical Mantras Pvt. Ltd in collaboration with MASA & CWBTA.",
         fullDescription:
           "This three-day event featured keynote speeches from tech pioneers, hands-on workshops, and networking opportunities with industry leaders.",
-        image: past11,
+        image: "/images/event-imgs/past11.webp",
       },
       {
         id: 2,
@@ -155,7 +125,7 @@ Explore business funding opportunities under one roof
           "",
         fullDescription:
           " MASA Raipur Conclave — Connecting Entrepreneurs, Investors & Ecosystem Leaders. The MASA Raipur Conclave was conceived to address the growing need for structured support, visibility, and networking opportunities for MSMEs and startups in Chhattisgarh and surrounding regions.Additionally, the event emphasized inclusivity and women’s leadership through Women’s MASA, encouraging and recognizing women entrepreneurs as vital contributors to the region’s growth story.",
-        image: pastRaipur,
+        image: "/images/event-imgs/pastRaipur.webp",
       },
       {
         id: 3,
@@ -165,7 +135,7 @@ Explore business funding opportunities under one roof
         description: "",
         fullDescription:
           "This intensive workshop covered SEO, social media marketing, and content strategy with practical case studies and actionable insights.",
-        image: past10,
+        image: "/images/event-imgs/past10.webp",
       },
       {
         id: 4,
@@ -175,7 +145,7 @@ Explore business funding opportunities under one roof
         description: "",
         fullDescription:
           "This intensive workshop covered SEO, social media marketing, and content strategy with practical case studies and actionable insights.",
-        image: past9,
+        image: "/images/event-imgs/past9.webp",
       },
       {
         id: 5,
@@ -185,7 +155,7 @@ Explore business funding opportunities under one roof
         description: "",
         fullDescription:
           "This intensive workshop covered SEO, social media marketing, and content strategy with practical case studies and actionable insights.",
-        image: past8,
+        image: "/images/event-imgs/past8.webp",
       },
       {
         id: 6,
@@ -195,7 +165,7 @@ Explore business funding opportunities under one roof
         description: "",
         fullDescription:
           "This intensive workshop covered SEO, social media marketing, and content strategy with practical case studies and actionable insights.",
-        image: past7,
+        image: "/images/event-imgs/past7.webp",
       },
       {
         id: 7,
@@ -205,7 +175,7 @@ Explore business funding opportunities under one roof
         description: "",
         fullDescription:
           "This intensive workshop covered SEO, social media marketing, and content strategy with practical case studies and actionable insights.",
-        image: past6,
+        image: "/images/event-imgs/past6.webp",
       },
       {
         id: 8,
@@ -215,7 +185,7 @@ Explore business funding opportunities under one roof
         description: "",
         fullDescription:
           "This intensive workshop covered SEO, social media marketing, and content strategy with practical case studies and actionable insights.",
-        image: past5,
+        image: "/images/event-imgs/past5.webp",
       },
       {
         id: 9,
@@ -225,7 +195,7 @@ Explore business funding opportunities under one roof
         description: "",
         fullDescription:
           "This intensive workshop covered SEO, social media marketing, and content strategy with practical case studies and actionable insights.",
-        image: past4,
+        image: "/images/event-imgs/past4.webp",
       },
       {
         id: 10,
@@ -235,7 +205,7 @@ Explore business funding opportunities under one roof
         description: "",
         fullDescription:
           "This intensive workshop covered SEO, social media marketing, and content strategy with practical case studies and actionable insights.",
-        image: past3,
+        image: "/images/event-imgs/past3.webp",
       },
       {
         id: 11,
@@ -245,7 +215,7 @@ Explore business funding opportunities under one roof
         description: "",
         fullDescription:
           "This intensive workshop covered SEO, social media marketing, and content strategy with practical case studies and actionable insights.",
-        image: past2,
+        image: "/images/event-imgs/past2.webp",
       },
       {
         id: 12,
@@ -255,7 +225,7 @@ Explore business funding opportunities under one roof
         description: "",
         fullDescription:
           "This intensive workshop covered SEO, social media marketing, and content strategy with practical case studies and actionable insights.",
-        image: past1,
+        image: "/images/event-imgs/past1.webp",
       },
     ],
     programs: [
@@ -265,7 +235,7 @@ Explore business funding opportunities under one roof
         date: "Every month 3rd Week Thursday",
         description: "An offline meet at CWBTA Office for all members and non-members",
         fullDescription: "Exact Dates details to be announced in our Whatsapp channel. This MASA CONNECT meet is to empower MSMEs & startups through monthly engagements. Be a part of nation's thriving MSMEs & Startups ecosystem",
-        image: CONNECT,
+        image: "/images/event-imgs/MASA-connect1.webp",
       },
       {
         id: 14,
@@ -275,7 +245,7 @@ Explore business funding opportunities under one roof
         description: "Six-week intensive leadership training",
         fullDescription:
           "This program includes mentorship sessions, team projects, and leadership simulations designed to develop executive-level skills.",
-        image: poddar,
+        image: "/images/event-imgs/leadershipProgram.JPG.webp",
       },
       {
         id: 15,
@@ -283,7 +253,7 @@ Explore business funding opportunities under one roof
         date: "21 May 2025",
         description: "",
         fullDescription: "",
-        image: upcoming3,
+        image: "/images/event-imgs/gem.webp",
       },
       {
         id: 16,
@@ -291,7 +261,7 @@ Explore business funding opportunities under one roof
         date: "23 May 2025",
         description: "",
         fullDescription: "",
-        image: upcoming5,
+        image: "/images/event-imgs/pmepg.webp",
       },
       
 

@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { FaRocket, FaLightbulb, FaEye, FaUsers, FaHandshake, FaGavel } from "react-icons/fa";
 import Footer from "../components/Footer";
-import logo from "../assets/about_us.webp";
 
 const About = () => {
   // Gradient text style
@@ -72,7 +71,7 @@ const About = () => {
             </div>
             <div className="md:w-1/2 flex justify-center">
               <img
-                src={logo}
+                src="/images/about_us.webp"
                 alt="MASA Logo"
                 className="w-64 md:w-96 h-auto"
               />

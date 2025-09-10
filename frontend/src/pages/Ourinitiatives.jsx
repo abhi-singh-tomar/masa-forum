@@ -10,24 +10,6 @@ import {
   FaCalendarAlt
 } from "react-icons/fa";
 
-// Dummy Images (Replace with your real ones)
-import awardLogo from "../assets/awards-imgs/masa-award-img.webp";
-import powerBrand from "../assets/awards-imgs/power-brand-img.webp";
-import powerBrand1 from "../assets/awards-imgs/powerBrand1.JPG.webp";
-import powerBrand2 from "../assets/awards-imgs/powerBrand2.webp";
-import times from "../assets/awards-imgs/MSME-times-img.webp";
-import kalpataru from "../assets/awards-imgs/kalpataru.webp";
-import nivesh from "../assets/awards-imgs/niveshmanthan.png";
-import raipur from "../assets/awards-imgs/raipur.webp";
-import jobFair from "../assets/event-imgs/upcoming1.webp";
-import quiz from "../assets/awards-imgs/quizz.webp";
-import nivesh2 from "../assets/awards-imgs/raipur-2.webp";
-import nivesh3 from "../assets/awards-imgs/raipur9.webp";
-import awards1 from "../assets/awards-imgs/2024.webp";
-import awards2 from "../assets/awards-imgs/2025.JPG.webp";
-import comingSoon from "../assets/awards-imgs/timesmsme.png";
-import kalpataru2 from "../assets/awards-imgs/kalpataru2.webp";
-
 // Data
 const initiatives = [
   {
@@ -35,9 +17,9 @@ const initiatives = [
     description: "Recognizing and honoring the achievements of startups and MSMEs across India in various categories.",
     icon: <FaAward className="text-yellow-400 text-4xl" />,
     cards: [
-      { image: awardLogo, title: "Startup of the Year", description: "Awarded to the most innovative startup." },
-      { image: awards1, title: "MSME Leader", description: "Recognizing outstanding MSME leaders." },
-      { image: awards2, title: "Innovation Excellence", description: "Celebrating technological innovation." },
+      { image: "/images/awards-imgs/masa-award-img.webp", title: "Startup of the Year", description: "Awarded to the most innovative startup." },
+      { image: "/images/awards-imgs/2024.webp", title: "MSME Leader", description: "Recognizing outstanding MSME leaders." },
+      { image: "/images/awards-imgs/2025.JPG.webp", title: "Innovation Excellence", description: "Celebrating technological innovation." },
     ]
   },
   {
@@ -45,9 +27,9 @@ const initiatives = [
     description: "Showcasing the most influential emerging startups and MSMEs in India through comprehensive profiling and recognition.",
     icon: <FaLightbulb className="text-yellow-400 text-4xl" />,
     cards: [
-      { image: powerBrand, title: "My Power Brand Podcasts", description: "Our podcast is a treasure trove of magical mantras that can turn your life around." },
-      { image: powerBrand1, title: "Podcast shoot Day-1", description: "Ft Twirl Store Founder Sujata Chatterjee" },
-      { image: powerBrand2, title: "Podcast shoot Day-6", description: "Ft Renowned matchmaker Kusum Bhandari" },
+      { image: "/images/awards-imgs/power-brand-img.webp", title: "My Power Brand Podcasts", description: "Our podcast is a treasure trove of magical mantras that can turn your life around." },
+      { image: "/images/awards-imgs/powerBrand1.JPG.webp", title: "Podcast shoot Day-1", description: "Ft Twirl Store Founder Sujata Chatterjee" },
+      { image: "/images/awards-imgs/powerBrand2.webp", title: "Podcast shoot Day-6", description: "Ft Renowned matchmaker Kusum Bhandari" },
     ]
   },
   {
@@ -55,8 +37,8 @@ const initiatives = [
     description: "Quarterly digital magazine covering success stories, government schemes, and the latest business trends for MSMEs.",
     icon: <FaNewspaper className="text-yellow-400 text-4xl" />,
     cards: [
-      { image: times, title: "Market Insights", description: "Trends shaping the future." },
-      { image: comingSoon, title: "Join Our WhatsApp Channel", description: " Click image to join whatsapp channel " },
+      { image: "/images/awards-imgs/MSME-times-img.webp", title: "Market Insights", description: "Trends shaping the future." },
+      { image: "/images/awards-imgs/timesmsme.png", title: "Join Our WhatsApp Channel", description: " Click image to join whatsapp channel " },
     ]
   },
   {
@@ -64,8 +46,8 @@ const initiatives = [
     description: "Funding and mentorship initiative designed to empower MSMEs with resources for exponential growth.",
     icon: <FaChartLine className="text-yellow-400 text-4xl" />,
     cards: [
-      { image: kalpataru, title: "Funding Access", description: "Connecting startups to investors." },
-      { image: kalpataru2, title: "Mentorship Programs", description: "Guidance from industry veterans." },
+      { image: "/images/awards-imgs/kalpataru.webp", title: "Funding Access", description: "Connecting startups to investors." },
+      { image: "/images/awards-imgs/kalpataru2.webp", title: "Mentorship Programs", description: "Guidance from industry veterans." },
     ]
   },
   {
@@ -73,9 +55,9 @@ const initiatives = [
     description: "Platform connecting promising startups with visionary investors through curated pitching opportunities.",
     icon: <FaHandshake className="text-yellow-400 text-4xl" />,
     cards: [
-      { image: nivesh, title: "Investor Connect", description: "Bringing founders & investors together." },
-      { image: nivesh2, title: "Pitch Days", description: "Live pitching events for startups." },
-      { image: nivesh3, title: "VC Panels", description: "Insights from venture capitalists." },
+      { image: "/images/awards-imgs/niveshmanthan.png", title: "Investor Connect", description: "Bringing founders & investors together." },
+      { image: "/images/awards-imgs/raipur-2.webp", title: "Pitch Days", description: "Live pitching events for startups." },
+      { image: "/images/awards-imgs/raipur9.webp", title: "VC Panels", description: "Insights from venture capitalists." },
     ]
   },
   {
@@ -83,9 +65,9 @@ const initiatives = [
     description: "Workshops, exhibitions, conclaves, and training programs conducted across India for ecosystem upliftment.",
     icon: <FaCalendarAlt className="text-yellow-400 text-4xl" />,
     cards: [
-      { image: raipur, title: "Raipur Conclave 2025", description: "" },
-      { image: jobFair, title: "East India Job & Career Expo", description: "" },
-      { image: quiz, title: "Environment Quizz", description: "" },
+      { image: "/images/event-imgs/upcoming1.webp", title: "Raipur Conclave 2025", description: "" },
+      { image: "/images/event-imgs/upcoming1.webp", title: "East India Job & Career Expo", description: "" },
+      { image: "/images/event-imgs/upcoming1.webp", title: "Environment Quizz", description: "" },
     ]
   }
 ];

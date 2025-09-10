@@ -10,52 +10,42 @@ import { IoClose } from "react-icons/io5";
 import { sendUserIntent } from "../api";
 import Faqs from "../components/Faqs";
 // ----Image imports----------
-import upSkill from "../assets/homePage-carousel-imgs/training.webp";
-import network from "../assets/homePage-carousel-imgs/networking.JPG.webp";
-import govt from "../assets/homePage-carousel-imgs/govt.webp";
-import excel from "../assets/homePage-carousel-imgs/excellence.webp";
-import masa from "../assets/homePage-carousel-imgs/whoWeAre.JPG.webp";
-import delhi from "../assets/homePage-carousel-imgs/delhi-chap.webp";
-import kanika from "../assets/testimonial-imgs/kanika.webp";
-
 const carouselImages = [
   {
-    url: masa,
-    alt: "We are Ecosystem partners for MSMEs & Startups",
+    src: "/images/homePage-carousel-imgs/whoWeAre.JPG.webp",
     caption: "We are Ecosystem partners for MSMEs & Startups"
   },
   {
-    url: excel,
-    alt: "Celebrating Innovation & Business Excellence",
+    src: "/images/homePage-carousel-imgs/excellence.webp",
     caption: "Celebrating Innovation & Business Excellence"
   },
   {
-    url: govt,
-    alt: "Government Schemes & Policy Support",
+    src: "/images/homePage-carousel-imgs/govt.webp",
     caption: "Government Schemes & Policy Support"
   },
   {
-    url: upSkill,
-    alt: "Upskilling Workshops",
+    src: "/images/homePage-carousel-imgs/training.webp",
     caption: "Upskilling Workshops"
   },
   {
-    url: network,
-    alt: "National Networking Access",
+    src: "/images/homePage-carousel-imgs/carasoul.webp",
     caption: "National Networking Access"
   },
   {
-    url: delhi,
-    alt: "Delhi Chapter of MASA",
+    src: "/images/homePage-carousel-imgs/networking.JPG.webp",
+    caption: "National Networking Access"
+  },
+  {
+    src: "/images/homePage-carousel-imgs/delhi-chap.webp",
     caption: "Delhi Chapter of MASA"
-  }
+  },
 ];
 
 const testimonials = [
   { 
     name: "Kanika Gupta", 
     text: "I think this a perfect platform for women to come together and grow together. Do something very substantial", 
-    profileImage: kanika 
+    profileImage: "/images/testimonial-imgs/kanika.webp"
   },
   
    
@@ -250,8 +240,8 @@ const handlePopupSelection = async (option) => {
             className="absolute inset-0 w-full h-full"
           >
             <img 
-              src={carouselImages[currentCarouselIndex].url} 
-              alt={carouselImages[currentCarouselIndex].alt}
+              src={carouselImages[currentCarouselIndex].src} 
+              alt={carouselImages[currentCarouselIndex].caption}
               className="w-full h-full object-contain sm:object-cover object-center transition-all duration-500"
             />
             <div className="absolute inset-0 bg-black/50 flex items-center justify-center px-4">

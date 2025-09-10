@@ -1,13 +1,5 @@
 import React, { useState } from 'react';
 import Footer from '../components/Footer';
-import blogImage1 from "../assets/blog-imgs/ira.JPG.webp"; // Replace with your actual blog images
-import blogImage2 from "../assets/blog-imgs/tandon.webp"
-import blogImage3 from "../assets/blog-imgs/biswarup.JPG.webp";
-import blogImage4 from "../assets/blog-imgs/pragya.JPG.webp";
-import blogImage5 from "../assets/blog-imgs/president.webp";
-import blogImage6 from "../assets/blog-imgs/impact.webp";
-import blogImage7 from "../assets/blog-imgs/greengrowth.webp";
-import blogImage8 from "../assets/blog-imgs/empower.webp";
 
 
 const BlogsPage = () => {
@@ -22,7 +14,7 @@ const BlogsPage = () => {
       fullContent: " The platform’s consistent growth, especially with operators like M1xchange, highlights its increasing relevance in bridging the working capital gap.Yet, it is concerning that TReDS still addresses less than 5% of the sector’s massive credit demand. For a country with over 64 million MSMEs and a credit gap of Rs 20–25 lakh crore, this signals the need for deeper reforms and expanded outreach. MASA Forum strongly supports further innovations—such as secondary market trading of invoices, integration with GSTN, and alternative credit assessment models—to strengthen this ecosystem. We urge all stakeholders to work in unison to make TReDS a mainstream financing channel that empowers even the smallest MSME in the remotest corner of India.",
       date: "May 19, 2025",
       author: "sushil poddar",
-      image: blogImage5,
+      image: "/images/blog-imgs/president.webp",
     },
      {
       id: 6,
@@ -31,7 +23,7 @@ const BlogsPage = () => {
       fullContent: "The Digital Imperative With tools like Udyam Registration, GeM (Government eMarketplace), and digital accounting platforms such as Zoho and TallyPrime, MSMEs can reduce paperwork, cut costs, and improve operational efficiency. How MASA Forum Helps MASA offers tech mentoring sessions, access to software tools at discounted rates, and workshops on eCommerce onboarding. We also help with integration into India Stack APIs like Aadhaar, UPI, and Digilocker for smoother compliance and financial inclusion.",
       date: "May 19, 2025",
       author: "masa forum",
-      image: blogImage8,
+      image: "/images/blog-imgs/empower.webp",
     },
      {
       id: 7,
@@ -40,7 +32,7 @@ const BlogsPage = () => {
       fullContent: "The Green Advantage Eco-conscious businesses get easier credit access, carbon-offset tax benefits, and eligibility for government schemes like the Zero Effect, Zero Defect (ZED) program.MASA Forum’s Green Drive Through our Green MSME Bootcamps, MASA trains small manufacturers and service providers in energy efficiency, waste management, and green certification (such as ISO 14001 and ZED Bronze/Silver)..",
       date: "May 19, 2025",
       author: "masa forum",
-      image: blogImage7,
+      image: "/images/blog-imgs/greengrowth.webp",
     },
 
     {
@@ -50,7 +42,7 @@ const BlogsPage = () => {
       fullContent: "Startups in smaller cities face barriers like limited access to mentorship, investors, and incubation spaces. MASA’s hybrid model of virtual incubation, local networking events, and remote pitch days is solving this. Real Stories, Real Impact Startups from small towns we’ve supported include a healthtech firm from Bareilly now exporting diagnostic kits, and a smart irrigation company from Bhubaneswar that secured a ₹25 lakh angel round.",
       date: "May 19, 2025",
       author: "masa forum",
-      image: blogImage6,
+      image: "/images/blog-imgs/impact.webp",
     },
     {
       id: 5,
@@ -59,7 +51,7 @@ const BlogsPage = () => {
       fullContent: "The startup landscape in 2025 is poised for significant evolution. With advancements in AI, blockchain, and sustainable tech, entrepreneurs are finding new opportunities to innovate. This article explores key trends, including the rise of remote-first companies, increased investor focus on ESG (Environmental, Social, Governance) factors, and the growing importance of community-driven business models. We’ll also discuss predictions from industry experts and how startups can position themselves for success in this dynamic environment.",
       date: "March 25, 2025",
       author: "Ira Saha",
-      image: blogImage1,
+      image: "/images/blog-imgs/ira.JPG.webp",
     },
     {
       id: 3,
@@ -68,7 +60,7 @@ const BlogsPage = () => {
       fullContent: "Artificial Intelligence is no longer a futuristic concept—it’s here, and it’s transforming entrepreneurship. From automating mundane tasks to providing deep customer insights, AI offers tools that level the playing field for small businesses. This article dives into practical applications of AI for entrepreneurs, such as predictive analytics, personalized marketing, and operational efficiency. We’ll also explore the ethical considerations and future implications of this tech revolution.",
       date: "March 15, 2025",
       author: "Biswarup Chatterjee",
-      image: blogImage3,
+      image: "/images/blog-imgs/biswarup.JPG.webp",
     },
     {
       id: 4,
@@ -77,7 +69,7 @@ const BlogsPage = () => {
       fullContent: "Scaling a business is a delicate balance of growth and stability. In this post, we share lessons from founders who’ve successfully scaled their ventures. Topics include hiring the right team, maintaining company culture, leveraging data-driven decisions, and securing funding without losing control. These insights are backed by real-world case studies, offering actionable advice for entrepreneurs at any stage of their journey.",
       date: "March 10, 2025",
       author: "Pragya Jhunjhunwala",
-      image: blogImage4,
+      image: "/images/blog-imgs/pragya.JPG.webp",
     },
     {
       id: 2,
@@ -86,7 +78,7 @@ const BlogsPage = () => {
       fullContent: "Pitching to investors can be daunting, but with the right approach, you can turn it into a winning opportunity. This post covers essential tips: crafting a compelling story, focusing on your unique value proposition, preparing for tough questions, and mastering your delivery. Learn from real-world examples of successful pitches and avoid common pitfalls that turn investors away. Whether you’re a first-time founder or a seasoned entrepreneur, these strategies will help you shine.",
       date: "March 20, 2025",
       author: "Vibhor Tandon",
-      image: blogImage2,
+      image: "/images/blog-imgs/tandon.webp",
     },
      
     

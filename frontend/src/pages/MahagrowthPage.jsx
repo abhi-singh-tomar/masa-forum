@@ -1,22 +1,7 @@
 import { useState, useEffect, lazy, Suspense, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiArrowRight, FiArrowLeft, FiUsers, FiAward } from 'react-icons/fi';
-import mum1 from '../assets/mumbai-masa/mum1.webp';
-import mum2 from '../assets/mumbai-masa/mum2.webp';
-import mum3 from '../assets/mumbai-masa/mum3.webp';
-import mum5 from '../assets/mumbai-masa/mum5.webp';
-import mum20 from '../assets/mumbai-masa/mum20.jpg';
-import mum21 from '../assets/mumbai-masa/mum21.jpg';
-import powerbrand from '../assets/powerbrand.png';
 import LiteYouTube from "../components/LiteYouTube";
-import mum12 from '../assets/mumbai-masa/mum12-min.webp';
-import mum13 from '../assets/mumbai-masa/mum13-min.webp';
-import mum14 from '../assets/mumbai-masa/mum14-min.webp';
-import mum15 from '../assets/mumbai-masa/mum15-min.webp';
-import mum16 from '../assets/mumbai-masa/mum16-min.webp';
-import mum17 from '../assets/mumbai-masa/mum17-min.webp';
-import mum18 from '../assets/mumbai-masa/mum18-min.webp';
-import mum19 from '../assets/mumbai-masa/mum19-min.webp';
 
 // Lazy load the Footer component
 const Footer = lazy(() => import('../components/Footer'));
@@ -31,7 +16,24 @@ const LoadingSpinner = () => (
 const MahagrowthPage = () => {
   // ---------- Hero Carousel ----------
   const gallery = useMemo(() => [
-    mum1, mum3, mum5, mum12, mum13, mum14, mum15, mum16, mum2, mum17, mum18, mum19, mum20, mum21
+    "/images/mumbai-masa/mum1.webp",
+    "/images/mumbai-masa/mum2.webp",
+    "/images/mumbai-masa/mum3.webp",
+    "/images/mumbai-masa/mum4.webp",
+    "/images/mumbai-masa/mum5.webp",
+    "/images/mumbai-masa/mum6.webp",
+    "/images/mumbai-masa/mum7.webp",
+    "/images/mumbai-masa/mum12-min.webp",
+    "/images/mumbai-masa/mum13-min.webp",
+    "/images/mumbai-masa/mum14-min.webp",
+    "/images/mumbai-masa/mum15-min.webp",
+    "/images/mumbai-masa/mum16-min.webp",
+    "/images/mumbai-masa/mum17-min.webp",
+    "/images/mumbai-masa/mum18-min.webp",
+    "/images/mumbai-masa/mum19-min.webp",
+    "/images/mumbai-masa/mum20.jpg",
+    "/images/mumbai-masa/mum21.jpg",
+   
   ], []);
   const [current, setCurrent] = useState(0);
   const [dir, setDir] = useState(1);
@@ -264,7 +266,7 @@ const MahagrowthPage = () => {
           <div className="p-6 sm:p-12 space-y-10 text-center">
             <div className="space-y-4">
               <img
-                src={powerbrand}
+                src="/images/mumbai-masa/mum1.webp"
                 alt="MyPowerBrand Logo"
                 className="mx-auto h-28 md:h-32 object-contain"
               />

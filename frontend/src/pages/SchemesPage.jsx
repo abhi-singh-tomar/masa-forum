@@ -1,76 +1,64 @@
 import React from "react";
 import Footer from "../components/Footer";
 
-import img1 from "../assets/schemes-imgs/img1.webp";
-import img2 from "../assets/schemes-imgs/img2.webp";
-import img3 from "../assets/schemes-imgs/img3.webp";
-import img4 from "../assets/schemes-imgs/img4.webp";
-import img5 from "../assets/schemes-imgs/img5.webp";
-import img6 from "../assets/schemes-imgs/img6.webp";
-import img7 from "../assets/schemes-imgs/img7.webp";
-import img8 from "../assets/schemes-imgs/img8.webp";
-import img9 from "../assets/schemes-imgs/img9.webp";
-import img10 from "../assets/schemes-imgs/img10.webp";
-
-
 const schemes = [
   {
     title: "Pradhan Mantri Mudra Yojana (PMMY)",
-    image: img1,
+    image: "/images/schemes-imgs/img1.webp",
     description: "Provides loans up to ₹10 lakh to micro and small enterprises without collateral.",
     link: "https://www.mudra.org.in/"
   },
   {
     title: "Stand-Up India Scheme",
-    image: img2,
+    image: "/images/schemes-imgs/img2.webp",
     description: "Aims to support SC/ST and women entrepreneurs with bank loans from ₹10 lakh to ₹1 crore.",
     link: "https://www.standupmitra.in/"
   },
   {
     title: "Startup India Initiative",
-    image: img3,
+    image: "/images/schemes-imgs/img3.webp",
     description: "Provides tax exemptions, funding support, and ease of doing business for startups.",
     link: "https://www.startupindia.gov.in/"
   },
   {
     title: "Credit Guarantee Fund Scheme (CGTMSE)",
-    image: img4,
+    image: "/images/schemes-imgs/img4.webp",
     description: "Offers credit guarantee to MSMEs for collateral-free loans up to ₹2 crore.",
     link: "https://www.cgtmse.in/"
   },
   {
     title: "National Small Industries Corporation (NSIC) Subsidy",
-    image: img5,
+    image: "/images/schemes-imgs/img5.webp",
     description: "Provides marketing support, credit facilitation, and technology assistance to MSMEs.",
     link: "https://www.nsic.co.in/"
   },
   {
     title: "Credit Linked Capital Subsidy Scheme (CLCSS)",
-    image: img6,
+    image: "/images/schemes-imgs/img6.webp",
     description: "Offers 15% capital subsidy for MSMEs upgrading technology in manufacturing.",
     link: "https://msme.gov.in/"
   },
   {
     title: "Prime Minister's Employment Generation Programme (PMEGP)",
-    image: img7,
+    image: "/images/schemes-imgs/img7.webp",
     description: "Encourages self-employment by providing subsidies on project costs for new businesses.",
     link: "https://kviconline.gov.in/pmegpeportal/pmegphome/index.jsp"
   },
   {
     title: "ZED Certification Scheme",
-    image: img8,
+    image: "/images/schemes-imgs/img8.webp",
     description: "Promotes quality manufacturing in MSMEs by providing financial assistance for certification.",
     link: "https://zed.msme.gov.in/"
   },
   {
     title: "Women Entrepreneurship Platform (WEP)",
-    image: img9,
+    image: "/images/schemes-imgs/img9.webp",
     description: "Encourages women-led businesses by offering mentoring, funding, and networking opportunities.",
     link: "https://wep.gov.in/"
   },
   {
     title: "Technology Upgradation Fund Scheme (TUFS)",
-    image: img10,
+    image: "/images/schemes-imgs/img10.webp",
     description: "Supports textile industries in upgrading technology with financial assistance.",
     link: "https://www.txcindia.gov.in/"
   }

@@ -1,110 +1,89 @@
 import React from "react";
 import { motion } from "framer-motion";
-import gtcci from "../assets/partners-imgs/gtcci-logo.webp";
-import cwbta from "../assets/partners-imgs/cwbta-logo2.webp";
-import iem from "../assets/partners-imgs/iem-logo.webp";
-import dc from "../assets/partners-imgs/diplomatic-logo.webp";
-import msme from "../assets/partners-imgs/MSME-logo.webp";
-import bse from "../assets/partners-imgs/BSE_New_Logo.webp";
-import cbi from "../assets/partners-imgs/Central-Bank-of-India-Logo.webp";
-import cokuss from "../assets/partners-imgs/cokuss-logo.webp";
-import icici from "../assets/partners-imgs/icici-logo.webp";
-import ilead from "../assets/partners-imgs/ilead-logo.webp";
-import kotak from "../assets/partners-imgs/kotak-logo.webp";
-import laghu from "../assets/partners-imgs/laghu-logo.webp";
-import mcx from "../assets/partners-imgs/mcxlogo.webp";
-import nse from "../assets/partners-imgs/nse-logo.webp";
-import sbi from "../assets/partners-imgs/sbi-logo.webp";
-import patrika from "../assets/partners-imgs/patrika-logo.webp";
-import emami from "../assets/partners-imgs/emami-logo.webp";
-import adhunik from "../assets/partners-imgs/adhunik-logo.webp";
-import linc from "../assets/partners-imgs/linc-logo.webp";
-import hair from "../assets/partners-imgs/hairsmart.webp";
-import mantras from "../assets/partners-imgs/mantras.webp";
 
 const partners = [
   {
     id: 1,
     name: "GTCCI",
-    logo: gtcci,
+    logo: "/images/partners-imgs/gtcci-logo.webp",
     website: "https://www.google.com",
   },
   {
     id: 2,
     name: "CWBTA",
-    logo: cwbta,
+    logo: "/images/partners-imgs/cwbta-logo2.webp",
     website: "https://www.microsoft.com",
   },
   {
     id: 3,
     name: "IEM",
-    logo: iem,
+    logo: "/images/partners-imgs/iem-logo.webp",
     website: "https://www.amazon.com",
   },
   {
     id: 4,
     name: "Diplomatic Club",
-    logo: dc,
+    logo: "/images/partners-imgs/diplomatic-logo.webp",
     website: "https://www.tesla.com",
   },
   {
     id: 5,
     name: "MSME Development Forum",
-    logo: msme,
+    logo: "/images/partners-imgs/MSME-logo.webp",
     website: "https://www.google.com",
   },
   {
     id: 6,
     name: "ILEAD",
-    logo: ilead,
+    logo: "/images/partners-imgs/ilead-logo.webp",
     website: "https://www.microsoft.com",
   },
   {
     id: 7,
     name: "COKUSS",
-    logo: cokuss,
+    logo: "/images/partners-imgs/cokuss-logo.webp",
     website: "https://www.amazon.com",
   },
   {
     id: 8,
     name: "Laghu Udyog Bhaarti",
-    logo: laghu,
+    logo: "/images/partners-imgs/laghu-logo.webp",
     website: "https://www.tesla.com",
   },
   {
     id: 9,
     name: "Emami Foundation",
-    logo: emami,
+    logo: "/images/partners-imgs/emami-logo.webp",
     website: "https://www.google.com",
   },
   {
     id: 10,
     name: "Adhunik TMT Bars",
-    logo: adhunik,
+    logo: "/images/partners-imgs/adhunik-logo.webp",
     website: "https://www.microsoft.com",
   },
   {
     id: 11,
     name: "Linc",
-    logo: linc,
+    logo: "/images/partners-imgs/linc-logo.webp",
     website: "https://www.amazon.com",
   },
   {
     id: 12,
     name: "Rajasthan Patrika",
-    logo: patrika,
+    logo: "/images/partners-imgs/patrika-logo.webp",
     website: "https://www.tesla.com",
   },
   {
     id: 13,
     name: "HairSmart",
-    logo: hair,
+    logo: "/images/partners-imgs/hairsmart.webp",
     website: "https://www.tesla.com",
   },
   {
     id: 14,
     name: "Mantras Foundation",
-    logo: mantras,
+    logo: "/images/partners-imgs/mantras.webp",
     website: "https://www.tesla.com",
   },
 ];
@@ -113,43 +92,43 @@ const banks = [
   {
     id: 1,
     name: "SBI",
-    logo: sbi,
+    logo: "/images/partners-imgs/sbi-logo.webp",
     website: "https://www.google.com"
   },
   {
     id: 2,
     name: "Kotak Mahindra",
-    logo: kotak,
+    logo: "/images/partners-imgs/kotak-logo.webp",
     website: "https://www.google.com"
   },
   {
     id: 3,
     name: "ICICI",
-    logo: icici,
+    logo: "/images/partners-imgs/icici-logo.webp",
     website: "https://www.google.com"
   },
   {
     id: 4,
     name: "CBI",
-    logo: cbi,
+    logo: "/images/partners-imgs/Central-Bank-of-India-Logo.webp",
     website: "https://www.google.com"
   },
   {
     id: 5,
     name: "MCX",
-    logo: mcx,
+    logo: "/images/partners-imgs/mcxlogo.webp",
     website: "https://www.google.com"
   },
   {
     id: 6,
     name: "NSE",
-    logo: nse,
+    logo: "/images/partners-imgs/nse-logo.webp",
     website: "https://www.google.com"
   },
   {
     id: 7,
     name: "BSE",
-    logo: bse,
+    logo: "/images/partners-imgs/BSE_New_Logo.webp",
     website: "https://www.google.com"
   }
 ]

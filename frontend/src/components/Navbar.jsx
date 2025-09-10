@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
-import logo from "../assets/about_us.webp"; // Adjust the path as needed
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -61,7 +60,7 @@ function Navbar() {
         {/* Logo and hamburger */}
         <div className="flex justify-between items-center w-full lg:w-auto">
           <Link to="/" className="flex items-center gap-2">
-            <img src={logo} alt="MASA Logo" className="h-10" />
+            <img src="/images/about_us.webp" alt="MASA Logo" className="h-10" />
             <span className="text-xl font-bold whitespace-nowrap">MASA Forum</span>
           </Link>
           <button
