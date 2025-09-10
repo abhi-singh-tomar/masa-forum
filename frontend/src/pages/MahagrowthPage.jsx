@@ -40,34 +40,32 @@ const MahagrowthPage = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   // Preload images
-  useEffect(() => {
-    const preloadImages = () => {
-      const promises = gallery.map((src) => {
-        return new Promise((resolve, reject) => {
-          const img = new Image();
-          img.src = src;
-          img.onload = resolve;
-          img.onerror = reject;
-        });
-      });
+  // Preload only the first image (so spinner goes away quickly)
+useEffect(() => {
+  const img = new Image();
+  img.src = gallery[0];
+  img.onload = () => setIsLoading(false);
+  img.onerror = () => setIsLoading(false);
 
-      Promise.all(promises)
-        .then(() => setIsLoading(false))
-        .catch(() => setIsLoading(false));
-    };
+  // Preload remaining images in background (non-blocking)
+  gallery.slice(1).forEach((src) => {
+    const bgImg = new Image();
+    bgImg.src = src;
+  });
+}, [gallery]);
 
-    preloadImages();
-  }, [gallery]);
+// Auto-play carousel after first image is ready
+useEffect(() => {
+  if (isLoading) return;
 
-  useEffect(() => {
-    if (isLoading) return;
+  const id = setInterval(() => {
+    setDir(1);
+    setCurrent((p) => (p + 1) % gallery.length);
+  }, 4500);
 
-    const id = setInterval(() => {
-      setDir(1);
-      setCurrent((p) => (p + 1) % gallery.length);
-    }, 4500);
-    return () => clearInterval(id);
-  }, [gallery.length, isLoading]);
+  return () => clearInterval(id);
+}, [gallery.length, isLoading]);
+
 
   const next = () => {
     setDir(1);
