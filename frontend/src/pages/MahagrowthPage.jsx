@@ -19,7 +19,7 @@ const MahagrowthPage = () => {
     "/images/mumbai-masa/mum1.webp",
     "/images/mumbai-masa/mum2.webp",
     "/images/mumbai-masa/mum3.webp",
-    "/images/mumbai-masa/mum4.webp",
+  
     "/images/mumbai-masa/mum5.webp",
     "/images/mumbai-masa/mum6.webp",
     "/images/mumbai-masa/mum7.webp",
