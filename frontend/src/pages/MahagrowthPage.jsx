@@ -16,10 +16,10 @@ const LoadingSpinner = () => (
 const MahagrowthPage = () => {
   // ---------- Hero Carousel ----------
   const gallery = useMemo(() => [
-    "/images/mumbai-masa/mum1.webp",
+    "/.netlify/images?url=/images/mumbai-masa/mum1.webp&w=800&q=70",
     "/images/mumbai-masa/mum2.webp",
     "/images/mumbai-masa/mum3.webp",
-  
+    "/images/mumbai-masa/mum4.webp",
     "/images/mumbai-masa/mum5.webp",
     "/images/mumbai-masa/mum6.webp",
     "/images/mumbai-masa/mum7.webp",
@@ -264,7 +264,7 @@ useEffect(() => {
           <div className="p-6 sm:p-12 space-y-10 text-center">
             <div className="space-y-4">
               <img
-                src="/images/mumbai-masa/mum1.webp"
+                src="/images/powerbrand.png"
                 alt="MyPowerBrand Logo"
                 className="mx-auto h-28 md:h-32 object-contain"
               />
